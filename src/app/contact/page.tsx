@@ -1,5 +1,13 @@
 import { createMetadata } from '@/lib/metadata';
-import { CONTACT_EMAIL, COORDINATOR_NAME, COORDINATOR_TITLE, FULL_NAME, RESPONSE_HOURS } from '@/lib/site';
+import {
+  APPLY_FROM_EMAIL,
+  APPLY_FROM_NAME,
+  CONTACT_EMAIL,
+  COORDINATOR_NAME,
+  COORDINATOR_TITLE,
+  FULL_NAME,
+  RESPONSE_HOURS,
+} from '@/lib/site';
 import Link from 'next/link';
 
 export const metadata = createMetadata({
@@ -38,7 +46,9 @@ export default function ContactPage() {
             </a>
             <p className="mt-4 text-sm leading-relaxed text-[var(--gp-muted)]">
               First reply on new applications is within {RESPONSE_HOURS} hours. Check inbox and spam.
-              Reply on the same thread so your file stays together.
+              Reply on the same thread so your file stays together. Application receipts come from{' '}
+              {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}); conversation is {COORDINATOR_NAME} at{' '}
+              {CONTACT_EMAIL}.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2">

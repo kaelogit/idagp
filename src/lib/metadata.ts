@@ -72,8 +72,11 @@ export function createMetadata(options: {
       images: [LOGO_URL],
     },
     robots: options.noIndex
-      ? { index: false, follow: true }
-      : { index: true, follow: true },
+      ? { index: false, follow: true, googleBot: { index: false, follow: true } }
+      : { index: true, follow: true, googleBot: { index: true, follow: true } },
+    ...(process.env.GOOGLE_SITE_VERIFICATION
+      ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
+      : {}),
   };
 }
 

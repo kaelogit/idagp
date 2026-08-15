@@ -1,5 +1,7 @@
 import { createMetadata } from '@/lib/metadata';
 import { applicantContactWithin, CONTACT_EMAIL, COORDINATOR_NAME, RESPONSE_HOURS } from '@/lib/site';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { breadcrumbJsonLd } from '@/lib/jsonld';
 import Link from 'next/link';
 
 export const metadata = createMetadata({
@@ -50,6 +52,12 @@ const steps = [
 export default function HowItWorksPage() {
   return (
     <div className="bg-white">
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: 'How it works', path: '/how-it-works' },
+        ])}
+      />
       <section className="border-b border-[var(--gp-line)] bg-[var(--gp-navy)] pt-16 pb-14 text-white">
         <div className="container-page max-w-3xl">
           <p className="section-label">Process</p>

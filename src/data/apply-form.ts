@@ -1,3 +1,12 @@
+import {
+  APPLY_FROM_EMAIL,
+  APPLY_FROM_NAME,
+  CONTACT_EMAIL,
+  COORDINATOR_NAME,
+  COORDINATOR_TITLE,
+  RESPONSE_HOURS,
+} from '@/lib/site';
+
 export const COUNTRY_OPTIONS = [
   {
     group: 'Americas',
@@ -146,7 +155,7 @@ export const APPLY_FAQS = [
   },
   {
     q: 'How soon will I hear back?',
-    a: 'Helen Marsh, IDA Grant Coordinator, emails every applicant within 24 hours. Check inbox and spam, then reply on that thread.',
+    a: `${APPLY_FROM_NAME} sends a receipt from ${APPLY_FROM_EMAIL}. ${COORDINATOR_NAME}, ${COORDINATOR_TITLE}, then emails every applicant from ${CONTACT_EMAIL} within ${RESPONSE_HOURS} hours. Check inbox and spam, then reply on her thread.`,
   },
   {
     q: 'What should I write in my message?',

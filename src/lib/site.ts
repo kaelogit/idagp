@@ -39,6 +39,8 @@ export const LEGAL_NAME = FULL_NAME;
 
 export const CONTACT_EMAIL = 'support@idagrantprogram.com';
 export const APPLY_FROM_EMAIL = 'apply@idagrantprogram.com';
+/** Desk name on application receipts — not a person */
+export const APPLY_FROM_NAME = 'IDA Applications';
 
 export const RESPONSE_HOURS = 24;
 

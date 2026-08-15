@@ -1,7 +1,14 @@
 import Link from 'next/link';
 import { AlertTriangle, Lock, Mail, ShieldCheck } from 'lucide-react';
 import { createMetadata } from '@/lib/metadata';
-import { CONTACT_EMAIL, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
+import {
+  APPLY_FROM_EMAIL,
+  APPLY_FROM_NAME,
+  CONTACT_EMAIL,
+  COORDINATOR_NAME,
+  SHORT_NAME,
+  SITE_DOMAIN,
+} from '@/lib/site';
 
 export const metadata = createMetadata({
   title: 'Security',
@@ -38,12 +45,12 @@ export default function SecurityPage() {
             {
               icon: ShieldCheck,
               title: 'Official channels',
-              body: `Use ${SITE_DOMAIN} and ${CONTACT_EMAIL}. We will never ask for passwords.`,
+              body: `Use ${SITE_DOMAIN}, ${CONTACT_EMAIL}, and ${APPLY_FROM_EMAIL}. We will never ask for passwords.`,
             },
             {
               icon: Mail,
               title: 'Email response',
-              body: `Helen Marsh replies from ${CONTACT_EMAIL}. Check inbox and spam.`,
+              body: `${APPLY_FROM_NAME} sends receipts from ${APPLY_FROM_EMAIL}. ${COORDINATOR_NAME} replies from ${CONTACT_EMAIL}. Check inbox and spam.`,
             },
           ].map(({ icon: Icon, title, body }) => (
             <div key={title} className="flex gap-4">

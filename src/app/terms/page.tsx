@@ -1,6 +1,6 @@
 import { createMetadata } from '@/lib/metadata';
 import { LegalLayout, LegalSection } from '@/components/layout/LegalLayout';
-import { CONTACT_EMAIL, FULL_NAME, ORG_BLURB, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
+import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, CONTACT_EMAIL, FULL_NAME, ORG_BLURB, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
 
 export const metadata = createMetadata({
   title: 'Terms of use',
@@ -27,8 +27,9 @@ export default function TermsPage() {
         every day and billions of dollars in IDA grant money go out each year.
       </LegalSection>
       <LegalSection title="Official contact">
-        Follow-up is by email. If you are unsure whether a message is from IDA, use the Verify page
-        or write {CONTACT_EMAIL} before you act.
+        Follow-up is by email. Application receipts come from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}).
+        If you are unsure whether a message is from IDA, use the Verify page or write {CONTACT_EMAIL}{' '}
+        before you act.
       </LegalSection>
       <LegalSection title="Accuracy">
         You agree that what you submit is true to the best of your knowledge. False statements can

@@ -1,5 +1,7 @@
 import { createMetadata } from '@/lib/metadata';
 import { GRANT_PROGRAMS } from '@/data/programs';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { breadcrumbJsonLd, programsItemListJsonLd } from '@/lib/jsonld';
 import Link from 'next/link';
 
 export const metadata = createMetadata({
@@ -12,6 +14,13 @@ export const metadata = createMetadata({
 export default function ProgramsPage() {
   return (
     <div className="bg-white">
+      <JsonLd data={programsItemListJsonLd()} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', path: '/' },
+          { name: 'Programs', path: '/programs' },
+        ])}
+      />
       <section className="border-b border-[var(--gp-line)] bg-[var(--gp-paper)] pt-16 pb-12">
         <div className="container-page max-w-3xl">
           <p className="section-label">Programs</p>

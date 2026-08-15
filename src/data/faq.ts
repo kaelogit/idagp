@@ -1,4 +1,6 @@
 import {
+  APPLY_FROM_EMAIL,
+  APPLY_FROM_NAME,
   CONTACT_EMAIL,
   COORDINATOR_NAME,
   FULL_NAME,
@@ -63,11 +65,11 @@ export const faqItems = [
   },
   {
     question: 'How will I be contacted?',
-    answer: `${COORDINATOR_NAME}, ${FULL_NAME} Grant Coordinator, emails you at ${CONTACT_EMAIL} within ${RESPONSE_HOURS} hours. Check inbox and spam. Reply on that email thread.`,
+    answer: `You will get a receipt from ${APPLY_FROM_NAME} (${APPLY_FROM_EMAIL}). Then ${COORDINATOR_NAME}, ${FULL_NAME} Grant Coordinator, emails you at ${CONTACT_EMAIL} within ${RESPONSE_HOURS} hours. Check inbox and spam. Reply on her thread.`,
   },
   {
     question: 'Someone contacted me about an IDA grant — is it real?',
-    answer: `If you are unsure, verify before you act. Official contact is ${CONTACT_EMAIL} and this website (${SITE_DOMAIN}). Visit ${SITE_DOMAIN}/verify and email support with what you were told.`,
+    answer: `If you are unsure, verify before you act. Official contact is ${CONTACT_EMAIL} (${COORDINATOR_NAME}), ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}), and this website (${SITE_DOMAIN}). Visit ${SITE_DOMAIN}/verify and email support with what you were told.`,
   },
   {
     question: 'Do I have to pay IDA back?',

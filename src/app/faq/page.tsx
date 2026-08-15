@@ -26,9 +26,13 @@ export default function FaqPage() {
               {item.question}
               <ChevronDown className={`h-4 w-4 shrink-0 ${open === idx ? 'rotate-180' : ''}`} />
             </button>
-            {open === idx ? (
-              <p className="pb-5 text-sm leading-relaxed text-[var(--gp-muted)]">{item.answer}</p>
-            ) : null}
+            <p
+              className={`pb-5 text-sm leading-relaxed text-[var(--gp-muted)] ${
+                open === idx ? '' : 'hidden'
+              }`}
+            >
+              {item.answer}
+            </p>
           </div>
         ))}
         <div className="flex flex-wrap gap-3 pt-8">

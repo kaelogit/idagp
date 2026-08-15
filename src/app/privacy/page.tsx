@@ -1,6 +1,6 @@
 import { createMetadata } from '@/lib/metadata';
 import { LegalLayout, LegalSection } from '@/components/layout/LegalLayout';
-import { CONTACT_EMAIL, FULL_NAME, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
+import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, CONTACT_EMAIL, FULL_NAME, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
 
 export const metadata = createMetadata({
   title: 'Privacy Policy',
@@ -26,8 +26,9 @@ export default function PrivacyPage() {
         to third parties.
       </LegalSection>
       <LegalSection title="Email">
-        Official follow-up comes from {CONTACT_EMAIL}. Check inbox and spam. We will never ask for
-        your email or banking passwords.
+        Application receipts come from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Official follow-up
+        comes from {CONTACT_EMAIL}. Check inbox and spam. We will never ask for your email or
+        banking passwords.
       </LegalSection>
       <LegalSection title="Access and deletion">
         You may request access, correction, or deletion of your personal information by emailing{' '}

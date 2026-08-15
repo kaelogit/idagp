@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import { APPLY_FROM_NAME, CONTACT_EMAIL } from '@/lib/site';
 
 export function getSmtpCredentials() {
   const user = process.env.ZOHO_USER?.trim();
@@ -23,11 +24,13 @@ export function getOperatorInbox() {
 }
 
 export function mailFromAutomated() {
-  return process.env.MAIL_FROM?.trim() || process.env.ZOHO_USER?.trim() || '';
+  const address = process.env.MAIL_FROM?.trim() || process.env.ZOHO_USER?.trim() || '';
+  if (!address) return '';
+  return `"${APPLY_FROM_NAME}" <${address}>`;
 }
 
 export function mailUnavailableMessage() {
-  return 'Applications are temporarily unavailable. Please email support@idagrantprogram.com or try again shortly.';
+  return `Applications are temporarily unavailable. Please email ${CONTACT_EMAIL} or try again shortly.`;
 }
 
 export function escapeHtml(s: string): string {

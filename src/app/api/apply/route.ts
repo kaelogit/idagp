@@ -7,7 +7,15 @@ import {
   mailFromAutomated,
   mailUnavailableMessage,
 } from '@/lib/mail';
-import { CONTACT_EMAIL, COORDINATOR_NAME, COORDINATOR_TITLE, FULL_NAME, SHORT_NAME } from '@/lib/site';
+import {
+  APPLY_FROM_EMAIL,
+  APPLY_FROM_NAME,
+  CONTACT_EMAIL,
+  COORDINATOR_NAME,
+  COORDINATOR_TITLE,
+  FULL_NAME,
+  SHORT_NAME,
+} from '@/lib/site';
 
 type Payload = {
   name: string;
@@ -103,17 +111,17 @@ export async function POST(req: NextRequest) {
     });
 
     await transporter.sendMail({
-      from: `"${COORDINATOR_NAME}, ${COORDINATOR_TITLE}" <${from}>`,
+      from,
       to: parsed.email,
       replyTo: CONTACT_EMAIL,
       subject: 'We received your IDA grant application',
       html: `
         <p>Dear ${escapeHtml(parsed.name)},</p>
-        <p>Thank you for trusting ${escapeHtml(FULL_NAME)} with your application. I have your file for <strong>${escapeHtml(parsed.category)}</strong>.</p>
-        <p>IDA grants are not loans. Applying does not create debt. I will review your request personally and reply from this email.</p>
-        <p>Please check your inbox and spam folder, then reply on this thread if I write you.</p>
-        <p>You took a brave step by asking. I am glad you did.</p>
-        <p>${escapeHtml(COORDINATOR_NAME)}<br/>${escapeHtml(COORDINATOR_TITLE)}<br/>${escapeHtml(FULL_NAME)}<br/>${escapeHtml(CONTACT_EMAIL)}</p>
+        <p>This is a receipt from ${escapeHtml(APPLY_FROM_NAME)}. Thank you for trusting ${escapeHtml(FULL_NAME)} with your application. We have your file for <strong>${escapeHtml(parsed.category)}</strong>.</p>
+        <p>IDA grants are not loans. Applying does not create debt.</p>
+        <p>${escapeHtml(COORDINATOR_NAME)}, ${escapeHtml(COORDINATOR_TITLE)}, will review your request personally and write you from ${escapeHtml(CONTACT_EMAIL)}. Please check your inbox and spam folder, then reply on her thread.</p>
+        <p>You took a brave step by asking. We are glad you did.</p>
+        <p>${escapeHtml(APPLY_FROM_NAME)}<br/>${escapeHtml(FULL_NAME)}<br/>${escapeHtml(APPLY_FROM_EMAIL)}</p>
       `,
     });
 

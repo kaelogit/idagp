@@ -14,6 +14,8 @@ import { GRANT_PROGRAMS } from '@/data/programs';
 import { APPLY_FAQS, APPLY_TESTIMONIALS, COUNTRY_OPTIONS } from '@/data/apply-form';
 import {
   applicantResponseBadge,
+  APPLY_FROM_EMAIL,
+  APPLY_FROM_NAME,
   CONTACT_EMAIL,
   COORDINATOR_NAME,
   COORDINATOR_TITLE,
@@ -107,8 +109,9 @@ export default function ApplyPage() {
                   application, and it will be read personally.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--gp-muted)]">
-                  Expect an email from {CONTACT_EMAIL} within {RESPONSE_HOURS} hours. Check spam.
-                  Reply on that thread so your file stays together.
+                  You will get a receipt from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Then expect
+                  an email from {COORDINATOR_NAME} at {CONTACT_EMAIL} within {RESPONSE_HOURS} hours.
+                  Check spam. Reply on her thread so your file stays together.
                 </p>
                 <p className="mt-4 text-sm font-medium text-[var(--gp-navy)]">
                   You did the hard part by asking. Rest tonight. We will take the next step. IDA
@@ -280,9 +283,13 @@ export default function ApplyPage() {
                     {item.q}
                     <ChevronDown className={`h-4 w-4 ${openFaq === idx ? 'rotate-180' : ''}`} />
                   </button>
-                  {openFaq === idx ? (
-                    <p className="pb-4 text-sm leading-relaxed text-[var(--gp-muted)]">{item.a}</p>
-                  ) : null}
+                  <p
+                    className={`pb-4 text-sm leading-relaxed text-[var(--gp-muted)] ${
+                      openFaq === idx ? '' : 'hidden'
+                    }`}
+                  >
+                    {item.a}
+                  </p>
                 </div>
               ))}
             </div>
