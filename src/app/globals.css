@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --gp-navy: #002244;
+  --gp-blue: #009fda;
+  --gp-blue-dark: #0088bb;
+  --gp-white: #ffffff;
+  --gp-black: #000000;
+  --gp-paper: #f5f7fa;
+  --gp-ink: #333333;
+  --gp-muted: #5a6570;
+  --gp-line: #d9e1e8;
+}
+
+@theme {
+  --font-sans: 'Inter', 'Source Sans 3', Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--gp-ink);
+    background: var(--gp-white);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-sans);
+    color: var(--gp-navy);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  ::selection {
+    background: #d6f0fa;
+    color: var(--gp-navy);
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto max-w-6xl px-5 sm:px-8;
+  }
+  .section-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gp-blue);
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-none px-6 py-3 text-sm font-semibold text-white transition-colors;
+    background: var(--gp-blue);
+  }
+  .btn-primary:hover {
+    background: var(--gp-blue-dark);
+  }
+  .btn-navy {
+    @apply inline-flex items-center justify-center gap-2 rounded-none px-6 py-3 text-sm font-semibold text-white transition-colors;
+    background: var(--gp-navy);
+  }
+  .btn-navy:hover {
+    background: #001a36;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-none border px-6 py-3 text-sm font-semibold transition-colors;
+    border-color: var(--gp-navy);
+    color: var(--gp-navy);
+  }
+  .btn-outline:hover {
+    background: var(--gp-paper);
+  }
+  .divider {
+    height: 1px;
+    background: var(--gp-line);
+    border: 0;
+  }
+  .card {
+    border: 1px solid var(--gp-line);
+    background: white;
+  }
+}
