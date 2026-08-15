@@ -16,6 +16,10 @@ function normalizeSiteUrl(raw: string | undefined): string {
 
 export const SITE_URL = normalizeSiteUrl(process.env.NEXT_PUBLIC_SITE_URL);
 
+/** Public logo used in nav, favicons, and Google / Open Graph. */
+export const LOGO_PATH = '/logo.png';
+export const LOGO_URL = `${SITE_URL}${LOGO_PATH}`;
+
 export const SITE_DOMAIN = (() => {
   try {
     return new URL(SITE_URL).hostname;

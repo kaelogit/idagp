@@ -1,5 +1,13 @@
 import type { Metadata } from 'next';
-import { absoluteSiteUrl, FULL_NAME, PROGRAM_NAME, SHORT_NAME, SITE_URL } from '@/lib/site';
+import {
+  absoluteSiteUrl,
+  FULL_NAME,
+  LOGO_PATH,
+  LOGO_URL,
+  PROGRAM_NAME,
+  SHORT_NAME,
+  SITE_URL,
+} from '@/lib/site';
 
 export const DEFAULT_TITLE = 'Apply for an IDA Grant';
 export const DEFAULT_DESCRIPTION =
@@ -27,6 +35,18 @@ export function createMetadata(options: {
     description,
     metadataBase: new URL(SITE_URL),
     alternates: { canonical: url },
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: 'any' },
+        { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+        { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+        { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+        { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
+        { url: LOGO_PATH, type: 'image/png' },
+      ],
+      shortcut: '/favicon.ico',
+      apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+    },
     openGraph: {
       title,
       description,
@@ -34,6 +54,22 @@ export function createMetadata(options: {
       siteName: PROGRAM_NAME,
       locale: 'en_US',
       type: 'website',
+      images: [
+        {
+          url: LOGO_URL,
+          secureUrl: LOGO_URL,
+          width: 1295,
+          height: 1215,
+          alt: `${SHORT_NAME} Grant Program`,
+          type: 'image/png',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary',
+      title,
+      description,
+      images: [LOGO_URL],
     },
     robots: options.noIndex
       ? { index: false, follow: true }
