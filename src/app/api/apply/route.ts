@@ -109,7 +109,7 @@ export async function POST(req: NextRequest) {
       subject: 'We received your IDA grant application',
       html: `
         <p>Dear ${escapeHtml(parsed.name)},</p>
-        <p>Thank you for trusting Internal Development Associate with your application. I have your file for <strong>${escapeHtml(parsed.category)}</strong>.</p>
+        <p>Thank you for trusting ${escapeHtml(FULL_NAME)} with your application. I have your file for <strong>${escapeHtml(parsed.category)}</strong>.</p>
         <p>IDA grants are not loans. Applying does not create debt. I will review your request personally and reply from this email.</p>
         <p>Please check your inbox and spam folder, then reply on this thread if I write you.</p>
         <p>You took a brave step by asking. I am glad you did.</p>

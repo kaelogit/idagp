@@ -3,7 +3,7 @@ import { createMetadata } from '@/lib/metadata';
 export const metadata = createMetadata({
   title: 'Apply',
   description:
-    'Apply for an IDA grant from Internal Development Associate. Grants are not loans. Medical bills, home, school, business, teachers, and seniors.',
+    'Apply for an IDA grant from International Development Association. Grants are not loans. Medical bills, home, school, business, teachers, and seniors.',
   path: '/apply',
 });
 

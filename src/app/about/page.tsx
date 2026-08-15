@@ -21,7 +21,7 @@ export default function AboutPage() {
       <section className="border-b border-[var(--gp-line)] bg-[var(--gp-paper)] pt-16 pb-12">
         <div className="container-page max-w-3xl">
           <p className="section-label">About</p>
-          <h1 className="mt-3 text-4xl">Internal Development Associate</h1>
+          <h1 className="mt-3 text-4xl">{FULL_NAME}</h1>
           <p className="mt-4 text-lg text-[var(--gp-navy)]">{SHORT_NAME} · Grant Program</p>
         </div>
       </section>

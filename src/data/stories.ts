@@ -100,7 +100,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'I wanted dignity more than I wanted a speech.',
     story: [
       'I am seventy-two. I am not helpless. I was tired of asking my son for grocery money after the cooling bill jumped two summers in a row.',
-      'The IDA application took an evening. I said I was looking for financial assistance and I meant it. No drama. Just numbers.',
+      'The International Development Association application took an evening. I said I was looking for financial assistance and I meant it. No drama. Just numbers.',
       'The $29,000 grant put the utilities and the overdue dental work behind me. My son still visits. He brings pie, not cash. That is how it should be.',
     ],
   },
@@ -184,7 +184,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'My need did not fit one box. They still read the whole letter.',
     story: [
       'It was medical copays and a grandson’s school fees and a water heater in the same season. I did not know which category to pick. I chose financial assistance and wrote the truth.',
-      'IDA said completeness matters more than a perfect label. I was complete. I was not elegant. Helen treated the letter like a file, not a complaint.',
+      'International Development Association said completeness matters more than a perfect label. I was complete. I was not elegant. Helen treated the letter like a file, not a complaint.',
       'The $39,000 grant covered the heater, the copays, and the remaining school costs. I can breathe in my own kitchen again. If you are looking for financial assistance and your life is more than one checkbox, you are still allowed to apply.',
     ],
   },
@@ -208,7 +208,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'I am old. I am not finished. I was just out of money.',
     story: [
       'People talk to seniors as if we are already a problem to be managed. I am eighty. I still cook. I still pay my own bills until the hurricane deductible and the heart medicine arrived in the same month.',
-      'I applied because IDA said older retired people looking for financial assistance are welcome. I did not write a speech. I wrote the deductible, the copays, and the fact that my daughter lives four states away and I will not move in with her.',
+      'I applied because International Development Association said older retired people looking for financial assistance are welcome. I did not write a speech. I wrote the deductible, the copays, and the fact that my daughter lives four states away and I will not move in with her.',
       'The $31,000 grant closed those two files. I still live in my house. I still make soup on Sundays. If you are a senior reading this and you think asking is shameful, I asked. They answered. You can too.',
     ],
   },

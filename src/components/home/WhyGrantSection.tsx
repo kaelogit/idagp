@@ -22,7 +22,7 @@ export function WhyGrantSection() {
         <p className="section-label">Important</p>
         <h2 className="mt-3 max-w-2xl text-3xl md:text-4xl">IDA programs are not loans</h2>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--gp-muted)]">
-          Internal Development Associate is a grant foundation. Each year we issue billions of
+          International Development Association is a grant foundation. Each year we issue billions of
           dollars in IDA grant money. If you are selected, you do not pay it back.
         </p>
         <div className="mt-10 grid gap-px bg-[var(--gp-line)] md:grid-cols-2">

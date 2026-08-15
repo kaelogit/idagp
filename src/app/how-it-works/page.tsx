@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata = createMetadata({
   title: 'How it works',
-  description: 'How Internal Development Associate reviews IDA grant applications. Grants are not loans.',
+  description: 'How International Development Association reviews IDA grant applications. Grants are not loans.',
   path: '/how-it-works',
 });
 
@@ -15,7 +15,7 @@ const steps = [
   },
   {
     title: 'Background',
-    body: 'Internal Development Associate issues billions of dollars in grant money each year to a variety of groups. Grants are awarded to individuals each and every day. Your file is still reviewed on its own merits.',
+    body: 'International Development Association issues billions of dollars in grant money each year to a variety of groups. Grants are awarded to individuals each and every day. Your file is still reviewed on its own merits.',
   },
   {
     title: 'Submit',

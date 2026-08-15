@@ -87,7 +87,7 @@ export default function ApplyPage() {
           <p className="section-label">Apply</p>
           <h1 className="mt-3 text-4xl text-white">Your IDA grant application</h1>
           <p className="mt-4 text-sm leading-relaxed text-white/80 md:text-base">
-            Internal Development Associate issues billions of dollars in IDA grant money each year.
+            International Development Association issues billions of dollars in IDA grant money each year.
             Awards go to individuals every day. IDA programs are not loans. {HELP_AREAS_SHORT}
           </p>
           <p className="mt-3 text-sm text-white/70">{applicantResponseBadge()}</p>

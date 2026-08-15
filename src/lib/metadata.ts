@@ -11,7 +11,7 @@ import {
 
 export const DEFAULT_TITLE = 'Apply for an IDA Grant';
 export const DEFAULT_DESCRIPTION =
-  'Internal Development Associate (IDA) issues billions of dollars in grant money each year. Awards are not loans. Apply for help with medical bills, a home, school, business, teaching, or senior support.';
+  'International Development Association (IDA) issues billions of dollars in grant money each year. Awards are not loans. Apply for help with medical bills, a home, school, business, teaching, or senior support.';
 
 export function pageUrl(path = '/'): string {
   return absoluteSiteUrl(path || '/');

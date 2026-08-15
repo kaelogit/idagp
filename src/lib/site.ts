@@ -31,7 +31,7 @@ export const SITE_DOMAIN = (() => {
 /** Short public brand */
 export const SHORT_NAME = 'IDA';
 /** Legal / full organization name */
-export const FULL_NAME = 'Internal Development Associate';
+export const FULL_NAME = 'International Development Association';
 /** Program line used in headlines */
 export const PROGRAM_NAME = 'IDA Grant Program';
 export const BRAND_NAME = SHORT_NAME;
@@ -62,7 +62,7 @@ export function absoluteSiteUrl(path = ''): string {
 }
 
 export const ORG_BLURB =
-  'Internal Development Associate (IDA) is a private grant foundation. Each year we issue billions of dollars in IDA grant money to individuals and groups. Awards are grants — not loans — and they are made every day.';
+  'International Development Association (IDA) is a private grant foundation. Each year we issue billions of dollars in IDA grant money to individuals and groups. Awards are grants — not loans — and they are made every day.';
 
 export const HELP_AREAS_SHORT =
   'Medical bills, buying a home, starting a business, going to school, teachers, retired teachers, seniors, and others seeking financial assistance.';
