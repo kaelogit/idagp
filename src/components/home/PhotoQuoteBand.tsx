@@ -25,7 +25,7 @@ export function PhotoQuoteBand() {
         <blockquote className="mt-4 text-2xl font-semibold leading-snug md:text-3xl">
           “Asking did not cost me my dignity. It gave some of it back.”
         </blockquote>
-        <p className="mt-4 text-sm text-white/70">Ruth P. · Ohio · Senior grant · $48,000</p>
+        <p className="mt-4 text-sm text-white/70">Ruth P. · Ohio · Senior grant · $475,000</p>
         <Link href="/impact" className="mt-8 inline-block text-sm font-semibold text-white underline-offset-4 hover:underline">
           Read more letters
         </Link>
