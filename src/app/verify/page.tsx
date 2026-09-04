@@ -8,24 +8,23 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
-  COORDINATOR_NAME,
-  COORDINATOR_TITLE,
   FULL_NAME,
   SHORT_NAME,
   SITE_DOMAIN,
   SITE_URL,
 } from '@/lib/site';
 
-const VERIFY_DESCRIPTION = `Verify whether a message about an IDA grant is real. Official ${FULL_NAME} contact is ${CONTACT_EMAIL} (${COORDINATOR_NAME}) and ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}) on ${SITE_DOMAIN}.`;
+const VERIFY_DESCRIPTION =
+  'Pause here if someone contacted you about an IDA grant. Verifying means confirming the text or email is from IDA before you reply, share personal information, or take any next step.';
 
 const verifyFaqs = [
   {
-    question: 'How do I verify an IDA grant email or call?',
-    answer: `Pause and check this page. Official ${SHORT_NAME} contact is ${CONTACT_EMAIL} and this website (${SITE_DOMAIN}). Email support with who contacted you and what they asked. We will confirm whether it matches an official file.`,
+    question: 'How do I verify an IDA grant text or email?',
+    answer: `Pause and check this page. Email ${CONTACT_EMAIL} with who contacted you and what they asked. We will confirm whether it matches an official file. The official website is ${SITE_DOMAIN}.`,
   },
   {
     question: 'What are the official IDA email addresses?',
-    answer: `${COORDINATOR_NAME}, ${COORDINATOR_TITLE}, writes from ${CONTACT_EMAIL}. Application receipts come from ${APPLY_FROM_NAME} at ${APPLY_FROM_EMAIL}. Messages from other addresses are not official.`,
+    answer: `Official support is ${CONTACT_EMAIL}. Application receipts come from ${APPLY_FROM_NAME} at ${APPLY_FROM_EMAIL} only. Messages from other addresses are not official.`,
   },
   {
     question: 'Does IDA ask for passwords or payment to release a grant?',
@@ -33,13 +32,13 @@ const verifyFaqs = [
       'No. IDA grants are not loans. We will never ask for your email or banking passwords. If anyone claiming to represent us demands passwords or repayment as if the award were a loan, ignore them and write support.',
   },
   {
-    question: 'Who is Helen Marsh?',
-    answer: `${COORDINATOR_NAME} is the ${COORDINATOR_TITLE}. She follows up on applications from ${CONTACT_EMAIL}. If someone uses her name from a different address, verify here first.`,
+    question: 'What if the message used a name or title that sounded official?',
+    answer: `Names and titles alone do not prove a message is real. Confirm the sender address against this page — ${CONTACT_EMAIL} for support and verification, ${APPLY_FROM_EMAIL} for application receipts only. When in doubt, email support before you act.`,
   },
 ];
 
 export const metadata = createMetadata({
-  title: 'Verify an IDA grant contact',
+  title: 'Verify an IDA Grant Text or Email',
   description: VERIFY_DESCRIPTION,
   path: '/verify',
 });
@@ -63,8 +62,8 @@ export default function VerifyPage() {
             <span className="mt-2 block text-[var(--gp-blue)]">Verify it here first.</span>
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-[var(--gp-muted)]">
-            If a call, email, or message left you unsure, pause and write us. Confirming official{' '}
-            {FULL_NAME} contact is the right next step.
+            If a text or email about an IDA grant left you unsure, pause and write us. Verifying
+            means confirming the message is from {FULL_NAME} before you reply or take any next step.
           </p>
         </div>
       </section>
@@ -80,8 +79,7 @@ export default function VerifyPage() {
               {CONTACT_EMAIL}
             </a>
             <p className="mt-3 text-sm text-[var(--gp-muted)]">
-              Coordinator: {COORDINATOR_NAME}, {COORDINATOR_TITLE}. Application receipts come from{' '}
-              {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Website:{' '}
+              Application receipts come from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Website:{' '}
               <a href={SITE_URL} className="font-medium text-[var(--gp-navy)]">
                 {SITE_DOMAIN}
               </a>
@@ -98,17 +96,17 @@ export default function VerifyPage() {
               {
                 icon: Globe,
                 title: 'Official website only',
-                body: `The official application site is ${SITE_DOMAIN}. If a link goes somewhere else, stop and email us.`,
+                body: `The official application site is ${SITE_DOMAIN}. If a link goes somewhere else, stop and email ${CONTACT_EMAIL}.`,
               },
               {
                 icon: Mail,
                 title: 'Official email',
-                body: `Legitimate ${SHORT_NAME} messages come from addresses you can confirm through this page: ${CONTACT_EMAIL} (${COORDINATOR_NAME}) and ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}).`,
+                body: `Legitimate ${SHORT_NAME} support and verification messages come from ${CONTACT_EMAIL}. Application receipts come from ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}) only.`,
               },
               {
                 icon: ShieldCheck,
                 title: 'Ask us before you act',
-                body: `Tell us who contacted you and what they asked. We will confirm whether it matches an official file.`,
+                body: `Tell us who contacted you and what they asked. Email ${CONTACT_EMAIL} and we will confirm whether it matches an official file.`,
               },
               {
                 icon: AlertTriangle,
