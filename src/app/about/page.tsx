@@ -1,17 +1,19 @@
 import { createMetadata } from '@/lib/metadata';
 import {
   CONTACT_EMAIL,
-  COORDINATOR_NAME,
+  ELIGIBILITY_OPEN,
   FULL_NAME,
   HELP_AREAS_SHORT,
   ORG_BLURB,
+  RESPONSE_HOURS,
   SHORT_NAME,
 } from '@/lib/site';
 import Link from 'next/link';
 
 export const metadata = createMetadata({
-  title: 'About',
-  description: `${FULL_NAME} (${SHORT_NAME}) is a private grant foundation issuing billions in grant money each year. Awards are not loans.`,
+  title: 'About IDA — International Development Association',
+  description:
+    'International Development Association is a private grant foundation. Official application site: idagrantprogram.com. Awards are grants, not loans.',
   path: '/about',
 });
 
@@ -29,24 +31,24 @@ export default function AboutPage() {
         <div className="container-page max-w-3xl space-y-6 text-sm leading-relaxed text-[var(--gp-muted)]">
           <p>{ORG_BLURB}</p>
           <p>
-            People come to IDA when they are looking for financial assistance they can actually use —
-            not another product they have to pay back. {HELP_AREAS_SHORT}
+            People apply to IDA for one-time grant funding they never have to repay — whether they
+            are closing a specific gap or funding something new. {ELIGIBILITY_OPEN} {HELP_AREAS_SHORT}
           </p>
 
           <h2 className="pt-4 text-2xl text-[var(--gp-blue)]">Executive summary</h2>
           <p>
-            IDA exists to move grant money — not credit — to individuals and groups with a practical
-            need. We issue billions of dollars in IDA grant money each year across many kinds of
+            IDA exists to move grant money — not credit — to individuals and groups with a clear
+            purpose. We issue billions of dollars in IDA grant money each year across many kinds of
             files. Awards are made to individuals each and every day. That volume does not mean every
             application is selected. It does mean that asking is allowed, expected, and reviewed.
           </p>
 
           <h2 className="text-2xl text-[var(--gp-blue)]">Objectives</h2>
           <p>
-            Help people pay medical bills. Help people buy a home. Help salespeople and others start
-            their own business. Help people going to school. Help working teachers and retired
-            teachers. Help seniors and older retired people looking for financial assistance. Contact
-            every applicant by email. Keep official applications on this website.
+            Fund medical care and treatment. Support home purchases and housing goals. Back business
+            ventures and independent work. Support education and credential programs. Support working
+            and retired educators. Serve seniors and retirees. Contact every applicant by email.
+            Keep official applications on this website.
           </p>
 
           <h2 className="text-2xl text-[var(--gp-blue)]">Not a loan</h2>
@@ -58,18 +60,18 @@ export default function AboutPage() {
 
           <h2 className="text-2xl text-[var(--gp-blue)]">Who we serve</h2>
           <p>
-            Adults 18 or older may apply for themselves. Files come from people in medical recovery,
-            families closing on a house, sales professionals opening a shop, students finishing a
-            credential, teachers buying classroom supplies with their own rent money, retired
-            teachers on a fixed pension, and seniors who are tired of choosing between the pharmacy
-            and the grocery list.
+            {ELIGIBILITY_OPEN} Files come from people at every income level — families closing on a
+            home, professionals expanding a business, students finishing a credential, educators
+            investing in their classrooms, retirees planning the next chapter, and anyone with a
+            clear purpose for a one-time grant.
           </p>
 
           <h2 className="text-2xl text-[var(--gp-blue)]">How a file is handled</h2>
           <p>
-            {COORDINATOR_NAME} reads applications personally. First contact is email within 24 hours.
-            We may ask for more detail. Selected files receive next steps by email. Unselected files
-            are still treated with respect — applying is not a waste of courage.
+            After you apply, a coordinator is assigned to your file. First contact is email within{' '}
+            {RESPONSE_HOURS} hours. We may ask for more detail. Selected files receive next steps by
+            email. Unselected files are still treated with respect — applying is not a waste of
+            courage.
           </p>
 
           <Link href="/apply" className="btn-primary mt-4 inline-flex">

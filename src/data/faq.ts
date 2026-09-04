@@ -2,7 +2,7 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
-  COORDINATOR_NAME,
+  ELIGIBILITY_OPEN,
   FULL_NAME,
   HELP_AREAS_SHORT,
   ORG_BLURB,
@@ -19,12 +19,17 @@ export const faqItems = [
   },
   {
     question: 'Who can apply?',
-    answer: `Adults 18 or older may apply for themselves. ${SHORT_NAME} awards grants to individuals each and every day. Each person submits their own application. ${HELP_AREAS_SHORT}`,
+    answer: `${ELIGIBILITY_OPEN} ${SHORT_NAME} awards grants to individuals each and every day. Each person submits their own application. ${HELP_AREAS_SHORT}`,
   },
   {
-    question: 'Can IDA help with medical bills?',
+    question: 'Do I need to be low income or in financial crisis?',
     answer:
-      'Yes. Paying medical bills is one of the core reasons people apply. Include what the bills are for and what remains unpaid. Selected awards are grants, not medical loans.',
+      'No. There is no income cap, no means test, and no requirement that you be in crisis. IDA reviews applications from adults at every income level. What matters is a clear purpose for the grant and a complete application.',
+  },
+  {
+    question: 'Can IDA help with medical costs?',
+    answer:
+      'Yes. Medical care is one of the core categories. Include what the care is for and what remains unpaid. Selected awards are grants, not medical loans.',
   },
   {
     question: 'Can I apply for help buying a home?',
@@ -49,7 +54,7 @@ export const faqItems = [
   {
     question: 'Is this for seniors and retired people?',
     answer:
-      'Yes. Seniors, older adults, and retired people looking for financial assistance are welcome to apply. Many IDA awards each year go to this group.',
+      'Yes. Seniors, older adults, and retirees may apply. Many IDA awards each year go to this group, at every income level.',
   },
   {
     question: 'How much grant money does IDA issue?',
@@ -65,11 +70,11 @@ export const faqItems = [
   },
   {
     question: 'How will I be contacted?',
-    answer: `You will get a receipt from ${APPLY_FROM_NAME} (${APPLY_FROM_EMAIL}). Then ${COORDINATOR_NAME}, ${FULL_NAME} Grant Coordinator, emails you at ${CONTACT_EMAIL} within ${RESPONSE_HOURS} hours. Check inbox and spam. Reply on her thread.`,
+    answer: `You will get a receipt from ${APPLY_FROM_NAME} (${APPLY_FROM_EMAIL}). Then an IDA grant coordinator assigned to your file will contact you by email at ${CONTACT_EMAIL} within ${RESPONSE_HOURS} hours. Check inbox and spam. Reply on that thread.`,
   },
   {
     question: 'Someone contacted me about an IDA grant — is it real?',
-    answer: `If you are unsure, verify before you act. Official contact is ${CONTACT_EMAIL} (${COORDINATOR_NAME}), ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}), and this website (${SITE_DOMAIN}). Visit ${SITE_DOMAIN}/verify and email support with what you were told.`,
+    answer: `If you are unsure, verify before you act. Official contact is ${CONTACT_EMAIL}, ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}), and this website (${SITE_DOMAIN}). Visit ${SITE_DOMAIN}/verify and email support with what you were told.`,
   },
   {
     question: 'Do I have to pay IDA back?',
@@ -77,9 +82,9 @@ export const faqItems = [
       'No. Selected IDA awards are grants. You do not make monthly payments to IDA on an award. If a message asks you to “repay your grant” as if it were a loan product, pause and verify on this website first.',
   },
   {
-    question: 'I am looking for financial assistance but I am not sure which category to pick.',
+    question: 'I am not sure which category to pick.',
     answer:
-      'Choose the closest fit, or select financial assistance. Write the situation plainly. Medical bills, a home, a business, school, teaching, retirement, and senior needs are all reviewed. Completeness matters more than picking a perfect label.',
+      'Choose the closest fit, or select general grants. Write your goal plainly. Medical care, housing, business, school, teaching, retirement, and senior goals are all reviewed. Completeness matters more than picking a perfect label.',
   },
 ];
 

@@ -1,19 +1,20 @@
 import { createMetadata } from '@/lib/metadata';
-import { applicantContactWithin, CONTACT_EMAIL, COORDINATOR_NAME, RESPONSE_HOURS } from '@/lib/site';
+import { applicantContactWithin, CONTACT_EMAIL, RESPONSE_HOURS } from '@/lib/site';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 import Link from 'next/link';
 
 export const metadata = createMetadata({
-  title: 'How it works',
-  description: 'How International Development Association reviews IDA grant applications. Grants are not loans.',
+  title: 'How an IDA Grant Works — Not a Loan',
+  description:
+    'Apply on this official site. A coordinator is assigned to your file after you submit. Grants are not loans and are not guaranteed. First reply within 24 hours.',
   path: '/how-it-works',
 });
 
 const steps = [
   {
     title: 'Objectives',
-    body: 'Move IDA grant money to individuals with a practical need — medical bills, a home, a business start, school, teachers, retired teachers, seniors, and other financial assistance. Awards are grants, not loans.',
+    body: 'Move IDA grant money to individuals with a clear purpose — medical care, housing, business ventures, school, educators, retirees, seniors, and other goals. No income cap. Awards are grants, not loans.',
   },
   {
     title: 'Background',
@@ -25,7 +26,7 @@ const steps = [
   },
   {
     title: 'Review',
-    body: `${COORDINATOR_NAME} may ask for more detail by email. Incomplete files are not advanced. Write plainly. Completeness matters more than perfect wording.`,
+    body: 'Your assigned coordinator may ask for more detail by email. Incomplete files are not advanced. Write plainly. Completeness matters more than perfect wording.',
   },
   {
     title: 'Decision',

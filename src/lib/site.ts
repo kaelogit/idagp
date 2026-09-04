@@ -48,15 +48,15 @@ export const COORDINATOR_NAME = 'Helen Marsh';
 export const COORDINATOR_TITLE = 'IDA Grant Coordinator';
 
 export function applicantResponseBadge(hours = RESPONSE_HOURS): string {
-  return `Email from ${COORDINATOR_NAME} within ${hours} hours`;
+  return `A coordinator is assigned to your file within ${hours} hours of applying`;
 }
 
 export function applicantContactWithin(hours = RESPONSE_HOURS): string {
-  return `Every applicant is contacted by email (${CONTACT_EMAIL}) within ${hours} hours.`;
+  return `After you apply, an IDA grant coordinator is assigned to your file and contacts you by email within ${hours} hours.`;
 }
 
 export const APPLICANT_CONTACT_MONITOR =
-  'Check your inbox and spam folder. Reply on the email thread from Helen Marsh.';
+  'Check your inbox and spam folder. Reply on the email thread from your assigned coordinator.';
 
 export function absoluteSiteUrl(path = ''): string {
   if (!path) return SITE_URL;
@@ -64,7 +64,11 @@ export function absoluteSiteUrl(path = ''): string {
 }
 
 export const ORG_BLURB =
-  'International Development Association (IDA) is a private grant foundation. Each year we issue billions of dollars in IDA grant money to individuals and groups. Awards are grants — not loans — and they are made every day.';
+  'International Development Association (IDA) is a grant foundation. Each year we issue billions of dollars in IDA grant money to individuals and groups. Awards are grants — not loans — and they are made every day.';
+
+/** Shown on eligibility blocks — no income gate, no crisis requirement */
+export const ELIGIBILITY_OPEN =
+  'Open to all adults 18 and older. There is no income cap, no means test, and no requirement that you be in financial crisis.';
 
 export const HELP_AREAS_SHORT =
-  'Medical bills, buying a home, starting a business, going to school, teachers, retired teachers, seniors, and others seeking financial assistance.';
+  'Medical care, housing, business ventures, education, educators, retirees, seniors, and other personal or professional goals.';

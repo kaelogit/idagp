@@ -3,16 +3,14 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
-  COORDINATOR_NAME,
-  COORDINATOR_TITLE,
-  FULL_NAME,
   RESPONSE_HOURS,
 } from '@/lib/site';
 import Link from 'next/link';
 
 export const metadata = createMetadata({
-  title: 'Contact',
-  description: `Contact ${FULL_NAME} at ${CONTACT_EMAIL}.`,
+  title: 'Contact IDA — Official Email for Applicants',
+  description:
+    'Official support: support@idagrantprogram.com. Application receipts: apply@idagrantprogram.com. After you apply, a coordinator contacts you by email within 24 hours.',
   path: '/contact',
 });
 
@@ -24,8 +22,8 @@ export default function ContactPage() {
           <p className="section-label">Contact</p>
           <h1 className="mt-3 text-4xl">Talk to IDA by email</h1>
           <p className="mt-4 leading-relaxed text-[var(--gp-muted)]">
-            Grant applications go through the Apply form so your file is complete. Questions,
-            verification, and follow-up go to {COORDINATOR_NAME}.
+            Grant applications go through the Apply form. For questions, verification, or general
+            support, write {CONTACT_EMAIL}.
           </p>
         </div>
       </section>
@@ -35,9 +33,6 @@ export default function ContactPage() {
             <p className="text-xs font-semibold tracking-wider text-[var(--gp-blue)] uppercase">
               Official support
             </p>
-            <p className="mt-2 text-sm text-[var(--gp-muted)]">
-              {COORDINATOR_NAME}, {COORDINATOR_TITLE}
-            </p>
             <a
               href={`mailto:${CONTACT_EMAIL}`}
               className="mt-3 inline-block text-xl font-semibold text-[var(--gp-blue)]"
@@ -45,10 +40,20 @@ export default function ContactPage() {
               {CONTACT_EMAIL}
             </a>
             <p className="mt-4 text-sm leading-relaxed text-[var(--gp-muted)]">
+              Use this address for verification, questions, and general help. Application receipts
+              come from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}) only.
+            </p>
+          </div>
+          <div className="border border-[var(--gp-line)] p-8">
+            <p className="text-xs font-semibold tracking-wider text-[var(--gp-blue)] uppercase">
+              After you apply
+            </p>
+            <p className="mt-2 text-sm text-[var(--gp-muted)]">
+              A coordinator is assigned to your file after you submit an application.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-[var(--gp-muted)]">
               First reply on new applications is within {RESPONSE_HOURS} hours. Check inbox and spam.
-              Reply on the same thread so your file stays together. Application receipts come from{' '}
-              {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}); conversation is {COORDINATOR_NAME} at{' '}
-              {CONTACT_EMAIL}.
+              Reply on the same thread so your file stays together.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2">
@@ -65,8 +70,7 @@ export default function ContactPage() {
             <div className="border-t border-[var(--gp-line)] pt-5">
               <h2 className="text-lg">Unsure if a message is real</h2>
               <p className="mt-2 text-sm leading-relaxed text-[var(--gp-muted)]">
-                Pause and verify. Tell us who contacted you and what they asked. Confirming first is
-                the right thing to do.
+                Pause and verify. Email {CONTACT_EMAIL} with who contacted you and what they asked.
               </p>
               <Link href="/verify" className="mt-4 inline-block text-sm font-semibold text-[var(--gp-blue)]">
                 Go to Verify

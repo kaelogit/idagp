@@ -17,8 +17,6 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
-  COORDINATOR_NAME,
-  COORDINATOR_TITLE,
   HELP_AREAS_SHORT,
   RESPONSE_HOURS,
 } from '@/lib/site';
@@ -104,14 +102,14 @@ export default function ApplyPage() {
                 <CheckCircle2 className="h-10 w-10 text-[var(--gp-blue)]" />
                 <h2 className="mt-4 text-2xl">Thank you. Your file is with us.</h2>
                 <p className="mt-4 text-sm leading-relaxed text-[var(--gp-muted)]">
-                  Dear applicant — {COORDINATOR_NAME} is grateful you trusted IDA with your story.
-                  Your application has been received. This is a grant request, not a loan
+                  Your application has been received. An IDA grant coordinator will be assigned to
+                  your file and will contact you by email. This is a grant request, not a loan
                   application, and it will be read personally.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--gp-muted)]">
                   You will get a receipt from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Then expect
-                  an email from {COORDINATOR_NAME} at {CONTACT_EMAIL} within {RESPONSE_HOURS} hours.
-                  Check spam. Reply on her thread so your file stays together.
+                  an email from your assigned coordinator at {CONTACT_EMAIL} within {RESPONSE_HOURS}{' '}
+                  hours. Check spam. Reply on that thread so your file stays together.
                 </p>
                 <p className="mt-4 text-sm font-medium text-[var(--gp-navy)]">
                   You did the hard part by asking. Rest tonight. We will take the next step. IDA
@@ -121,8 +119,8 @@ export default function ApplyPage() {
             ) : (
               <form onSubmit={onSubmit} className="space-y-4">
                 <p className="text-sm leading-relaxed text-[var(--gp-muted)]">
-                  Write plainly. Completeness matters more than perfect wording. {COORDINATOR_NAME}{' '}
-                  reads every application.
+                  Write plainly. Completeness matters more than perfect wording. Every application
+                  is read by a person after you submit.
                 </p>
                 <label className="block text-sm font-medium text-[var(--gp-navy)]">
                   Full name
@@ -317,7 +315,7 @@ export default function ApplyPage() {
               </p>
               <p className="flex gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--gp-blue)]" />
-                {COORDINATOR_NAME} · {CONTACT_EMAIL}
+                Coordinator assigned · {CONTACT_EMAIL}
               </p>
               <p className="flex gap-2">
                 <Lock className="mt-0.5 h-4 w-4 shrink-0 text-[var(--gp-blue)]" />
@@ -332,8 +330,8 @@ export default function ApplyPage() {
               </Link>
             </div>
             <p className="text-xs leading-relaxed text-[var(--gp-muted)]">
-              {COORDINATOR_NAME}, {COORDINATOR_TITLE}. Official applications are submitted on this
-              website only.
+              A coordinator is assigned to your file after you submit. Official applications are
+              submitted on this website only.
             </p>
           </aside>
         </div>

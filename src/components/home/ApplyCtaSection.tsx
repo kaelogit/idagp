@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { RESPONSE_HOURS } from '@/lib/site';
 
 export function ApplyCtaSection() {
   return (
@@ -7,7 +8,8 @@ export function ApplyCtaSection() {
       <div className="container-page text-center">
         <h2 className="text-2xl font-bold text-white md:text-3xl">Ready to apply for an IDA grant?</h2>
         <p className="mx-auto mt-3 max-w-md text-sm text-white/90">
-          Grants, not loans. One form. Helen Marsh replies by email within 24 hours.
+          Grants, not loans. One form. A coordinator is assigned to your file and replies by email
+          within {RESPONSE_HOURS} hours.
         </p>
         <Link
           href="/apply"

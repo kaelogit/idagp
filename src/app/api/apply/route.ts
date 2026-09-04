@@ -119,7 +119,7 @@ export async function POST(req: NextRequest) {
         <p>Dear ${escapeHtml(parsed.name)},</p>
         <p>This is a receipt from ${escapeHtml(APPLY_FROM_NAME)}. Thank you for trusting ${escapeHtml(FULL_NAME)} with your application. We have your file for <strong>${escapeHtml(parsed.category)}</strong>.</p>
         <p>IDA grants are not loans. Applying does not create debt.</p>
-        <p>${escapeHtml(COORDINATOR_NAME)}, ${escapeHtml(COORDINATOR_TITLE)}, will review your request personally and write you from ${escapeHtml(CONTACT_EMAIL)}. Please check your inbox and spam folder, then reply on her thread.</p>
+        <p>${escapeHtml(COORDINATOR_NAME)}, your ${escapeHtml(COORDINATOR_TITLE)}, has been assigned to your file and will write you from ${escapeHtml(CONTACT_EMAIL)}. Please check your inbox and spam folder, then reply on that thread.</p>
         <p>You took a brave step by asking. We are glad you did.</p>
         <p>${escapeHtml(APPLY_FROM_NAME)}<br/>${escapeHtml(FULL_NAME)}<br/>${escapeHtml(APPLY_FROM_EMAIL)}</p>
       `,

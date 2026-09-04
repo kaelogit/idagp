@@ -5,14 +5,13 @@ import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
   CONTACT_EMAIL,
-  COORDINATOR_NAME,
-  SHORT_NAME,
   SITE_DOMAIN,
 } from '@/lib/site';
 
 export const metadata = createMetadata({
-  title: 'Security',
-  description: `How ${SHORT_NAME} protects applicants. Official contact is ${CONTACT_EMAIL} on ${SITE_DOMAIN}.`,
+  title: 'IDA Official Emails — How to Verify a Message',
+  description:
+    'Official IDA contact is support@idagrantprogram.com and apply@idagrantprogram.com on idagrantprogram.com. We never ask for passwords.',
   path: '/security',
 });
 
@@ -50,7 +49,7 @@ export default function SecurityPage() {
             {
               icon: Mail,
               title: 'Email response',
-              body: `${APPLY_FROM_NAME} sends receipts from ${APPLY_FROM_EMAIL}. ${COORDINATOR_NAME} replies from ${CONTACT_EMAIL}. Check inbox and spam.`,
+              body: `${APPLY_FROM_NAME} sends receipts from ${APPLY_FROM_EMAIL}. Support and follow-up after you apply: ${CONTACT_EMAIL}. Check inbox and spam.`,
             },
           ].map(({ icon: Icon, title, body }) => (
             <div key={title} className="flex gap-4">
