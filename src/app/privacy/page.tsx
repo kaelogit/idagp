@@ -3,8 +3,9 @@ import { LegalLayout, LegalSection } from '@/components/layout/LegalLayout';
 import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, CONTACT_EMAIL, FULL_NAME, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
 
 export const metadata = createMetadata({
-  title: 'Privacy Policy',
-  description: `How ${FULL_NAME} uses application information.`,
+  title: 'IDA Privacy Policy — How We Handle Applications',
+  description:
+    'How International Development Association uses the information you submit on idagrantprogram.com. Official follow-up is by email. We never ask for passwords.',
   path: '/privacy',
 });
 

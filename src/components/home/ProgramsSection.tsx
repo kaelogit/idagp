@@ -21,8 +21,8 @@ export function ProgramsSection() {
           Who IDA grants are for
         </h2>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--gp-muted)]">
-          Medical bills. Buying a home. Salespeople starting a business. School. Teachers. Retired
-          teachers. Seniors. If you are looking for financial assistance, start here.
+          Medical care. Housing. Business ventures. School. Educators. Retirees. Seniors. Grants are
+          reviewed at every income level — you do not need to be in crisis to apply.
         </p>
         <div className="mt-10 grid gap-px bg-[var(--gp-line)] sm:grid-cols-2 lg:grid-cols-3">
           {GRANT_PROGRAMS.map((p, i) => {

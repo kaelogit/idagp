@@ -13,7 +13,7 @@ import Link from 'next/link';
 export const metadata = createMetadata({
   title: 'About IDA — International Development Association',
   description:
-    'International Development Association is a private grant foundation. Official application site: idagrantprogram.com. Awards are grants, not loans.',
+    'International Development Association works in cooperation with the World Bank Group. Official application site: idagrantprogram.com. Awards are grants, not loans.',
   path: '/about',
 });
 

@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { createMetadata } from '@/lib/metadata';
 import { GRANT_PROGRAMS } from '@/data/programs';
-import { HELP_AREAS_SHORT, ORG_BLURB } from '@/lib/site';
+import { HELP_AREAS_SHORT, ORG_BLURB, ELIGIBILITY_OPEN } from '@/lib/site';
 
 export const metadata = createMetadata({
-  title: 'Eligibility',
+  title: 'Who Can Apply for an IDA Grant',
   description:
-    'Who can apply for an IDA grant — medical bills, buying a home, business, school, teachers, retired teachers, and seniors. Grants, not loans.',
+    'Adults 18 or older may apply. No income cap or means test. IDA grants support medical care, housing, business, school, teachers, and seniors. Grants are not loans.',
   path: '/eligibility',
 });
 
@@ -23,8 +23,8 @@ export default function EligibilityPage() {
       <section className="py-16">
         <div className="container-page max-w-3xl space-y-8 text-sm leading-relaxed text-[var(--gp-muted)]">
           <p>
-            You may apply if you are 18 or older and you are looking for financial assistance for
-            yourself. Each person submits their own application. {HELP_AREAS_SHORT}
+            {ELIGIBILITY_OPEN} You may apply for yourself. Each person submits their own
+            application. {HELP_AREAS_SHORT}
           </p>
           <h2 className="text-2xl text-[var(--gp-blue)]">Groups IDA reviews every day</h2>
           <ul className="space-y-4">

@@ -10,8 +10,8 @@ export function Footer() {
         <div className="md:col-span-2">
           <Logo light />
           <p className="mt-4 max-w-md text-sm leading-relaxed text-white/70">
-            {FULL_NAME} ({SHORT_NAME}) is a private grant foundation. We issue billions of dollars
-            in IDA grant money each year. Awards are grants, not loans.
+            {FULL_NAME} ({SHORT_NAME}) works in cooperation with the World Bank Group. We issue
+            billions of dollars in IDA grant money each year. Awards are grants, not loans.
           </p>
         </div>
         <div>
@@ -57,7 +57,7 @@ export function Footer() {
         </div>
       </div>
       <p className="container-page mt-10 border-t border-white/15 pt-6 text-sm text-white/55">
-        © {year} {FULL_NAME}. Private grant foundation.
+        © {year} {FULL_NAME}. World Bank Group.
       </p>
     </footer>
   );

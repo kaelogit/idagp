@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { GRANT_PROGRAMS } from '@/data/programs';
+import { ELIGIBILITY_OPEN } from '@/lib/site';
 
 export function EligibilitySection() {
   return (
@@ -8,9 +9,8 @@ export function EligibilitySection() {
         <p className="section-label">Eligibility</p>
         <h2 className="mt-3 max-w-2xl text-3xl md:text-4xl">Who IDA grants are for</h2>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--gp-muted)]">
-          Adults 18 or older may apply for themselves. IDA awards grants to individuals each and
-          every day across a variety of groups. Choose the closest category — completeness matters
-          more than a perfect label.
+          {ELIGIBILITY_OPEN} IDA awards grants to individuals each and every day across a variety of
+          goals. Choose the closest category — completeness matters more than a perfect label.
         </p>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {GRANT_PROGRAMS.map((p) => (

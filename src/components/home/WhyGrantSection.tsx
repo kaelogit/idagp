@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Ban, Check } from 'lucide-react';
 
 const grant = [
-  'One-time assistance you do not repay',
+  'One-time grant funding you do not repay',
   'Awarded to individuals every day',
   'Medical, home, school, business, teachers, seniors',
   'Apply on this website. Follow-up by email',
@@ -22,8 +22,9 @@ export function WhyGrantSection() {
         <p className="section-label">Important</p>
         <h2 className="mt-3 max-w-2xl text-3xl md:text-4xl">IDA programs are not loans</h2>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--gp-muted)]">
-          International Development Association is a grant foundation. Each year we issue billions of
-          dollars in IDA grant money. If you are selected, you do not pay it back.
+          International Development Association works in cooperation with the World Bank Group. Each
+          year we issue billions of dollars in IDA grant money. If you are selected, you do not pay
+          it back.
         </p>
         <div className="mt-10 grid gap-px bg-[var(--gp-line)] md:grid-cols-2">
           <div className="bg-[var(--gp-paper)] p-8 md:p-10">

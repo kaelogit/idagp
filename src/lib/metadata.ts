@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import {
   absoluteSiteUrl,
-  FULL_NAME,
   LOGO_PATH,
   LOGO_URL,
   PROGRAM_NAME,
@@ -9,9 +8,9 @@ import {
   SITE_URL,
 } from '@/lib/site';
 
-export const DEFAULT_TITLE = 'Apply for an IDA Grant';
+export const DEFAULT_TITLE = 'IDA Grant Program — Official Site, Not a Loan';
 export const DEFAULT_DESCRIPTION =
-  'International Development Association (IDA) issues billions of dollars in grant money each year. Awards are not loans. Apply for help with medical bills, a home, school, business, teaching, or senior support.';
+  'Official IDA application website. Grants are not loans — you do not repay an award. Open to all adults 18+. No income cap. Apply for medical care, housing, business, school, and more.';
 
 export function pageUrl(path = '/'): string {
   return absoluteSiteUrl(path || '/');
@@ -26,12 +25,10 @@ export function createMetadata(options: {
   const description = options.description ?? DEFAULT_DESCRIPTION;
   const path = options.path ?? '/';
   const url = pageUrl(path);
-  const title = options.title
-    ? `${options.title} | ${SHORT_NAME}`
-    : `${PROGRAM_NAME} — ${FULL_NAME}`;
+  const documentTitle = options.title ?? DEFAULT_TITLE;
 
   return {
-    title: options.title ?? { default: title, template: `%s | ${SHORT_NAME}` },
+    title: options.title ?? { default: DEFAULT_TITLE, template: '%s' },
     description,
     metadataBase: new URL(SITE_URL),
     alternates: { canonical: url },
@@ -48,7 +45,7 @@ export function createMetadata(options: {
       apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
     },
     openGraph: {
-      title,
+      title: documentTitle,
       description,
       url,
       siteName: PROGRAM_NAME,
@@ -67,7 +64,7 @@ export function createMetadata(options: {
     },
     twitter: {
       card: 'summary',
-      title,
+      title: documentTitle,
       description,
       images: [LOGO_URL],
     },

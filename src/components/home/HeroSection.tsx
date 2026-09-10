@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, CheckCircle2, ShieldCheck } from 'lucide-react';
-import { HELP_AREAS_SHORT, ORG_BLURB, SHORT_NAME } from '@/lib/site';
+import { HELP_AREAS_SHORT, ORG_BLURB, SHORT_NAME, SITE_DOMAIN, ELIGIBILITY_OPEN } from '@/lib/site';
 
 export function HeroSection() {
   return (
@@ -51,7 +51,11 @@ export function HeroSection() {
             </span>
             <span className="inline-flex items-center gap-2">
               <ShieldCheck className="h-4 w-4 text-[var(--gp-blue)]" />
-              Official site: idagrantprogram.com
+              No income cap
+            </span>
+            <span className="inline-flex items-center gap-2">
+              <ShieldCheck className="h-4 w-4 text-[var(--gp-blue)]" />
+              Official site: {SITE_DOMAIN}
             </span>
           </div>
         </div>
@@ -61,7 +65,8 @@ export function HeroSection() {
           </p>
           <p className="mt-4 text-5xl font-bold text-white">Billions</p>
           <p className="mt-2 text-sm leading-relaxed text-white/75">
-            in IDA grant money issued to individuals and groups — awards every day, grants not loans.
+            in IDA grant money issued to individuals and groups — at every income level, grants not
+            loans.
           </p>
           <div className="mt-8 space-y-3 border-t border-white/15 pt-6 text-sm text-white/80">
             <p>Medical bills · Buying a home</p>

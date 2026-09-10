@@ -3,9 +3,9 @@ import { createMetadata } from '@/lib/metadata';
 import { recentAwards } from '@/data/stories';
 
 export const metadata = createMetadata({
-  title: 'Recent awards',
+  title: 'Recent IDA Grants Awarded to Individuals',
   description:
-    'IDA grants awarded to individuals — medical bills, housing, business, school, teachers, and seniors. Grants, not loans.',
+    'See recent IDA grants for medical bills, housing, business, school, teachers, and seniors. These are grants, not loans. Awards go to individuals every day.',
   path: '/awards',
 });
 

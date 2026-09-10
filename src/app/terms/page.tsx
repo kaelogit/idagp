@@ -3,8 +3,9 @@ import { LegalLayout, LegalSection } from '@/components/layout/LegalLayout';
 import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, CONTACT_EMAIL, FULL_NAME, ORG_BLURB, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
 
 export const metadata = createMetadata({
-  title: 'Terms of use',
-  description: `Terms for using the ${SHORT_NAME} Grant Program website.`,
+  title: 'IDA Terms — Grants Are Not Loans',
+  description:
+    'Terms for the official IDA Grant Program website. Applying does not create debt. Awards are grants, not loans, and are not guaranteed.',
   path: '/terms',
 });
 

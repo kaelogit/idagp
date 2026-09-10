@@ -21,7 +21,8 @@ export default function ImpactPage() {
           <p className="section-label">Stories</p>
           <h1 className="mt-3 text-4xl text-white">Letters from people IDA has helped</h1>
           <p className="mt-4 text-sm leading-relaxed text-white/75">
-            These are recipient accounts in their own words. Amounts are grants — not loans.
+            Recipient accounts in their own words. Applicants come from every income level — these
+            stories reflect a range of goals and situations. Amounts are grants, not loans.
           </p>
         </div>
       </section>

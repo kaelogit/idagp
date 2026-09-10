@@ -4,9 +4,9 @@ import { buildFaqPageJsonLd, faqItems } from '@/data/faq';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 
 export const metadata = createMetadata({
-  title: 'IDA grant FAQ',
+  title: 'IDA Grant FAQ — Not a Loan, Who Can Apply',
   description:
-    'IDA grant FAQ — grants are not loans. Who can apply, medical bills, home, school, teachers, seniors, how to apply, and how you are contacted.',
+    'No — an IDA grant is not a loan. Adults 18+ may apply for medical bills, a home, school, business, teachers, and seniors. See how you are contacted and how to verify a message.',
   path: '/faq',
 });
 

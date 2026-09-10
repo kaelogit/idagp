@@ -9,66 +9,66 @@ export type GrantProgram = {
 export const GRANT_PROGRAMS: GrantProgram[] = [
   {
     slug: 'medical',
-    title: 'Medical bills',
-    summary: 'Help paying treatment, hospital, pharmacy, and related medical costs.',
-    who: 'Anyone facing unpaid medical bills, ongoing treatment, or recovery costs.',
+    title: 'Medical care',
+    summary: 'Treatment, hospital, pharmacy, and related medical costs.',
+    who: 'Anyone with medical expenses — from routine care to major treatment, at any income level.',
     details:
-      'IDA grants help individuals cover medical bills that insurance or savings have not fully closed — hospital stays, ongoing treatment, prescriptions, specialist visits, and recovery costs. Tell us what you owe, what the care is for, and what remains unpaid. Selected awards are grants, not medical loans. You do not repay an IDA award.',
+      'IDA grants support medical costs that insurance or savings have not fully covered — hospital stays, ongoing treatment, prescriptions, specialist visits, and recovery. Describe the care, what remains unpaid, and how a one-time grant would be used. Selected awards are grants, not medical loans. You do not repay an IDA award.',
   },
   {
     slug: 'housing',
     title: 'Buying a home',
     summary: 'Support toward a home purchase or keeping stable housing.',
-    who: 'First-time buyers, families closing a gap, and people protecting the home they already have.',
+    who: 'First-time buyers, families, and property owners with a clear housing goal.',
     details:
-      'For people working toward a first home, covering closing costs, or remaining in the home they already have. This is grant assistance — not a mortgage and not a loan you repay. Describe the property situation, the gap you need to close, and how a one-time grant would make the difference.',
+      'For people working toward a home purchase, covering closing costs, upgrading a property, or protecting the home they already have. This is grant assistance — not a mortgage and not a loan you repay. Describe the property situation and how a one-time grant would support your goal.',
   },
   {
     slug: 'business',
     title: 'Starting a business',
-    summary: 'Seed help for salespeople and others launching their own business.',
-    who: 'Salespeople, independent workers, and people standing up a small business of their own.',
+    summary: 'Capital for salespeople and others launching or expanding a business.',
+    who: 'Salespeople, independent workers, and entrepreneurs at any stage.',
     details:
-      'Salespeople and independent workers often have the skill — and not the start-up capital. IDA reviews one-time grants to open, equip, or stabilize a small business. Describe the work, what the funds would cover (equipment, a vehicle, inventory, licensing, a first lease), and how the business will support you. This is not a business loan.',
+      'Salespeople and independent workers often have the skill — and want the capital to act on it. IDA reviews one-time grants to open, equip, or expand a business. Describe the work and what the funds would cover (equipment, a vehicle, inventory, licensing, a lease). This is not a business loan.',
   },
   {
     slug: 'education',
     title: 'Going to school',
     summary: 'Tuition, training, books, and related school costs.',
-    who: 'Adults returning to school, completing a credential, or covering tuition and materials.',
+    who: 'Adults returning to school, completing a credential, or investing in training.',
     details:
-      'For adults going back to school, finishing a credential, or covering tuition, books, tools, and related costs. IDA grants are not student loans. If selected, you do not repay the award. Tell us the program, what remains unpaid, and how finishing would change your work.',
+      'For adults going back to school, finishing a credential, or covering tuition, books, tools, and related costs. IDA grants are not student loans. If selected, you do not repay the award. Tell us the program and how completing it supports your goals.',
   },
   {
     slug: 'teachers',
     title: 'Teachers',
     summary: 'Classroom and career support for working educators.',
-    who: 'Working teachers under financial pressure at home or in the classroom.',
+    who: 'Working teachers investing in their classrooms or professional development.',
     details:
-      'Working teachers may apply for help with certification, classroom materials, or personal financial pressure that is getting in the way of staying in the profession. Educators are people with rent, too. List classroom needs and household bills separately so the file is clear.',
+      'Working teachers may apply for grants toward certification, classroom materials, or professional goals. List classroom needs and personal goals separately so the file is clear. Awards are grants, not loans.',
   },
   {
     slug: 'retired-teachers',
     title: 'Retired teachers',
     summary: 'Practical support for educators who have already given their careers.',
-    who: 'Retired teachers facing living costs, medical bills, or housing after a career in the classroom.',
+    who: 'Retired teachers with living, medical, housing, or personal goals.',
     details:
-      'Retired teachers may apply for assistance with living costs, medical bills, housing, or other needs after a career in the classroom. A lifetime of teaching should not end in a collection letter. Applications are reviewed individually. Awards are grants, not loans.',
+      'Retired teachers may apply for assistance with living costs, medical care, housing, or other goals after a career in the classroom. Applications are reviewed individually. Awards are grants, not loans.',
   },
   {
     slug: 'seniors',
     title: 'Seniors',
-    summary: 'Help for older and retired people seeking financial assistance.',
-    who: 'Seniors, older adults, and retired people looking for practical financial help.',
+    summary: 'Support for older and retired adults.',
+    who: 'Seniors, older adults, and retirees with medical, housing, or personal goals.',
     details:
-      'Seniors and retirees may apply for medical, housing, utilities, or general financial assistance. Applications are reviewed individually. Many IDA awards each year go to this group. Awards are grants, not loans — and they are made to individuals every day.',
+      'Seniors and retirees may apply for medical, housing, utilities, or general grant support. Applications are reviewed individually at every income level. Awards are grants, not loans — and they are made to individuals every day.',
   },
   {
     slug: 'assistance',
-    title: 'Financial assistance',
-    summary: 'General help when your need does not fit a single category.',
-    who: 'Anyone 18 or older looking for financial assistance and willing to explain the situation plainly.',
+    title: 'General grants',
+    summary: 'When your goal does not fit a single category.',
+    who: 'Anyone 18 or older with a clear purpose and willing to explain it plainly.',
     details:
-      'If you are looking for financial assistance and your request spans more than one category — or does not match the list above — apply here. Write what you need, what you have already tried, and how a grant (not a loan) would help. Completeness matters more than perfect wording.',
+      'If your request spans more than one category — or does not match the list above — apply here. Write what you want to fund, what you have already arranged, and how a grant (not a loan) would be used. Completeness matters more than perfect wording.',
   },
 ];

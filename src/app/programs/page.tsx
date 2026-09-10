@@ -5,9 +5,9 @@ import { breadcrumbJsonLd, programsItemListJsonLd } from '@/lib/jsonld';
 import Link from 'next/link';
 
 export const metadata = createMetadata({
-  title: 'Programs',
+  title: 'IDA Grant Programs — Medical, Home, School, Business',
   description:
-    'IDA grant categories: medical bills, buying a home, starting a business, school, teachers, retired teachers, and seniors.',
+    'Choose medical bills, buying a home, starting a business, school, teachers, retired teachers, or seniors. Every IDA award is a grant, not a loan.',
   path: '/programs',
 });
 

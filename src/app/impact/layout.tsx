@@ -1,9 +1,9 @@
 import { createMetadata } from '@/lib/metadata';
 
 export const metadata = createMetadata({
-  title: 'Stories',
+  title: 'IDA Grant Stories — People Already Helped',
   description:
-    'IDA grant recipient stories — medical bills, homes, school, business, teachers, and seniors. Grants, not loans.',
+    'Letters from people who received an IDA grant for medical bills, a home, school, business, teaching, or senior support. Grants, not loans.',
   path: '/impact',
 });
 

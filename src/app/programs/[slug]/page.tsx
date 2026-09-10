@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props) {
   const program = GRANT_PROGRAMS.find((p) => p.slug === slug);
   if (!program) return createMetadata({ title: 'Program', path: '/programs' });
   return createMetadata({
-    title: program.title,
-    description: `${program.summary} IDA grants are not loans.`,
+    title: `${program.title} — IDA Grant, Not a Loan`,
+    description: `${program.summary} This is an IDA grant, not a loan.`,
     path: `/programs/${program.slug}`,
   });
 }
