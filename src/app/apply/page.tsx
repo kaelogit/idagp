@@ -16,7 +16,7 @@ import {
   applicantResponseBadge,
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
-  CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
   HELP_AREAS_SHORT,
   RESPONSE_HOURS,
 } from '@/lib/site';
@@ -108,8 +108,9 @@ export default function ApplyPage() {
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--gp-muted)]">
                   You will get a receipt from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Then expect
-                  an email from your assigned coordinator at {CONTACT_EMAIL} within {RESPONSE_HOURS}{' '}
-                  hours. Check spam. Reply on that thread so your file stays together.
+                  an email from your assigned coordinator at {COORDINATOR_EMAIL} within{' '}
+                  {RESPONSE_HOURS} hours. Check spam. Reply on that thread so your file stays
+                  together.
                 </p>
                 <p className="mt-4 text-sm font-medium text-[var(--gp-navy)]">
                   You did the hard part by asking. Rest tonight. We will take the next step. IDA
@@ -316,7 +317,7 @@ export default function ApplyPage() {
               </p>
               <p className="flex gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[var(--gp-blue)]" />
-                Coordinator assigned · {CONTACT_EMAIL}
+                Coordinator assigned · {COORDINATOR_EMAIL}
               </p>
               <p className="flex gap-2">
                 <Lock className="mt-0.5 h-4 w-4 shrink-0 text-[var(--gp-blue)]" />

@@ -1,6 +1,6 @@
 import { createMetadata } from '@/lib/metadata';
 import { LegalLayout, LegalSection } from '@/components/layout/LegalLayout';
-import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, CONTACT_EMAIL, FULL_NAME, ORG_BLURB, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
+import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, FULL_NAME, ORG_BLURB, SHORT_NAME, SITE_DOMAIN, SUPPORT_EMAIL } from '@/lib/site';
 
 export const metadata = createMetadata({
   title: 'IDA Terms — Grants Are Not Loans',
@@ -29,7 +29,7 @@ export default function TermsPage() {
       </LegalSection>
       <LegalSection title="Official contact">
         Follow-up is by email. Application receipts come from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}).
-        If you are unsure whether a message is from IDA, use the Verify page or write {CONTACT_EMAIL}{' '}
+        If you are unsure whether a message is from IDA, use the Verify page or write {SUPPORT_EMAIL}{' '}
         before you act.
       </LegalSection>
       <LegalSection title="Accuracy">

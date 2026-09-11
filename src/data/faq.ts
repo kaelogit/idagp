@@ -1,14 +1,14 @@
 import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
-  CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
   ELIGIBILITY_OPEN,
-  FULL_NAME,
   HELP_AREAS_SHORT,
   ORG_BLURB,
   RESPONSE_HOURS,
   SHORT_NAME,
   SITE_DOMAIN,
+  SUPPORT_EMAIL,
 } from '@/lib/site';
 
 export const faqItems = [
@@ -70,11 +70,11 @@ export const faqItems = [
   },
   {
     question: 'How will I be contacted?',
-    answer: `You will get a receipt from ${APPLY_FROM_NAME} (${APPLY_FROM_EMAIL}). Then an IDA grant coordinator assigned to your file will contact you by email at ${CONTACT_EMAIL} within ${RESPONSE_HOURS} hours. Check inbox and spam. Reply on that thread.`,
+    answer: `You will get a receipt from ${APPLY_FROM_NAME} (${APPLY_FROM_EMAIL}). Then an IDA grant coordinator assigned to your file will contact you from ${COORDINATOR_EMAIL} within ${RESPONSE_HOURS} hours. Check inbox and spam. Reply on that thread.`,
   },
   {
     question: 'Someone contacted me about an IDA grant — is it real?',
-    answer: `If you are unsure, verify before you act. Official contact is ${CONTACT_EMAIL}, ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}), and this website (${SITE_DOMAIN}). Visit ${SITE_DOMAIN}/verify and email support with what you were told.`,
+    answer: `If you are unsure, verify before you act. Official support is ${SUPPORT_EMAIL}. Application receipts come from ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}). Assigned coordinator follow-up is ${COORDINATOR_EMAIL}. This website is ${SITE_DOMAIN}. Visit ${SITE_DOMAIN}/verify and email support with what you were told.`,
   },
   {
     question: 'Do I have to pay IDA back?',

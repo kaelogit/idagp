@@ -37,7 +37,9 @@ export const PROGRAM_NAME = 'IDA Grant Program';
 export const BRAND_NAME = SHORT_NAME;
 export const LEGAL_NAME = FULL_NAME;
 
-export const CONTACT_EMAIL = 'support@idagrantprogram.com';
+export const SUPPORT_EMAIL = 'support@idagrantprogram.com';
+/** @deprecated Prefer SUPPORT_EMAIL for public support/verify; kept as alias */
+export const CONTACT_EMAIL = SUPPORT_EMAIL;
 export const APPLY_FROM_EMAIL = 'apply@idagrantprogram.com';
 /** Desk name on application receipts — not a person */
 export const APPLY_FROM_NAME = 'IDA Applications';
@@ -46,13 +48,15 @@ export const RESPONSE_HOURS = 24;
 
 export const COORDINATOR_NAME = 'Helen Marsh';
 export const COORDINATOR_TITLE = 'IDA Grant Coordinator';
+/** Coordinator file follow-up — not used for public verify/support */
+export const COORDINATOR_EMAIL = 'helenmarsh@idagrantprogram.com';
 
 export function applicantResponseBadge(hours = RESPONSE_HOURS): string {
   return `A coordinator is assigned to your file within ${hours} hours of applying`;
 }
 
 export function applicantContactWithin(hours = RESPONSE_HOURS): string {
-  return `After you apply, an IDA grant coordinator is assigned to your file and contacts you by email within ${hours} hours.`;
+  return `After you apply, an IDA grant coordinator is assigned to your file and contacts you by email (${COORDINATOR_EMAIL}) within ${hours} hours.`;
 }
 
 export const APPLICANT_CONTACT_MONITOR =

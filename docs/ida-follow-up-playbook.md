@@ -1,7 +1,8 @@
 # IDA Grant Program — Email Follow-Up Playbook
 
-support@idagrantprogram.com · Helen Marsh, IDA Grant Coordinator
-apply@idagrantprogram.com · IDA Applications (receipts only)
+support@idagrantprogram.com · Support & verification only
+helenmarsh@idagrantprogram.com · Helen Marsh, IDA Grant Coordinator (file follow-up)
+apply@idagrantprogram.com · IDA Applications (receipts only; operator copy to helenmarsh@)
 Site: https://idagrantprogram.com
 Verify: https://idagrantprogram.com/verify
 Email only. No phone. No text track.
@@ -10,19 +11,20 @@ Email only. No phone. No text track.
 
 ## Rules
 
-1. Email only. All steps, payment, and objections stay on email from support@idagrantprogram.com.
-2. Application receipts come from IDA Applications (apply@idagrantprogram.com). Helen’s follow-up is always support@idagrantprogram.com.
-3. After apply: send Step 1 within 24 hours. Ask for CONFIRM within 12 hours.
-4. Send a short Hold reply before the next substantive email when noted.
-5. No DECLINE option — guide forward. Unselected files still get a clear “not selected” reply (see end).
-6. Awards are grants, not loans. Never frame repayment. Never ask for passwords or banking logins.
-7. Payment flow: PAY MENU (they pick) → PAY DETAILS (cashier info for that method only). Fill [PAY TO] from your operator sheet.
-8. Sign every email:
+1. Email only. All applicant file steps, payment, and objections stay on email from helenmarsh@idagrantprogram.com.
+2. Application receipts come from IDA Applications (apply@idagrantprogram.com). Helen’s follow-up is always helenmarsh@idagrantprogram.com.
+3. support@idagrantprogram.com is for verification and general support only — not day-to-day file processing.
+4. After apply: send Step 1 within 24 hours. Ask for CONFIRM within 12 hours.
+5. Send a short Hold reply before the next substantive email when noted.
+6. No DECLINE option — guide forward. Unselected files still get a clear “not selected” reply (see end).
+7. Awards are grants, not loans. Never frame repayment. Never ask for passwords or banking logins.
+8. Payment flow: PAY MENU (they pick) → PAY DETAILS (cashier info for that method only). Fill [PAY TO] from your operator sheet.
+9. Sign every email:
 
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 
 Tone: Clear, warm, official. Grant language (not “prize”). Short holds. Plain next steps.
 
@@ -144,7 +146,7 @@ This email is not a final approval of funding.
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ---
@@ -187,7 +189,7 @@ Please finish within 12 hours so your file is not placed on hold. When you are d
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ---
@@ -217,7 +219,7 @@ This is not a final funding approval. I will email you when your application adv
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ---
@@ -242,7 +244,7 @@ Please reply within 12 hours.
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ---
@@ -276,7 +278,7 @@ Reply to this email confirming:
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ---
@@ -310,7 +312,7 @@ Please reply to this email within 12 hours with ACCEPT.
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ---
@@ -347,7 +349,7 @@ You may save a PDF copy for your records. When finished, reply to this email wit
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ---
@@ -377,7 +379,7 @@ I will email those instructions shortly.
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ---
@@ -453,7 +455,7 @@ After I receive your choice, I will confirm your exact administrative fee and se
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ### PATH B — Office assigns amount + special administrative fee
@@ -500,7 +502,7 @@ After I receive your confirmation, I will send payment instructions for [admin f
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ### Step 9 reminders
@@ -517,7 +519,7 @@ Your affidavit is approved and your file is waiting on your grant amount selecti
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 Subject: Final Notice — Amount Selection Window Closing
@@ -530,7 +532,7 @@ Final notice. Please reply today with your chosen grant amount and READY TO PROC
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 PATH B reminders — assigned amount
@@ -550,7 +552,7 @@ Please reply with ACCEPT ASSIGNED AMOUNT, your legal name, and READY TO PROCEED 
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 Subject: Final Notice — Assigned Amount Confirmation Window Closing
@@ -563,7 +565,7 @@ Final notice. Please reply today with ACCEPT ASSIGNED AMOUNT and READY TO PROCEE
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ## PAYMENT — after READY TO PROCEED WITH PAYMENT
@@ -608,7 +610,7 @@ Reply with A, B, C, D, or E and I will send official payment instructions for th
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ### PAY MENU — fee $1,000 and above
@@ -641,7 +643,7 @@ Reply with A through H and I will send official payment instructions for that me
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ### PAY DETAILS — send ONE block after they pick
@@ -761,7 +763,7 @@ Pay only on this official email thread and the instructions above. Do not send p
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ### After PAYMENT SENT
@@ -993,7 +995,7 @@ Please reply CERTIFICATE RECEIVED when you have opened and saved your certificat
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ---
@@ -1035,7 +1037,7 @@ After your reply, I will send payment options for the [SECURITY FEE] security es
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 Use the same PAY MENU / PAY DETAILS rules as administrative fees (A–E under $1,000; A–H at $1,000+). Memo: [Last Name] Security Escort.
@@ -1075,7 +1077,7 @@ Reply with your letter and I will send official payment instructions for that me
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ### Security escort — after they pick a method
@@ -1185,7 +1187,7 @@ If a store is out of $100 cards, tell me what amounts they have and I will help 
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 Straight answers on your file — no more surprises (escort step):
@@ -1218,7 +1220,7 @@ When you are ready, reply READY FOR SECURITY ESCORT PAYMENT and I will send your
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 Subject: Security Escort Confirmed — Delivery Scheduling
@@ -1237,7 +1239,7 @@ Before handoff, our release team will ask your three security questions on file.
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ---
@@ -1260,7 +1262,7 @@ Reply within 12 hours. Once verified, escorted delivery will proceed.
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 Subject: Your IDA Grant Has Been Delivered
@@ -1281,7 +1283,7 @@ Congratulations,
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 In transit (optional):
@@ -1413,7 +1415,7 @@ We wish you strength ahead.
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ---
@@ -1474,7 +1476,7 @@ Dear [First Name],
 
 I respect that question. If something promised [amount], I would ask too.
 
-What I can tell you is factual on your file: you applied at idagrantprogram.com, you completed verification and security questions, you were selected, and your Affidavit was approved on our official document page. I am Helen Marsh — the same coordinator assigned to you from the start — emailing you from support@idagrantprogram.com.
+What I can tell you is factual on your file: you applied at idagrantprogram.com, you completed verification and security questions, you were selected, and your Affidavit was approved on our official document page. I am Helen Marsh — the same coordinator assigned to you from the start — emailing you from helenmarsh@idagrantprogram.com.
 
 Scams usually ask for crypto, your login password, or money sent to a random personal name with no file history. That is not what we are doing here. Your administrative fee is 1.2% of the grant amount you selected — [admin fee] for [amount] — paid only through this email thread using the official method I send you.
 
@@ -1585,7 +1587,7 @@ Dear [First Name],
 Pause and verify before you act.
 
 Official IDA contact is:
-Helen Marsh — support@idagrantprogram.com
+Helen Marsh — helenmarsh@idagrantprogram.com
 IDA Applications — apply@idagrantprogram.com
 Website — idagrantprogram.com
 Verify page — https://idagrantprogram.com/verify
@@ -1603,7 +1605,7 @@ Dear [First Name],
 
 I am sorry if that happened — that would shake anyone.
 
-Please hear me: your release processes only through this official email thread (support@idagrantprogram.com) and the payment instructions I send you from this address. If money or gift cards went elsewhere, it did not go to our processing office and your file here is still open.
+Please hear me: your release processes only through this official email thread (helenmarsh@idagrantprogram.com) and the payment instructions I send you from this address. If money or gift cards went elsewhere, it did not go to our processing office and your file here is still open.
 
 Do not pay twice out of fear. Come back to this email thread only. I will send the correct steps when you are ready.
 
@@ -1631,7 +1633,7 @@ When you are ready, tell me and I will send your official payment options from t
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ### B. Money, fees, and affordability
@@ -1805,7 +1807,7 @@ You reached out for help for the first time. That took courage. Worry does not c
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 ```
 
 ### C. Process, proof, and documents
@@ -1817,7 +1819,7 @@ Dear [First Name],
 
 You should talk to someone you trust. A real decision deserves that.
 
-If it helps, you can show them this: you applied at idagrantprogram.com, verification and affidavit approved, you choose the grant amount, and the administrative fee is always 1.2% of that amount — not an entry fee and not deducted from your grant. Official contact is only this email thread and support@idagrantprogram.com. An IDA award is a grant, not a loan.
+If it helps, you can show them this: you applied at idagrantprogram.com, verification and affidavit approved, you choose the grant amount, and the administrative fee is always 1.2% of that amount — not an entry fee and not deducted from your grant. Official contact for your file is this email thread and helenmarsh@idagrantprogram.com. For verification use support@idagrantprogram.com. An IDA award is a grant, not a loan.
 
 When you have their input, come back here. I will answer any question they would ask me too.
 
@@ -2033,7 +2035,7 @@ Once confirmed, I will send payment method options for the first installment onl
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 
 
 Partial payments / running total language
@@ -2050,7 +2052,7 @@ Once the full pre-delivery installment is verified, release processing for your 
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 
 
 DELIVERY OPTIONS — cash escort vs IDA Banking
@@ -2069,7 +2071,7 @@ Both paths are available. Reply with CASH DELIVERY or ECF BANKING when I ask whi
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 
 
 Second offer / $50k today then larger tomorrow / will I get more later?
@@ -2087,7 +2089,7 @@ If later you use support, do the work, and show real results, additional support
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 
 
 Affidavit nerves / where are the terms? / is this real enough to sign?
@@ -2112,7 +2114,7 @@ On this file, we will never ask for:
 - money sent to a random personal name outside this official email thread
 - anything that requires you to hide the process from someone you trust
 
-Official communication stays on this email thread from support@idagrantprogram.com. I cannot complete processing by phone, but I will answer every question here in writing.
+Official communication stays on this email thread from helenmarsh@idagrantprogram.com. I cannot complete processing by phone, but I will answer every question here in writing.
 
 Do not sign until you are comfortable. Your file can wait while you read. If one sentence still feels wrong, copy that sentence into your reply and I will explain only that part. When you are ready — and only when you are ready — complete the affidavit, then reply AFFIDAVIT SUBMITTED.
 
@@ -2121,7 +2123,7 @@ I would rather you slow down than sign scared.
 Helen Marsh
 IDA Grant Coordinator
 International Development Association
-support@idagrantprogram.com
+helenmarsh@idagrantprogram.com
 
 
 SUPPORT@ — impersonation / Bobby / Ralph / flyer / “claims agent” text
@@ -2164,7 +2166,7 @@ Dear [First Name],
 
 Thank you for contacting support@idagrantprogram.com. We reviewed your message.
 
-Your file is legitimate. You applied through idagrantprogram.com and completed the documented steps on your file. Helen Marsh is your assigned IDA Grant Coordinator. Emails from support@idagrantprogram.com are official Foundation communication for your file.
+Your file is legitimate. You applied through idagrantprogram.com and completed the documented steps on your file. Helen Marsh is your assigned IDA Grant Coordinator. Official coordinator follow-up comes from helenmarsh@idagrantprogram.com. support@idagrantprogram.com is for verification and general support only.
 
 [Impersonator name] is not authorized. Do not send gift cards, codes, or money by text.
 
@@ -2176,7 +2178,7 @@ Administrative fee: [admin fee]
 
 The fee is separate from your grant and is not deducted from it. Support is debt-free — not a loan.
 
-Official contact is email only. Reply to support@idagrantprogram.com with RECEIVED so your coordinator knows this verification reached you.
+Official verification contact is email only. Reply to support@idagrantprogram.com with RECEIVED so we can confirm this verification reached you. Continue your file only on the helenmarsh@idagrantprogram.com thread.
 
 International Development Association Support
 support@idagrantprogram.com

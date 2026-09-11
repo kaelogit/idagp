@@ -4,6 +4,8 @@ import {
   APPLY_FROM_NAME,
   absoluteSiteUrl,
   CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
+  COORDINATOR_NAME,
   FULL_NAME,
   LOGO_URL,
   PROGRAM_NAME,
@@ -48,6 +50,13 @@ export function organizationJsonLd() {
         name: APPLY_FROM_NAME,
         email: APPLY_FROM_EMAIL,
         url: pageUrl('/apply'),
+      },
+      {
+        '@type': 'ContactPoint',
+        contactType: 'grant coordinator',
+        name: COORDINATOR_NAME,
+        email: COORDINATOR_EMAIL,
+        url: pageUrl('/contact'),
       },
     ],
   };

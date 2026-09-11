@@ -1,12 +1,12 @@
 import { createMetadata } from '@/lib/metadata';
 import {
-  CONTACT_EMAIL,
   ELIGIBILITY_OPEN,
   FULL_NAME,
   HELP_AREAS_SHORT,
   ORG_BLURB,
   RESPONSE_HOURS,
   SHORT_NAME,
+  SUPPORT_EMAIL,
 } from '@/lib/site';
 import Link from 'next/link';
 
@@ -55,7 +55,7 @@ export default function AboutPage() {
           <p>
             An IDA award is a one-time grant. If you are selected, you do not repay it, and applying
             does not create debt. If someone offers you an “IDA loan,” it is not this program.
-            Confirm contact on our Verify page or write {CONTACT_EMAIL}.
+            Confirm contact on our Verify page or write {SUPPORT_EMAIL}.
           </p>
 
           <h2 className="text-2xl text-[var(--gp-blue)]">Who we serve</h2>

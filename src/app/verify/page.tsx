@@ -7,33 +7,35 @@ import { breadcrumbJsonLd, webPageJsonLd } from '@/lib/jsonld';
 import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
-  CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
+  COORDINATOR_NAME,
   FULL_NAME,
   SHORT_NAME,
   SITE_DOMAIN,
   SITE_URL,
+  SUPPORT_EMAIL,
 } from '@/lib/site';
 
 const VERIFY_DESCRIPTION =
-  'Pause here if someone contacted you about an IDA grant. Verifying means confirming the text or email is from IDA before you reply, share personal information, or take any next step.';
+  'Pause here if someone contacted you about an IDA grant. Official support: support@idagrantprogram.com. Application receipts: apply@idagrantprogram.com. Assigned coordinator follow-up: helenmarsh@idagrantprogram.com.';
 
 const verifyFaqs = [
   {
     question: 'How do I verify an IDA grant text or email?',
-    answer: `Pause and check this page. Email ${CONTACT_EMAIL} with who contacted you and what they asked. We will confirm whether it matches an official file. The official website is ${SITE_DOMAIN}.`,
+    answer: `Pause and check this page. Email ${SUPPORT_EMAIL} with who contacted you and what they asked. We will confirm whether it matches an official file. The official website is ${SITE_DOMAIN}.`,
   },
   {
     question: 'What are the official IDA email addresses?',
-    answer: `Official support is ${CONTACT_EMAIL}. Application receipts come from ${APPLY_FROM_NAME} at ${APPLY_FROM_EMAIL} only. Messages from other addresses are not official.`,
+    answer: `Official support and verification: ${SUPPORT_EMAIL}. Application receipts: ${APPLY_FROM_NAME} at ${APPLY_FROM_EMAIL}. After a coordinator is assigned to your file, follow-up comes from ${COORDINATOR_NAME} at ${COORDINATOR_EMAIL}.`,
   },
   {
     question: 'Does IDA ask for passwords or payment to release a grant?',
     answer:
-      'No. IDA grants are not loans. We will never ask for your email or banking passwords. If anyone claiming to represent us demands passwords or repayment as if the award were a loan, ignore them and write support.',
+      'No. We will never ask for your email or banking passwords. If anyone claiming to represent us demands passwords, ignore them and write support.',
   },
   {
     question: 'What if the message used a name or title that sounded official?',
-    answer: `Names and titles alone do not prove a message is real. Confirm the sender address against this page — ${CONTACT_EMAIL} for support and verification, ${APPLY_FROM_EMAIL} for application receipts only. When in doubt, email support before you act.`,
+    answer: `Names and titles alone do not prove a message is real. Confirm the sender address against this page — ${SUPPORT_EMAIL} for support and verification, ${APPLY_FROM_EMAIL} for application receipts, and ${COORDINATOR_EMAIL} for assigned-coordinator follow-up. When in doubt, email ${SUPPORT_EMAIL} before you act.`,
   },
 ];
 
@@ -73,19 +75,20 @@ export default function VerifyPage() {
             <CheckCircle2 className="mx-auto h-10 w-10 text-[var(--gp-blue)]" />
             <h2 className="mt-4 text-xl">Official support email</h2>
             <a
-              href={`mailto:${CONTACT_EMAIL}?subject=Please%20verify%20this%20contact`}
+              href={`mailto:${SUPPORT_EMAIL}?subject=Please%20verify%20this%20contact`}
               className="mt-2 block text-lg font-semibold text-[var(--gp-blue)]"
             >
-              {CONTACT_EMAIL}
+              {SUPPORT_EMAIL}
             </a>
             <p className="mt-3 text-sm text-[var(--gp-muted)]">
-              Application receipts come from {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Website:{' '}
+              Application receipts: {APPLY_FROM_NAME} ({APPLY_FROM_EMAIL}). Assigned coordinator
+              follow-up: {COORDINATOR_NAME} ({COORDINATOR_EMAIL}). Website:{' '}
               <a href={SITE_URL} className="font-medium text-[var(--gp-navy)]">
                 {SITE_DOMAIN}
               </a>
             </p>
             <a
-              href={`mailto:${CONTACT_EMAIL}?subject=Please%20verify%20this%20contact`}
+              href={`mailto:${SUPPORT_EMAIL}?subject=Please%20verify%20this%20contact`}
               className="btn-primary mt-6"
             >
               Email support to verify
@@ -96,17 +99,17 @@ export default function VerifyPage() {
               {
                 icon: Globe,
                 title: 'Official website only',
-                body: `The official application site is ${SITE_DOMAIN}. If a link goes somewhere else, stop and email ${CONTACT_EMAIL}.`,
+                body: `The official application site is ${SITE_DOMAIN}. If a link goes somewhere else, stop and email ${SUPPORT_EMAIL}.`,
               },
               {
                 icon: Mail,
-                title: 'Official email',
-                body: `Legitimate ${SHORT_NAME} support and verification messages come from ${CONTACT_EMAIL}. Application receipts come from ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}) only.`,
+                title: 'Official email addresses',
+                body: `Support and verification: ${SUPPORT_EMAIL}. Application receipts: ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}). Assigned coordinator follow-up: ${COORDINATOR_EMAIL} (${COORDINATOR_NAME}).`,
               },
               {
                 icon: ShieldCheck,
                 title: 'Ask us before you act',
-                body: `Tell us who contacted you and what they asked. Email ${CONTACT_EMAIL} and we will confirm whether it matches an official file.`,
+                body: `Tell us who contacted you and what they asked. Email ${SUPPORT_EMAIL} and we will confirm whether it matches an official file.`,
               },
               {
                 icon: AlertTriangle,
@@ -119,33 +122,19 @@ export default function VerifyPage() {
                   <Icon className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="text-lg">{title}</h3>
+                  <h3 className="font-semibold text-[var(--gp-navy)]">{title}</h3>
                   <p className="mt-1 text-sm leading-relaxed text-[var(--gp-muted)]">{body}</p>
                 </div>
               </div>
             ))}
           </div>
-          <div>
-            <h2 className="text-2xl">Questions people ask before they reply</h2>
-            <div className="mt-4">
-              {verifyFaqs.map((item) => (
-                <div key={item.question} className="border-t border-[var(--gp-line)] py-5">
-                  <h3 className="text-sm font-semibold text-[var(--gp-navy)]">{item.question}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[var(--gp-muted)]">{item.answer}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/faq" className="btn-outline">
-              FAQ
-            </Link>
-            <Link href="/security" className="btn-outline">
-              Security
-            </Link>
+          <div className="border-t border-[var(--gp-line)] pt-8 text-center">
             <Link href="/apply" className="btn-primary">
-              Apply on this site
+              Apply for a grant
             </Link>
+            <p className="mt-4 text-sm text-[var(--gp-muted)]">
+              {SHORT_NAME} · Official contact lives on this website and the addresses above.
+            </p>
           </div>
         </div>
       </section>

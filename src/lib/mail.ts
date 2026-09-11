@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer';
-import { APPLY_FROM_NAME, CONTACT_EMAIL } from '@/lib/site';
+import { APPLY_FROM_NAME, SUPPORT_EMAIL } from '@/lib/site';
 
 export function getSmtpCredentials() {
   const user = process.env.ZOHO_USER?.trim();
@@ -30,7 +30,7 @@ export function mailFromAutomated() {
 }
 
 export function mailUnavailableMessage() {
-  return `Applications are temporarily unavailable. Please email ${CONTACT_EMAIL} or try again shortly.`;
+  return `Applications are temporarily unavailable. Please email ${SUPPORT_EMAIL} or try again shortly.`;
 }
 
 export function escapeHtml(s: string): string {

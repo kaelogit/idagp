@@ -1,5 +1,5 @@
 import { createMetadata } from '@/lib/metadata';
-import { applicantContactWithin, CONTACT_EMAIL, RESPONSE_HOURS } from '@/lib/site';
+import { applicantContactWithin, COORDINATOR_EMAIL, RESPONSE_HOURS, SUPPORT_EMAIL } from '@/lib/site';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 import Link from 'next/link';
@@ -46,7 +46,7 @@ const steps = [
   },
   {
     title: 'Contact',
-    body: `Official follow-up is email only: ${CONTACT_EMAIL}. If you are unsure whether a message is real, use the Verify page first.`,
+    body: `Official file follow-up is email only from your assigned coordinator (${COORDINATOR_EMAIL}). If you are unsure whether a message is real, write ${SUPPORT_EMAIL} or use the Verify page first.`,
   },
 ];
 

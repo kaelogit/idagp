@@ -10,7 +10,7 @@ import {
 import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
-  CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
   COORDINATOR_NAME,
   COORDINATOR_TITLE,
   FULL_NAME,
@@ -96,7 +96,7 @@ export async function POST(req: NextRequest) {
   }
 
   const from = mailFromAutomated();
-  const to = getOperatorInbox() || CONTACT_EMAIL;
+  const to = getOperatorInbox() || COORDINATOR_EMAIL;
   const row = (l: string, v: string) =>
     `<tr><td style="padding:6px 12px 6px 0;font-weight:600;color:#555;">${escapeHtml(l)}</td><td>${escapeHtml(v)}</td></tr>`;
 
@@ -113,13 +113,12 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from,
       to: parsed.email,
-      replyTo: CONTACT_EMAIL,
+      replyTo: COORDINATOR_EMAIL,
       subject: 'We received your IDA grant application',
       html: `
         <p>Dear ${escapeHtml(parsed.name)},</p>
         <p>This is a receipt from ${escapeHtml(APPLY_FROM_NAME)}. Thank you for trusting ${escapeHtml(FULL_NAME)} with your application. We have your file for <strong>${escapeHtml(parsed.category)}</strong>.</p>
-        <p>IDA grants are not loans. Applying does not create debt.</p>
-        <p>${escapeHtml(COORDINATOR_NAME)}, your ${escapeHtml(COORDINATOR_TITLE)}, has been assigned to your file and will write you from ${escapeHtml(CONTACT_EMAIL)}. Please check your inbox and spam folder, then reply on that thread.</p>
+        <p>${escapeHtml(COORDINATOR_NAME)}, your ${escapeHtml(COORDINATOR_TITLE)}, has been assigned to your file and will write you from ${escapeHtml(COORDINATOR_EMAIL)}. Please check your inbox and spam folder, then reply on that thread.</p>
         <p>You took a brave step by asking. We are glad you did.</p>
         <p>${escapeHtml(APPLY_FROM_NAME)}<br/>${escapeHtml(FULL_NAME)}<br/>${escapeHtml(APPLY_FROM_EMAIL)}</p>
       `,

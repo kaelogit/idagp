@@ -4,14 +4,15 @@ import { createMetadata } from '@/lib/metadata';
 import {
   APPLY_FROM_EMAIL,
   APPLY_FROM_NAME,
-  CONTACT_EMAIL,
+  COORDINATOR_EMAIL,
+  SUPPORT_EMAIL,
   SITE_DOMAIN,
 } from '@/lib/site';
 
 export const metadata = createMetadata({
   title: 'IDA Official Emails — How to Verify a Message',
   description:
-    'Official IDA contact is support@idagrantprogram.com and apply@idagrantprogram.com on idagrantprogram.com. We never ask for passwords.',
+    'Official IDA contact is support@idagrantprogram.com, apply@idagrantprogram.com, and helenmarsh@idagrantprogram.com on idagrantprogram.com. We never ask for passwords.',
   path: '/security',
 });
 
@@ -34,7 +35,7 @@ export default function SecurityPage() {
             {
               icon: AlertTriangle,
               title: 'Unsure if a contact is real?',
-              body: `Email ${CONTACT_EMAIL} or use the Verify page. We will confirm whether the outreach matches an official file.`,
+              body: `Email ${SUPPORT_EMAIL} or use the Verify page. We will confirm whether the outreach matches an official file.`,
             },
             {
               icon: Lock,
@@ -44,12 +45,12 @@ export default function SecurityPage() {
             {
               icon: ShieldCheck,
               title: 'Official channels',
-              body: `Use ${SITE_DOMAIN}, ${CONTACT_EMAIL}, and ${APPLY_FROM_EMAIL}. We will never ask for passwords.`,
+              body: `Use ${SITE_DOMAIN}, ${SUPPORT_EMAIL}, ${APPLY_FROM_EMAIL}, and ${COORDINATOR_EMAIL}. We will never ask for passwords.`,
             },
             {
               icon: Mail,
               title: 'Email response',
-              body: `${APPLY_FROM_NAME} sends receipts from ${APPLY_FROM_EMAIL}. Support and follow-up after you apply: ${CONTACT_EMAIL}. Check inbox and spam.`,
+              body: `${APPLY_FROM_NAME} sends receipts from ${APPLY_FROM_EMAIL}. Support and verification: ${SUPPORT_EMAIL}. Assigned coordinator follow-up: ${COORDINATOR_EMAIL}. Check inbox and spam.`,
             },
           ].map(({ icon: Icon, title, body }) => (
             <div key={title} className="flex gap-4">
