@@ -10,8 +10,8 @@ export function Footer() {
         <div className="md:col-span-2">
           <Logo light />
           <p className="mt-4 max-w-md text-sm leading-relaxed text-white/70">
-            {FULL_NAME} ({SHORT_NAME}) works in cooperation with the World Bank Group. We issue
-            billions of dollars in IDA grant money each year. Awards are grants, not loans.
+            {FULL_NAME} ({SHORT_NAME}) works in cooperation with the World Bank Group. Through the
+            IDA Grant Program we issue billions of dollars in one-time awards each year.
           </p>
         </div>
         <div>

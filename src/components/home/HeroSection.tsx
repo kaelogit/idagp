@@ -47,7 +47,7 @@ export function HeroSection() {
           <div className="mt-10 flex flex-wrap gap-6 text-sm text-white/80">
             <span className="inline-flex items-center gap-2">
               <CheckCircle2 className="h-4 w-4 text-[var(--gp-blue)]" />
-              Grants, not loans
+              One-time awards
             </span>
             <span className="inline-flex items-center gap-2">
               <ShieldCheck className="h-4 w-4 text-[var(--gp-blue)]" />

@@ -140,7 +140,7 @@ export async function POST(request: NextRequest) {
         <p>Grant amount on file: <strong>${escapeHtml(payload.supportAmount)}</strong><br/>
         Date signed: <strong>${escapeHtml(payload.signDate)}</strong></p>
         <p>Your affidavit is now with our office for review. ${escapeHtml(COORDINATOR_NAME)}, your ${escapeHtml(COORDINATOR_TITLE)}, will email you with the next step.</p>
-        <p>This confirmation is not a final funding release. IDA awards are grants, not loans.</p>
+        <p>This confirmation is not a final funding release. Your coordinator will email the next step.</p>
         <p>${escapeHtml(COORDINATOR_NAME)}<br/>${escapeHtml(COORDINATOR_TITLE)}<br/>${escapeHtml(FULL_NAME)}<br/>${escapeHtml(CONTACT_EMAIL)}</p>
       `,
       text: `Dear ${payload.fullName},\n\nWe have received your Affidavit of Eligibility and Release. ${COORDINATOR_NAME} will email you with the next step.\n\n${FULL_NAME}\n${CONTACT_EMAIL}`,

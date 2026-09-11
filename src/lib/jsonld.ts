@@ -34,7 +34,7 @@ export function organizationJsonLd() {
     image: LOGO_URL,
     email: CONTACT_EMAIL,
     description:
-      'International Development Association works in cooperation with the World Bank Group, issuing IDA grants to individuals. Awards are grants, not loans.',
+      'International Development Association works in cooperation with the World Bank Group, issuing IDA grant awards to individuals through the official IDA Grant Program.',
     contactPoint: [
       {
         '@type': 'ContactPoint',

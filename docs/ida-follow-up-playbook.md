@@ -26,6 +26,41 @@ support@idagrantprogram.com
 
 Tone: Clear, warm, official. Grant language (not “prize”). Short holds. Plain next steps.
 
+### Expanded operator rules (aligned with current ops)
+
+Amount + fee paths (use ONE only)
+- PATH A: recipient is given the opportunity to choose from the standard 1.2% list
+- PATH B: office assigns fixed [amount] + special [admin fee] (example: $600,000 grant — $500.00 fee)
+- Do not mix paths on one file
+
+Installment (special approval)
+- Only for grant amounts above $250,000
+- Up to 50% before delivery, remaining balance after delivery
+- Confirm how they will pay the pre-delivery half: one payment, split over days, or split over weeks
+
+Payment method rules
+- Always available: Apple Pay, Zelle, Cash App, gift cards
+- Bank transfer (ACH / standard): only when a single payment is $1,500.00 or more
+- Western Union Walmart to Walmart, cash mailing, wire: unlock only when fee is $1,000.00 or more (extras; do not replace normal options)
+- Gift cards: recommend when recipient wants to avoid banking-app / technical stress (Steam Wallet, Apple Gift Card, Razor Gold)
+
+Release timing
+- Administrative fee is paid BEFORE release
+- After administrative payment is verified, delivery / release is targeted within about 24 hours
+
+Delivery options (ask before dispatch)
+- Cash / escorted in-person delivery to address on file
+- IDA Banking: account created for recipient; they can external-transfer to their personal bank account
+
+Story personalization
+- On Step 1 and Step 3, add 2–4 concrete details from their application so the email does not feel like a form letter
+
+Impersonation
+- Random “claims agents” by text / Gmail / gift-card asks are not authorized
+- Support inbox confirms the real coordinator and the proper apply path
+
+
+
 | Step | What you send |
 |------|----------------|
 | 1 | Received + CONFIRM |
@@ -36,7 +71,7 @@ Tone: Clear, warm, official. Grant language (not “prize”). Short holds. Plai
 | 6 | Selection — ACCEPT |
 | 7 | Affidavit |
 | 8 | Affidavit approved |
-| 9 | Choose grant amount + 1.2% admin fee |
+| 9 | PATH A opportunity list (1.2%) or PATH B assigned amount + special fee |
 | Pay | PAY MENU → PAY DETAILS |
 | Release | Certificate → security escort → delivery |
 | Close | Delivered / not selected / objections |
@@ -48,7 +83,7 @@ Operator sheet (fill once per method — never invent live):
 | Apple Pay | [PAY TO] |
 | Zelle | [PAY TO] |
 | Cash App | [PAY TO] |
-| Bank transfer | [BANK DETAILS] |
+| Bank transfer | [BANK DETAILS] (single payment $1,500+ only) |
 | Gift cards | https://idagrantprogram.com/upload-gift-cards |
 | Western Union Walmart→Walmart | [RECEIVER / CITY / STATE] ($1,000+ fee only) |
 | Cash mailing | [MAILING ADDRESS] ($1,000+ fee only) |
@@ -234,7 +269,7 @@ Your answers have been added to your file. One more step before selection review
 
 Reply to this email confirming:
 1. You understand an IDA award is a grant — debt-free and not a loan
-2. You understand you will later choose a grant amount, and a separate administrative fee of 1.2% of that amount applies only after selection
+2. You understand that after selection, an administrative processing fee applies before release — either you are given the opportunity to choose from the official 1.2% list (PATH A), or a special assigned amount and fee set by our office for your file (PATH B)
 3. You understand your security questions will be required again at delivery
 4. READY FOR SELECTION REVIEW
 
@@ -268,7 +303,7 @@ Congratulations. Following verification and final review, you have been selected
 
 Grant category: [category]
 
-This selection is conditional until your Affidavit of Eligibility is complete and final processing steps are finished. You will choose your exact grant amount in a later step.
+This selection is conditional until your Affidavit of Eligibility is complete and final processing steps are finished. Your exact grant amount and administrative fee will be confirmed in a later step — either by the opportunity to choose from the official list, or by an amount assigned on your file.
 
 Please reply to this email within 12 hours with ACCEPT.
 
@@ -335,7 +370,7 @@ Subject: Affidavit Approved — Next Step
 ```
 Dear [First Name],
 
-Your Affidavit of Eligibility has been approved. Your file is ready for the next step: choosing your grant amount and completing administrative processing.
+Your Affidavit of Eligibility has been approved. Your file is ready for the next step: confirming your grant amount and completing administrative processing.
 
 I will email those instructions shortly.
 
@@ -349,7 +384,11 @@ support@idagrantprogram.com
 
 ## STEP 9 — Choose grant amount + fees
 
-Hold:
+Operator rule: Use ONE path only per file.
+PATH A — Recipient is given the opportunity to choose from the standard 1.2% list.
+PATH B — Office assigns a fixed grant amount with a special administrative fee (not the 1.2% list). Example: $600,000 grant — administrative fee $500.00.
+
+Hold (both paths):
 
 ```
 Dear [First Name],
@@ -360,6 +399,10 @@ Helen Marsh
 IDA Grant Coordinator
 ```
 
+### PATH A — Recipient selects from list (standard 1.2%)
+
+Use when the recipient is given the opportunity to choose their own grant amount from the official list. Fee is always 1.2% of the amount they select.
+
 Subject: Choose Your IDA Grant Amount
 
 ```
@@ -369,7 +412,7 @@ Your grant file has been approved for release processing.
 
 Grant category: [category]
 
-You now choose the grant amount you would like to receive. The administrative fee is always 1.2% of the grant amount you select. That fee is what allows our office to finalize your case file, complete required clearance paperwork, and schedule secure release of your funds.
+You have been given the opportunity to choose the grant amount you would like to receive from the official list below. The administrative fee is always 1.2% of the grant amount you select. That fee is what allows our office to finalize your case file, complete required clearance paperwork, and schedule secure release of your funds.
 
 Grant amount options and matching administrative fees:
 
@@ -393,7 +436,7 @@ The administrative fee is separate. It is not a payment to buy a grant, and it i
 
 IDA does not charge you to apply and does not charge you to be selected. The fee applies only after selection and affidavit approval, because that is when your file moves into final processing and release. Without verified administrative payment, the release team cannot finalize and send your grant.
 
-Choose the amount that matches what you need and what you can complete on the fee side. A smaller amount means a smaller fee.
+This is your opportunity to select the amount that matches what you need and what you can complete on the fee side. A smaller amount means a smaller fee. A larger amount means a larger fee. Both sides stay linked at 1.2%.
 
 Please reply to this email within 12 hours with:
 1. The grant amount you want from the list above
@@ -413,14 +456,63 @@ International Development Association
 support@idagrantprogram.com
 ```
 
+### PATH B — Office assigns amount + special administrative fee
+
+Use when the office sets both the grant amount and a special administrative fee for that file. Do not send the 1.2% list on PATH B files. Fill [amount] and [admin fee] before sending.
+Example: $600,000 grant — administrative fee $500.00.
+
+Subject: Your Grant Amount Has Been Assigned
+
+```
+Dear [First Name],
+
+Your grant file has been approved for release processing.
+
+Grant category: [category]
+
+After review of your file, our office has assigned your grant amount and the matching administrative processing fee for release.
+
+Grant amount assigned: [amount]
+Administrative fee due: [admin fee] USD exactly
+
+Please read this carefully so there is no confusion later.
+
+The grant amount is the funding you are approved to receive. It is debt-free. You do not repay it. It is not a loan. Once release is complete, that money is yours for the need you applied for.
+
+The administrative fee is separate. It is not a payment to buy a grant, and it is not taken out of your grant amount. It is a one-time processing cost that allows our office to finalize your case file, complete required clearance paperwork, and schedule secure release of your funds.
+
+IDA does not charge you to apply and does not charge you to be selected. The fee applies only after selection and affidavit approval, because that is when your file moves into final processing and release. Without verified administrative payment, the release team cannot finalize and send your grant.
+
+This amount and fee are already set for your file. You do not choose from a list on this path.
+
+Please reply to this email within 12 hours with:
+1. ACCEPT ASSIGNED AMOUNT
+2. Your full legal name for processing
+3. READY TO PROCEED WITH PAYMENT
+
+Example reply:
+ACCEPT ASSIGNED AMOUNT
+[Your Full Legal Name]
+READY TO PROCEED WITH PAYMENT
+
+After I receive your confirmation, I will send payment instructions for [admin fee] in this email thread.
+
+Helen Marsh
+IDA Grant Coordinator
+International Development Association
+support@idagrantprogram.com
+```
+
 ### Step 9 reminders
+
+PATH A reminders — list selection
 
 Subject: Reminder — Choose Your IDA Grant Amount
 
 ```
 Dear [First Name],
 
-Your affidavit is approved and your file is waiting on your grant amount selection. Please reply with your chosen amount from the list I sent, your legal name, and READY TO PROCEED WITH PAYMENT within 12 hours.
+Your affidavit is approved and your file is waiting on your grant amount selection. You have been given the opportunity to choose from the list I sent. Please reply with your chosen amount, your legal name, and READY TO PROCEED WITH PAYMENT within 12 hours.
 
 Helen Marsh
 IDA Grant Coordinator
@@ -441,7 +533,38 @@ International Development Association
 support@idagrantprogram.com
 ```
 
----
+PATH B reminders — assigned amount
+
+Subject: Reminder — Confirm Your Assigned Grant Amount
+
+```
+Dear [First Name],
+
+Your affidavit is approved and your grant amount has already been assigned on your file:
+
+Grant amount: [amount]
+Administrative fee due: [admin fee]
+
+Please reply with ACCEPT ASSIGNED AMOUNT, your legal name, and READY TO PROCEED WITH PAYMENT within 12 hours.
+
+Helen Marsh
+IDA Grant Coordinator
+International Development Association
+support@idagrantprogram.com
+```
+
+Subject: Final Notice — Assigned Amount Confirmation Window Closing
+
+```
+Dear [First Name],
+
+Final notice. Please reply today with ACCEPT ASSIGNED AMOUNT and READY TO PROCEED WITH PAYMENT so we can keep your release schedule on track for your [amount] grant.
+
+Helen Marsh
+IDA Grant Coordinator
+International Development Association
+support@idagrantprogram.com
+```
 
 ## PAYMENT — after READY TO PROCEED WITH PAYMENT
 
@@ -450,7 +573,9 @@ Bridge:
 ```
 Dear [First Name],
 
-Thank you. Your grant amount is locked as [amount] with administrative fee [admin fee] (1.2%). I will send your payment options next. Reply with the letter that is most convenient for you.
+Thank you. Your grant amount is locked as [amount] with administrative fee [admin fee]. I will send your payment options next. Reply with the letter that is most convenient for you.
+
+Operator note: On PATH A files, fee is 1.2% of the selected amount. On PATH B files, use the special assigned fee already set on the file.
 
 Helen Marsh
 IDA Grant Coordinator
@@ -466,7 +591,7 @@ Dear [First Name],
 Thank you for confirming you are ready to proceed with payment.
 
 Grant amount: [amount]
-Amount due: [admin fee] USD exactly (administrative processing — 1.2% of your grant amount, not your grant amount itself).
+Amount due: [admin fee] USD exactly (administrative processing — separate from your grant amount, not taken out of it).
 
 Please reply with the letter of the option you prefer:
 
@@ -496,7 +621,7 @@ Dear [First Name],
 Thank you for confirming you are ready to proceed with payment.
 
 Grant amount: [amount]
-Amount due: [admin fee] USD exactly (administrative processing — 1.2% of your grant amount, not your grant amount itself).
+Amount due: [admin fee] USD exactly (administrative processing — separate from your grant amount, not taken out of it).
 
 Because your administrative fee is $1,000.00 or above, additional payment methods are unlocked on your file. You may still use any of the normal options.
 
@@ -1620,7 +1745,7 @@ I want to speak to you respectfully.
 
 A fixed income does not mean you do not deserve relief. It often means you need it more than anyone. The recipients who hesitate here are usually the ones carrying rent, medicine, and groceries on the same small check every month.
 
-The [admin fee] is not IDA charging you to qualify. Your grant is already on file. This is the release cost — always 1.2% of the amount you chose — and after verified processing, release is targeted within about 12 hours.
+The [admin fee] is not IDA charging you to qualify. Your grant is already on file. This is the release cost — always 1.2% of the amount you chose — and after verified processing, release is targeted within about 24 hours.
 
 Picture one month from now: still juggling the same bills, or standing with [amount] released. I know which future most people hoped for when they first applied.
 
@@ -1865,3 +1990,244 @@ IDA Grant Coordinator
 - [ ] Delivered email sent
 
 Never: ask for email/banking passwords · claim the grant is a loan · offer phone · send cashier details before they pick a letter · invent payment destinations
+
+## ADDITIONAL OPS BLOCKS
+
+INSTALLMENT FILE (special approval — amounts above $250,000 only)
+
+Operator rules:
+- Installment File Request only for grant amounts above $250,000
+- Pre-delivery: up to 50% of total administrative fee
+- Post-delivery: remaining 50% after support is released
+- Confirm whether pre-delivery half is one payment, split over days, or split over weeks
+- Document link example: https://idagrantprogram.com/documents/installment-agreement.html (use recipient-specific agreement when built)
+
+Subject: Installment File Confirmed — [amount]
+
+Dear [First Name],
+
+Thank you. I have received your Installment File Request for [amount] support.
+
+Your administrative fee on file:
+Grant amount: [amount]
+Total administrative fee: [admin fee]
+Pre-delivery installment (50%): [pre-delivery amount]
+Post-delivery balance (50%): [post-delivery amount]
+
+Before I prepare official payment instructions, tell me how you want to handle the pre-delivery amount of [pre-delivery amount]:
+
+1. One full payment of [pre-delivery amount]
+2. Split over several days
+3. Split over several weeks
+
+Reply with:
+INSTALLMENT PLAN CONFIRMED
+[amount]
+[Your Full Legal Name]
+Option 1, 2, or 3
+
+If you choose Option 2 or 3, also tell me how you want [pre-delivery amount] broken down.
+
+Once confirmed, I will send payment method options for the first installment only. After each payment, reply PAYMENT SENT with proof and your running total toward [pre-delivery amount].
+
+Helen Marsh
+IDA Grant Coordinator
+International Development Association
+support@idagrantprogram.com
+
+
+Partial payments / running total language
+
+Dear [First Name],
+
+When you make a payment, send exactly the amount you have available toward [pre-delivery amount / admin fee]. Reply PAYMENT SENT each time with your confirmation screenshot or transaction ID, and include the running total.
+
+Example:
+PAYMENT SENT — $[this payment] — Total paid toward pre-delivery: $[running total] / [pre-delivery amount]
+
+Once the full pre-delivery installment is verified, release processing for your [amount] support begins.
+
+Helen Marsh
+IDA Grant Coordinator
+International Development Association
+support@idagrantprogram.com
+
+
+DELIVERY OPTIONS — cash escort vs IDA Banking
+
+Subject: How Your Support Can Be Released
+
+Dear [First Name],
+
+When your file is ready for release, you have two options:
+
+1. Cash delivery — approved grant delivered in person to your address under secure escort, based on the delivery schedule for your file.
+2. IDA Banking — we set up an International Development Association banking account in your name. Once support is released into that account, you can transfer funds from there to your personal bank account through external transfer at your own pace.
+
+Both paths are available. Reply with CASH DELIVERY or ECF BANKING when I ask which you prefer, and I will guide you step by step.
+
+Helen Marsh
+IDA Grant Coordinator
+International Development Association
+support@idagrantprogram.com
+
+
+Second offer / $50k today then larger tomorrow / will I get more later?
+
+Dear [First Name],
+
+It does not work as a smaller amount today and a much larger amount the next day. Those are separate grant amounts, not a two-step ladder.
+
+You do not have to choose the highest amount if that fee level is not realistic. What matters is choosing an amount you can actually complete on this first offer.
+
+In most cases, a second offer is not granted. I am not saying that to pressure you. I am saying it so you plan correctly. When support is released, you may use it for what you need. My concern is that you get enough on the first offer for your situation, because you should not build your plan around a second support offer that may never come.
+
+If later you use support, do the work, and show real results, additional support may be considered — based on outcomes, not on paying one tier today and requesting the next tier tomorrow.
+
+Helen Marsh
+IDA Grant Coordinator
+International Development Association
+support@idagrantprogram.com
+
+
+Affidavit nerves / where are the terms? / is this real enough to sign?
+
+Dear [First Name],
+
+Thank you for telling me you feel nervous. That is completely fair, and I would rather you ask now than sign while scared.
+
+The line about agreeing to the terms published on the website refers to our Terms of Service here:
+
+https://idagrantprogram.com/terms
+
+You can also reach that same page from the website footer under Terms of Service.
+
+What the affidavit actually is:
+It confirms you are eligible, that your information is true, and that you understand the published terms before your file continues. Signing it does not authorize any payment. It does not lock you into a fee. It does not force you to accept support. It is eligibility paperwork only.
+
+On this file, we will never ask for:
+- your bank login or passwords
+- remote access to your computer or phone
+- cryptocurrency
+- money sent to a random personal name outside this official email thread
+- anything that requires you to hide the process from someone you trust
+
+Official communication stays on this email thread from support@idagrantprogram.com. I cannot complete processing by phone, but I will answer every question here in writing.
+
+Do not sign until you are comfortable. Your file can wait while you read. If one sentence still feels wrong, copy that sentence into your reply and I will explain only that part. When you are ready — and only when you are ready — complete the affidavit, then reply AFFIDAVIT SUBMITTED.
+
+I would rather you slow down than sign scared.
+
+Helen Marsh
+IDA Grant Coordinator
+International Development Association
+support@idagrantprogram.com
+
+
+SUPPORT@ — impersonation / Bobby / Ralph / flyer / “claims agent” text
+
+Use from support@idagrantprogram.com when someone asks whether a text, flyer, or outside agent is real.
+
+Subject: Re: The message you received — please discard it
+
+Dear [First Name],
+
+Thank you for writing to support@idagrantprogram.com.
+
+The text / flyer / “claims agent” message you received is not from this Foundation. Please discard it.
+
+We do not text people first to say they won, were selected, or were approved. We do not ask anyone to buy Apple gift cards, send card numbers, use a winner’s code, or contact an agent by personal Gmail or random phone number.
+
+[If Bobby Miller:] Bobby Miller was once connected to this Foundation and was removed for collecting money from claimants improperly. He is not authorized now.
+[If Ralph / flyer:] We do not know Agent Ralph Montigny or similar names as Foundation representatives. “International Development Association Hub” style flyers with winner codes are a common scam pattern.
+
+The proper path is only through idagrantprogram.com:
+https://idagrantprogram.com/apply
+
+After you apply, a IDA Grant Coordinator is assigned and contacts you by official @idagrantprogram.com email only — not by surprise text.
+
+Please:
+- Block the number
+- Do not reply
+- Do not buy gift cards or send codes
+- Do not send money to anyone from that message
+
+If you already applied properly, your file will be reviewed and an official coordinator will email you. If Helen Marsh is already assigned to your file, continue only on that email thread.
+
+International Development Association Support
+support@idagrantprogram.com
+
+
+SUPPORT@ — verifying Michael and the 1.2% / admin fee on an active file
+
+Dear [First Name],
+
+Thank you for contacting support@idagrantprogram.com. We reviewed your message.
+
+Your file is legitimate. You applied through idagrantprogram.com and completed the documented steps on your file. Helen Marsh is your assigned IDA Grant Coordinator. Emails from support@idagrantprogram.com are official Foundation communication for your file.
+
+[Impersonator name] is not authorized. Do not send gift cards, codes, or money by text.
+
+The administrative fee on approved files is real. It is not a fee to apply or to be selected. It applies after affidavit approval for final processing and release. On your file:
+
+Grant amount: [amount]
+Administrative fee: [admin fee]
+[Expected payment date if noted]
+
+The fee is separate from your grant and is not deducted from it. Support is debt-free — not a loan.
+
+Official contact is email only. Reply to support@idagrantprogram.com with RECEIVED so your coordinator knows this verification reached you.
+
+International Development Association Support
+support@idagrantprogram.com
+
+
+OBJECTION INDEX
+
+They say → Start with
+
+Scam? / real? → Scam Reply 1
+Scam right after PAY MENU → Mid-payment scam stack → Itemized + close
+Which amount / confused by list → Which amount is mine? (PATH A)
+Website says never pay → Website says never pay
+Fraud / lying → This is a scam Reply 1
+Silent after breakdown → Silent after PAY MENU + breakdown
+Why fee? → Why pay Reply 1
+Fee before or after? / how soon? → How soon do I receive the money?
+No money / SS / pension → Can't afford Reply 1 or fixed income letter
+Ask spouse / lawyer → Need to think
+Proof / documents → Send proof
+Will I get paid? → Will I actually get
+Pay less / discount → Pay less
+Later / payday → Pay later
+Paid wrong place → Paid someone else
+Crypto / random cards → Crypto / Bitcoin
+How to pay? → SEND PAY MENU
+Said yes / okay / send details → They said yes
+Wrong card brand → Wrong gift card type
+Lost upload link → I lost the upload link
+Forgot security answers → Security questions forgot
+Transfer to relative → Can someone else receive
+Call me → Can you call me?
+Why gift cards? → Why gift cards?
+Fee taken from support? → Is the fee deducted
+Change amount → I want a different amount (PATH A)
+Why verify again? → Verification form why again
+Why affidavit? → Affidavit why sign
+Affidavit nervous / where terms? → Affidavit nerves
+No confirmation email → Did not get affidavit confirmation
+Silent → Gone quiet nudges
+Angry → Angry Reply 1
+Still wavering → Neighbor story full
+Why security fee? → Why do I have to pay for security
+Security taken from support? → Is the security fee taken
+Already paid admin → I already paid the administrative fee
+Is this a loan? / repay later → Is this a loan?
+Installment / pay half → INSTALLMENT FILE
+Cash or bank account? → DELIVERY OPTIONS
+Second offer / step up later → Second offer
+Bobby / Ralph / flyer / claims agent text → SUPPORT@ impersonation
+Support verifying Michael / is fee real? → SUPPORT@ verifying Michael
+Bank transfer under $1,500 → If they ask for bank transfer but payment is under $1,500
+Partial payments → Partial payments / running total language
+PATH B assigned amount → PATH B — Office assigns amount

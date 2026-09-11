@@ -21,7 +21,7 @@ const steps = [
   {
     n: '3',
     title: 'Grant decision',
-    body: 'Selected applicants receive next steps by email. IDA grants are not loans. Awards are not guaranteed.',
+    body: 'Selected applicants receive next steps by email. Awards are reviewed individually and are not guaranteed.',
     icon: BadgeCheck,
   },
 ];

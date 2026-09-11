@@ -13,7 +13,7 @@ import Link from 'next/link';
 export const metadata = createMetadata({
   title: 'About IDA — International Development Association',
   description:
-    'International Development Association works in cooperation with the World Bank Group. Official application site: idagrantprogram.com. Awards are grants, not loans.',
+    'International Development Association works in cooperation with the World Bank Group. Official application site: idagrantprogram.com.',
   path: '/about',
 });
 
@@ -51,11 +51,11 @@ export default function AboutPage() {
             Keep official applications on this website.
           </p>
 
-          <h2 className="text-2xl text-[var(--gp-blue)]">Not a loan</h2>
+          <h2 className="text-2xl text-[var(--gp-blue)]">What an IDA award is</h2>
           <p>
-            IDA grant programs are not loans. If you are selected, you do not repay the award.
-            Applying does not create debt. If someone offers you an “IDA loan,” it is not this
-            program. Confirm contact on our Verify page or write {CONTACT_EMAIL}.
+            An IDA award is a one-time grant. If you are selected, you do not repay it, and applying
+            does not create debt. If someone offers you an “IDA loan,” it is not this program.
+            Confirm contact on our Verify page or write {CONTACT_EMAIL}.
           </p>
 
           <h2 className="text-2xl text-[var(--gp-blue)]">Who we serve</h2>

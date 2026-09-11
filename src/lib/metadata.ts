@@ -10,7 +10,7 @@ import {
 
 export const DEFAULT_TITLE = 'IDA Grant Program — Official Site, Not a Loan';
 export const DEFAULT_DESCRIPTION =
-  'Official IDA application website. Grants are not loans — you do not repay an award. Open to all adults 18+. No income cap. Apply for medical care, housing, business, school, and more.';
+  'Official IDA application website. One-time awards through the IDA Grant Program, in cooperation with the World Bank Group. Open to all adults 18+. No income cap.';
 
 export function pageUrl(path = '/'): string {
   return absoluteSiteUrl(path || '/');

@@ -23,7 +23,7 @@ export function LiveTicker() {
         {' '}
         in {item.location} received a {item.category.toLowerCase()} grant of{' '}
         <span className="font-semibold text-[var(--gp-blue)]">{item.amount}</span>
-        <span className="hidden sm:inline"> — IDA grants are not loans</span>
+        <span className="hidden sm:inline"> — official IDA Grant Program</span>
       </div>
     </div>
   );
