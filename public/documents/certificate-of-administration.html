@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate of Administration — IDA Grant Program</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0f2744;
+      --blue: #1e4a7a;
+      --gold: #b8962e;
+      --gold-dark: #8a7020;
+      --ink: #152033;
+      --muted: #5a6575;
+      --paper: #f7f3ea;
+      --unpaid: #b42318;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+      background: #d9dde3;
+      color: var(--ink);
+      padding: 28px 14px 48px;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+    .toolbar button {
+      font: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 16px;
+      border: none;
+      cursor: pointer;
+      background: var(--navy);
+      color: #fff;
+    }
+    .toolbar button:hover { background: #081628; }
+    .certificate {
+      aspect-ratio: 4 / 3;
+      background:
+        radial-gradient(circle at 50% 18%, rgba(184, 150, 46, 0.08), transparent 42%),
+        linear-gradient(180deg, #fffdf8 0%, var(--paper) 100%);
+      border: 12px solid var(--navy);
+      outline: 2px solid var(--gold);
+      outline-offset: -22px;
+      padding: clamp(28px, 4vw, 44px) clamp(24px, 4vw, 48px);
+      position: relative;
+      box-shadow: 0 14px 40px rgba(15, 39, 68, 0.18);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 0;
+    }
+    .corner {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border: 2px solid var(--gold);
+    }
+    .corner.tl { top: 24px; left: 24px; border-right: none; border-bottom: none; }
+    .corner.tr { top: 24px; right: 24px; border-left: none; border-bottom: none; }
+    .corner.bl { bottom: 24px; left: 24px; border-right: none; border-top: none; }
+    .corner.br { bottom: 24px; right: 24px; border-left: none; border-top: none; }
+    .brand-row {
+      text-align: center;
+    }
+    .seal {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      border: 3px solid var(--gold);
+      background: var(--navy);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+    .brand {
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold-dark);
+      margin-bottom: 6px;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      text-align: center;
+      font-size: clamp(28px, 4.2vw, 42px);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.05;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .rule {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 14px auto;
+      max-width: 260px;
+    }
+    .intro {
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .recipient {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      text-align: center;
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      color: var(--navy);
+      margin: 4px 0 10px;
+    }
+    .body-copy {
+      font-size: clamp(14px, 1.7vw, 16px);
+      line-height: 1.55;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 12px;
+    }
+    .amount {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: 700;
+      color: var(--gold-dark);
+      text-align: center;
+    }
+    .amount-label {
+      text-align: center;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-top: 2px;
+      margin-bottom: 14px;
+    }
+    .status-box {
+      max-width: 680px;
+      margin: 0 auto;
+      border: 1px solid rgba(184, 150, 46, 0.45);
+      background: rgba(255, 255, 255, 0.55);
+      padding: 12px 16px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .fee-unpaid {
+      color: var(--unpaid);
+      font-weight: 700;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+      font-size: 12px;
+      text-align: center;
+    }
+    .meta dt {
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+    .meta dd { font-weight: 700; color: var(--navy); }
+    .sigs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 18px;
+      font-size: 12px;
+    }
+    .sig-line {
+      border-top: 1px solid var(--navy);
+      padding-top: 8px;
+      margin-top: 28px;
+    }
+    .footer-note {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .editor {
+      margin-top: 22px;
+      background: #fff;
+      border: 1px solid #cfd5dd;
+      padding: 18px;
+    }
+    .editor h2 { font-size: 14px; margin-bottom: 8px; }
+    .editor p { font-size: 12px; color: #666; margin-bottom: 10px; }
+    .editor label { display: block; font-size: 12px; font-weight: 700; margin: 8px 0 4px; }
+    .editor input, .editor select {
+      width: 100%;
+      padding: 9px 10px;
+      border: 1px solid #ccc;
+      font: inherit;
+      font-size: 14px;
+    }
+    .editor .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+    .link-box {
+      margin-top: 12px;
+      font-size: 12px;
+      word-break: break-all;
+      background: #f4f4f5;
+      padding: 10px;
+    }
+    @media (max-width: 720px) {
+      .certificate {
+        aspect-ratio: auto;
+        min-height: auto;
+      }
+      .meta, .sigs, .editor .grid { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: #fff; padding: 0; }
+      .no-print { display: none !important; }
+      .certificate {
+        box-shadow: none;
+        width: 100%;
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="toolbar no-print">
+      <button type="button" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <div class="certificate" id="certificate">
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+
+      <div>
+        <div class="brand-row">
+          <div class="seal">IDA</div>
+          <div class="brand">International Development Association</div>
+          <h1>Certificate of Administration</h1>
+          <p class="subtitle">Official confirmation of approved grant file status</p>
+        </div>
+        <div class="rule"></div>
+
+        <p class="intro">This certifies that</p>
+        <div class="recipient" id="out-name">Recipient Full Name</div>
+        <p class="body-copy">
+          is the approved recipient on file for an assigned IDA grant award. This certificate confirms authenticity of the case file under the IDA Grant Program and authorizes administrative processing toward release. It is not a loan instrument.
+        </p>
+
+        <div class="amount" id="out-amount">$0</div>
+        <p class="amount-label">Assigned grant amount</p>
+
+        <div class="status-box">
+          <div>
+            Administrative processing fee:
+            <strong id="out-fee">$0</strong>
+            —
+            <span class="fee-unpaid" id="out-fee-status">UNPAID / PENDING</span>
+          </div>
+          <div style="margin-top:6px;" id="out-status">
+            Approved for release processing pending verified administrative payment.
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <dl class="meta">
+          <div>
+            <dt>Reference ID</dt>
+            <dd id="out-ref">—</dd>
+          </div>
+          <div>
+            <dt>Date of issue</dt>
+            <dd id="out-date">—</dd>
+          </div>
+          <div>
+            <dt>Grant category</dt>
+            <dd id="out-category">—</dd>
+          </div>
+          <div>
+            <dt>Official site</dt>
+            <dd>idagrantprogram.com</dd>
+          </div>
+        </dl>
+
+        <div class="sigs">
+          <div>
+            <div class="sig-line">
+              <strong>Helen Marsh</strong><br />
+              IDA Grant Coordinator<br />
+              helenmarsh@idagrantprogram.com
+            </div>
+          </div>
+          <div>
+            <div class="sig-line">
+              <strong>International Development Association</strong><br />
+              Certificate of Administration<br />
+              support@idagrantprogram.com
+            </div>
+          </div>
+        </div>
+
+        <p class="footer-note">
+          This certificate confirms an authentic IDA grant file. Physical cash delivery of the assigned grant amount occurs only after verified administrative payment and release scheduling.
+          Verify official contact at idagrantprogram.com/verify.
+        </p>
+      </div>
+    </div>
+
+    <div class="editor no-print">
+      <h2>Operator fill / share link</h2>
+      <p>Fill fields, then copy the share link into your email.</p>
+      <div class="grid">
+        <div>
+          <label for="name">Full legal name</label>
+          <input id="name" type="text" />
+        </div>
+        <div>
+          <label for="amount">Grant amount</label>
+          <input id="amount" type="text" placeholder="$600,000.00" />
+        </div>
+        <div>
+          <label for="fee">Admin fee</label>
+          <input id="fee" type="text" placeholder="$500.00" />
+        </div>
+        <div>
+          <label for="feeStatus">Fee status</label>
+          <input id="feeStatus" type="text" placeholder="UNPAID / PENDING" />
+        </div>
+        <div>
+          <label for="category">Category</label>
+          <input id="category" type="text" placeholder="General" />
+        </div>
+        <div>
+          <label for="date">Date of issue</label>
+          <input id="date" type="date" />
+        </div>
+        <div>
+          <label for="ref">Reference ID</label>
+          <input id="ref" type="text" placeholder="IDA-ADM-BM-600K-500" />
+        </div>
+        <div>
+          <label for="status">Case status line</label>
+          <input id="status" type="text" />
+        </div>
+      </div>
+      <div class="link-box" id="share-link"></div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var fields = {
+        name: document.getElementById('name'),
+        amount: document.getElementById('amount'),
+        fee: document.getElementById('fee'),
+        feeStatus: document.getElementById('feeStatus'),
+        category: document.getElementById('category'),
+        date: document.getElementById('date'),
+        ref: document.getElementById('ref'),
+        status: document.getElementById('status'),
+      };
+      var outs = {
+        name: document.getElementById('out-name'),
+        amount: document.getElementById('out-amount'),
+        fee: document.getElementById('out-fee'),
+        feeStatus: document.getElementById('out-fee-status'),
+        category: document.getElementById('out-category'),
+        date: document.getElementById('out-date'),
+        ref: document.getElementById('out-ref'),
+        status: document.getElementById('out-status'),
+      };
+      var share = document.getElementById('share-link');
+
+      function today() {
+        return new Date().toISOString().slice(0, 10);
+      }
+
+      fields.name.value = params.get('name') || '';
+      fields.amount.value = params.get('amount') || '';
+      fields.fee.value = params.get('fee') || '';
+      fields.feeStatus.value = params.get('feeStatus') || 'UNPAID / PENDING';
+      fields.category.value = params.get('category') || '';
+      fields.date.value = params.get('date') || today();
+      fields.ref.value = params.get('ref') || '';
+      fields.status.value =
+        params.get('status') ||
+        'Approved for release processing pending verified administrative payment.';
+
+      function sync() {
+        outs.name.textContent = fields.name.value.trim() || 'Recipient Full Name';
+        outs.amount.textContent = fields.amount.value.trim() || '$0';
+        outs.fee.textContent = fields.fee.value.trim() || '$0';
+        outs.feeStatus.textContent = fields.feeStatus.value.trim() || 'UNPAID / PENDING';
+        outs.category.textContent = fields.category.value.trim() || '—';
+        outs.date.textContent = fields.date.value || '—';
+        outs.ref.textContent = fields.ref.value.trim() || '—';
+        outs.status.textContent =
+          fields.status.value.trim() ||
+          'Approved for release processing pending verified administrative payment.';
+
+        var q = new URLSearchParams();
+        Object.keys(fields).forEach(function (k) {
+          var v = fields[k].value.trim();
+          if (v) q.set(k, v);
+        });
+        var url = window.location.origin + window.location.pathname + (q.toString() ? '?' + q.toString() : '');
+        share.textContent = 'Share link: ' + url;
+      }
+
+      Object.keys(fields).forEach(function (k) {
+        fields[k].addEventListener('input', sync);
+        fields[k].addEventListener('change', sync);
+      });
+      sync();
+    })();
+  </script>
+</body>
+</html>
