@@ -5,7 +5,7 @@ import { recentAwards } from '@/data/stories';
 export const metadata = createMetadata({
   title: 'Recent IDA Grants Awarded to Individuals',
   description:
-    'See recent IDA grants for medical bills, housing, business, school, teachers, and seniors. These are grants, not loans. Awards go to individuals every day.',
+    'See recent IDA grants for medical bills, housing, business, school, teachers, and seniors. Awards go to individuals every day.',
   path: '/awards',
 });
 

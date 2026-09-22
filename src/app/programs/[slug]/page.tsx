@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props) {
   const program = GRANT_PROGRAMS.find((p) => p.slug === slug);
   if (!program) return createMetadata({ title: 'Program', path: '/programs' });
   return createMetadata({
-    title: `${program.title} — IDA Grant, Not a Loan`,
-    description: `${program.summary} This is an IDA grant, not a loan.`,
+    title: `${program.title} — IDA Grant Program`,
+    description: `${program.summary} Official IDA Grant Program category.`,
     path: `/programs/${program.slug}`,
   });
 }
@@ -43,9 +43,8 @@ export default async function ProgramDetailPage({ params }: Props) {
         <div className="container-page max-w-3xl space-y-6">
           <p className="text-sm leading-relaxed text-[var(--gp-muted)]">{program.details}</p>
           <p className="text-sm leading-relaxed text-[var(--gp-muted)]">
-            IDA grant programs are not loans. If you are selected, you do not repay the award.
-            Applying does not guarantee funds. Write plainly. Completeness matters more than perfect
-            wording.
+            If you are selected, you do not repay the award. Applying does not guarantee funds.
+            Write plainly. Completeness matters more than perfect wording.
           </p>
           {related.length > 0 ? (
             <div className="border-t border-[var(--gp-line)] pt-8">

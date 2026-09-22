@@ -22,8 +22,7 @@ export function WhyGrantSection() {
         <p className="section-label">Important</p>
         <h2 className="mt-3 max-w-2xl text-3xl md:text-4xl">What an IDA award means</h2>
         <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--gp-muted)]">
-          International Development Association works in cooperation with the World Bank Group. Each
-          year we issue billions of dollars in IDA grant money as one-time awards. If you are
+          Each year we issue billions of dollars in IDA grant money as one-time awards. If you are
           selected, you do not pay it back.
         </p>
         <div className="mt-10 grid gap-px bg-[var(--gp-line)] md:grid-cols-2">

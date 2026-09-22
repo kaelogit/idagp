@@ -5,9 +5,9 @@ import { buildFaqPageJsonLd } from '@/data/faq';
 import { breadcrumbJsonLd } from '@/lib/jsonld';
 
 export const metadata = createMetadata({
-  title: 'Apply for an IDA Grant — Not a Loan',
+  title: 'Apply for an IDA Grant',
   description:
-    'Apply on this official website only. One form. Grants are not loans. Receipt from IDA Applications, then a coordinator assigned to your file contacts you by email within 24 hours.',
+    'Apply on this official website only. One form. Receipt from IDA Applications, then a coordinator assigned to your file contacts you by email within 24 hours.',
   path: '/apply',
 });
 

@@ -9,7 +9,6 @@ import {
   APPLY_FROM_NAME,
   COORDINATOR_EMAIL,
   COORDINATOR_NAME,
-  FULL_NAME,
   SHORT_NAME,
   SITE_DOMAIN,
   SITE_URL,
@@ -65,7 +64,7 @@ export default function VerifyPage() {
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-[var(--gp-muted)]">
             If a text or email about an IDA grant left you unsure, pause and write us. Verifying
-            means confirming the message is from {FULL_NAME} before you reply or take any next step.
+            means confirming the message is from {SHORT_NAME} before you reply or take any next step.
           </p>
         </div>
       </section>

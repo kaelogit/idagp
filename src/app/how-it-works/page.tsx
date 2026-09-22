@@ -18,7 +18,7 @@ const steps = [
   },
   {
     title: 'Background',
-    body: 'International Development Association works in cooperation with the World Bank Group. Through the IDA Grant Program we issue billions of dollars in grant money each year. Your file is still reviewed on its own merits.',
+    body: 'Through the IDA Grant Program we issue billions of dollars in grant money each year. Your file is still reviewed on its own merits.',
   },
   {
     title: 'Submit',

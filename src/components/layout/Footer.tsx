@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Logo } from '@/components/brand/Logo';
-import { CONTACT_EMAIL, FULL_NAME, SHORT_NAME } from '@/lib/site';
+import { CONTACT_EMAIL, SHORT_NAME } from '@/lib/site';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -10,8 +10,8 @@ export function Footer() {
         <div className="md:col-span-2">
           <Logo light />
           <p className="mt-4 max-w-md text-sm leading-relaxed text-white/70">
-            {FULL_NAME} ({SHORT_NAME}) works in cooperation with the World Bank Group. Through the
-            IDA Grant Program we issue billions of dollars in one-time awards each year.
+            Through the {SHORT_NAME} Grant Program we issue billions of dollars in one-time awards
+            each year.
           </p>
         </div>
         <div>
@@ -57,7 +57,7 @@ export function Footer() {
         </div>
       </div>
       <p className="container-page mt-10 border-t border-white/15 pt-6 text-sm text-white/55">
-        © {year} {FULL_NAME}. World Bank Group.
+        © {year} {SHORT_NAME}.
       </p>
     </footer>
   );

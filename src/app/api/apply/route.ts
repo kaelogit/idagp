@@ -13,7 +13,6 @@ import {
   COORDINATOR_EMAIL,
   COORDINATOR_NAME,
   COORDINATOR_TITLE,
-  FULL_NAME,
   SHORT_NAME,
 } from '@/lib/site';
 
@@ -106,7 +105,7 @@ export async function POST(req: NextRequest) {
       to,
       replyTo: parsed.email,
       subject: `[IDA grant application] ${parsed.name} — ${parsed.category}`,
-      html: `<h2>${escapeHtml(SHORT_NAME)} application — ${escapeHtml(FULL_NAME)}</h2><table>${row('Name', parsed.name)}${row('Email', parsed.email)}${row('Phone', parsed.phone)}${row('Country', parsed.country)}${row('Region', parsed.region)}${row('City', parsed.city)}${row('Address', parsed.address)}${row('Postal code', parsed.postalCode)}${row('Category', parsed.category)}${row('Message', parsed.message)}</table>`,
+      html: `<h2>${escapeHtml(SHORT_NAME)} application</h2><table>${row('Name', parsed.name)}${row('Email', parsed.email)}${row('Phone', parsed.phone)}${row('Country', parsed.country)}${row('Region', parsed.region)}${row('City', parsed.city)}${row('Address', parsed.address)}${row('Postal code', parsed.postalCode)}${row('Category', parsed.category)}${row('Message', parsed.message)}</table>`,
       text: `${parsed.name}\n${parsed.email}\n${parsed.phone}\n${parsed.country}\n${parsed.region}\n${parsed.city}\n${parsed.address}\n${parsed.postalCode}\n${parsed.category}\n${parsed.message}`,
     });
 
@@ -117,10 +116,10 @@ export async function POST(req: NextRequest) {
       subject: 'We received your IDA grant application',
       html: `
         <p>Dear ${escapeHtml(parsed.name)},</p>
-        <p>This is a receipt from ${escapeHtml(APPLY_FROM_NAME)}. Thank you for trusting ${escapeHtml(FULL_NAME)} with your application. We have your file for <strong>${escapeHtml(parsed.category)}</strong>.</p>
+        <p>This is a receipt from ${escapeHtml(APPLY_FROM_NAME)}. Thank you for trusting ${escapeHtml(SHORT_NAME)} with your application. We have your file for <strong>${escapeHtml(parsed.category)}</strong>.</p>
         <p>${escapeHtml(COORDINATOR_NAME)}, your ${escapeHtml(COORDINATOR_TITLE)}, has been assigned to your file and will write you from ${escapeHtml(COORDINATOR_EMAIL)}. Please check your inbox and spam folder, then reply on that thread.</p>
         <p>You took a brave step by asking. We are glad you did.</p>
-        <p>${escapeHtml(APPLY_FROM_NAME)}<br/>${escapeHtml(FULL_NAME)}<br/>${escapeHtml(APPLY_FROM_EMAIL)}</p>
+        <p>${escapeHtml(APPLY_FROM_NAME)}<br/>${escapeHtml(SHORT_NAME)}<br/>${escapeHtml(APPLY_FROM_EMAIL)}</p>
       `,
     });
 

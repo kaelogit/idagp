@@ -7,7 +7,7 @@ import Link from 'next/link';
 export const metadata = createMetadata({
   title: 'IDA Grant Programs — Medical, Home, School, Business',
   description:
-    'Choose medical bills, buying a home, starting a business, school, teachers, retired teachers, or seniors. Every IDA award is a grant, not a loan.',
+    'Choose medical bills, buying a home, starting a business, school, teachers, retired teachers, or seniors. Choose the category that matches your request.',
   path: '/programs',
 });
 
@@ -26,7 +26,7 @@ export default function ProgramsPage() {
           <p className="section-label">Programs</p>
           <h1 className="mt-3 text-4xl">IDA grant categories</h1>
           <p className="mt-4 leading-relaxed text-[var(--gp-muted)]">
-            Choose the category that matches your request. Every award is a grant, not a loan.
+            Choose the category that matches your request. Write plainly about your goal.
           </p>
         </div>
       </section>

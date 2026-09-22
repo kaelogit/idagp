@@ -8,9 +8,9 @@ import {
   SITE_URL,
 } from '@/lib/site';
 
-export const DEFAULT_TITLE = 'IDA Grant Program — Official Site, Not a Loan';
+export const DEFAULT_TITLE = 'IDA Grant Program — Official Application Site';
 export const DEFAULT_DESCRIPTION =
-  'Official IDA application website. One-time awards through the IDA Grant Program, in cooperation with the World Bank Group. Open to all adults 18+. No income cap.';
+  'Official IDA application website. One-time awards through the IDA Grant Program. Open to all adults 18+. No income cap. Apply for medical care, housing, business, school, and more.';
 
 export function pageUrl(path = '/'): string {
   return absoluteSiteUrl(path || '/');

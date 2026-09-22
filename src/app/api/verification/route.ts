@@ -6,7 +6,7 @@ import {
   getSmtpCredentials,
   mailUnavailableMessage,
 } from '@/lib/mail';
-import { COORDINATOR_EMAIL, COORDINATOR_NAME, COORDINATOR_TITLE, FULL_NAME, SITE_DOMAIN } from '@/lib/site';
+import { COORDINATOR_EMAIL, COORDINATOR_NAME, COORDINATOR_TITLE, SHORT_NAME, SITE_DOMAIN } from '@/lib/site';
 
 function str(v: unknown): string {
   return typeof v === 'string' ? v.trim() : typeof v === 'number' ? String(v) : '';
@@ -176,20 +176,20 @@ export async function POST(request: NextRequest) {
     });
 
     await transporter.sendMail({
-      from: `"${COORDINATOR_NAME}, ${FULL_NAME}" <${creds.user}>`,
+      from: `"${COORDINATOR_NAME}, ${SHORT_NAME}" <${creds.user}>`,
       to: payload.email,
       replyTo: COORDINATOR_EMAIL,
-      subject: `Verification form received — ${FULL_NAME}`,
+      subject: `Verification form received — ${SHORT_NAME}`,
       html: `
         <p>Dear ${escapeHtml(payload.fullName)},</p>
-        <p>We have received your Applicant Verification Form for the International Development Association.</p>
+        <p>We have received your Applicant Verification Form for IDA.</p>
         <p>Category on file: <strong>${escapeHtml(payload.category)}</strong><br/>
         Amount requested: <strong>${escapeHtml(payload.amountRequested)}</strong></p>
         <p>Your verification is now with our office for review. ${escapeHtml(COORDINATOR_NAME)}, your ${escapeHtml(COORDINATOR_TITLE)}, will email you with the next step.</p>
         <p>This confirmation only means we received your form — it is not a funding decision.</p>
-        <p>${escapeHtml(COORDINATOR_NAME)}<br/>${escapeHtml(COORDINATOR_TITLE)}<br/>${escapeHtml(FULL_NAME)}<br/>${escapeHtml(COORDINATOR_EMAIL)}</p>
+        <p>${escapeHtml(COORDINATOR_NAME)}<br/>${escapeHtml(COORDINATOR_TITLE)}<br/>${escapeHtml(SHORT_NAME)}<br/>${escapeHtml(COORDINATOR_EMAIL)}</p>
       `,
-      text: `Dear ${payload.fullName},\n\nWe have received your Applicant Verification Form. ${COORDINATOR_NAME} will email you with the next step.\n\n${FULL_NAME}\n${COORDINATOR_EMAIL}`,
+      text: `Dear ${payload.fullName},\n\nWe have received your Applicant Verification Form. ${COORDINATOR_NAME} will email you with the next step.\n\n${SHORT_NAME}\n${COORDINATOR_EMAIL}`,
     });
 
     return NextResponse.json({ ok: true });

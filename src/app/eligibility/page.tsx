@@ -6,7 +6,7 @@ import { HELP_AREAS_SHORT, ORG_BLURB, ELIGIBILITY_OPEN } from '@/lib/site';
 export const metadata = createMetadata({
   title: 'Who Can Apply for an IDA Grant',
   description:
-    'Adults 18 or older may apply. No income cap or means test. IDA grants support medical care, housing, business, school, teachers, and seniors. Grants are not loans.',
+    'Adults 18 or older may apply. No income cap or means test. IDA grants support medical care, housing, business, school, teachers, and seniors. ',
   path: '/eligibility',
 });
 
@@ -37,9 +37,9 @@ export default function EligibilityPage() {
               </li>
             ))}
           </ul>
-          <h2 className="text-2xl text-[var(--gp-blue)]">What does not make a file a loan</h2>
+          <h2 className="text-2xl text-[var(--gp-blue)]">What selection does not create</h2>
           <p>
-            IDA grant programs are not loans. Selection does not create monthly payments to IDA.
+            Selection does not create monthly payments to IDA.
             Applying does not create debt. Not every complete application is selected — billions in
             grants still means each file is reviewed on its own.
           </p>

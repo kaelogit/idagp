@@ -87,7 +87,6 @@ export default function ApplyPage() {
           <p className="section-label">Apply</p>
           <h1 className="mt-3 text-4xl text-white">Your IDA grant application</h1>
           <p className="mt-4 text-sm leading-relaxed text-white/80 md:text-base">
-            International Development Association works in cooperation with the World Bank Group.
             Through the IDA Grant Program we issue billions of dollars in awards each year. Awards go
             to individuals every day. {HELP_AREAS_SHORT}
           </p>

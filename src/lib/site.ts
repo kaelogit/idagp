@@ -30,6 +30,8 @@ export const SITE_DOMAIN = (() => {
 
 /** Short public brand */
 export const SHORT_NAME = 'IDA';
+/** Nav / footer wordmark (no “Association”) */
+export const NAV_NAME = 'International Development';
 /** Legal / full organization name */
 export const FULL_NAME = 'International Development Association';
 /** Program line used in headlines */
@@ -68,7 +70,7 @@ export function absoluteSiteUrl(path = ''): string {
 }
 
 export const ORG_BLURB =
-  'International Development Association (IDA) works in cooperation with the World Bank Group. Through the IDA Grant Program we issue billions of dollars in one-time awards to individuals and groups each year — for medical care, housing, business, education, and more.';
+  'Through the IDA Grant Program we issue billions of dollars in one-time awards to individuals and groups each year — for medical care, housing, business, education, and more.';
 
 /** Shown on eligibility blocks — no income gate, no crisis requirement */
 export const ELIGIBILITY_OPEN =

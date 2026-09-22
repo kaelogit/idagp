@@ -1,11 +1,11 @@
 import { createMetadata } from '@/lib/metadata';
 import { LegalLayout, LegalSection } from '@/components/layout/LegalLayout';
-import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, COORDINATOR_EMAIL, FULL_NAME, SHORT_NAME, SITE_DOMAIN, SUPPORT_EMAIL } from '@/lib/site';
+import { APPLY_FROM_EMAIL, APPLY_FROM_NAME, COORDINATOR_EMAIL, SHORT_NAME, SITE_DOMAIN, SUPPORT_EMAIL } from '@/lib/site';
 
 export const metadata = createMetadata({
   title: 'IDA Privacy Policy — How We Handle Applications',
   description:
-    'How International Development Association uses the information you submit on idagrantprogram.com. Official follow-up is by email. We never ask for passwords.',
+    'How IDA uses the information you submit on idagrantprogram.com. Official follow-up is by email. We never ask for passwords.',
   path: '/privacy',
 });
 
@@ -13,7 +13,7 @@ export default function PrivacyPage() {
   return (
     <LegalLayout title="Privacy Policy">
       <p className="mb-8 text-sm leading-relaxed text-[var(--gp-muted)]">
-        {FULL_NAME} ({SHORT_NAME}) uses this policy to explain how we handle information you submit
+        {SHORT_NAME} uses this policy to explain how we handle information you submit
         on {SITE_DOMAIN}.
       </p>
       <LegalSection title="What we collect">

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FULL_NAME } from '@/lib/site';
+import { NAV_NAME } from '@/lib/site';
 
 /** Text wordmark only — no logo image. */
 export function Logo({
@@ -19,7 +19,7 @@ export function Logo({
         <span
           className={`${compact ? 'text-[12px] sm:text-[13px] xl:text-[15px]' : 'text-[15px]'} font-semibold tracking-tight ${word}`}
         >
-          {FULL_NAME}
+          {NAV_NAME}
         </span>
         <span className={`text-[11px] font-medium tracking-wide ${sub}`}>Grant Program</span>
       </span>

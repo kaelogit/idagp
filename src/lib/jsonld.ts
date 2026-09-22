@@ -24,8 +24,8 @@ export function organizationJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': ORGANIZATION_ID,
-    name: FULL_NAME,
-    alternateName: [SHORT_NAME, PROGRAM_NAME],
+    name: SHORT_NAME,
+    alternateName: [FULL_NAME, PROGRAM_NAME],
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
@@ -36,7 +36,7 @@ export function organizationJsonLd() {
     image: LOGO_URL,
     email: CONTACT_EMAIL,
     description:
-      'International Development Association works in cooperation with the World Bank Group, issuing IDA grant awards to individuals through the official IDA Grant Program.',
+      'IDA issues one-time grant awards to individuals through the official IDA Grant Program.',
     contactPoint: [
       {
         '@type': 'ContactPoint',

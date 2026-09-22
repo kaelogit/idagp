@@ -24,7 +24,7 @@ export function HeroSection() {
       <div className="container-page relative grid min-h-[82vh] items-center gap-12 py-24 lg:grid-cols-2">
         <div>
           <p className="section-label text-[var(--gp-blue)]">
-            {SHORT_NAME} · International Development Association
+            {SHORT_NAME} Grant Program
           </p>
           <h1 className="mt-4 max-w-xl text-4xl font-bold text-white md:text-5xl lg:text-[3.15rem]">
             Billions in IDA grants. Awarded to people, every day.

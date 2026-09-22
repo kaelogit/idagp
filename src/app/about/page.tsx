@@ -1,7 +1,6 @@
 import { createMetadata } from '@/lib/metadata';
 import {
   ELIGIBILITY_OPEN,
-  FULL_NAME,
   HELP_AREAS_SHORT,
   ORG_BLURB,
   RESPONSE_HOURS,
@@ -11,9 +10,9 @@ import {
 import Link from 'next/link';
 
 export const metadata = createMetadata({
-  title: 'About IDA — International Development Association',
+  title: 'About IDA',
   description:
-    'International Development Association works in cooperation with the World Bank Group. Official application site: idagrantprogram.com.',
+    'IDA Grant Program. Official application site: idagrantprogram.com.',
   path: '/about',
 });
 
@@ -23,8 +22,8 @@ export default function AboutPage() {
       <section className="border-b border-[var(--gp-line)] bg-[var(--gp-paper)] pt-16 pb-12">
         <div className="container-page max-w-3xl">
           <p className="section-label">About</p>
-          <h1 className="mt-3 text-4xl">{FULL_NAME}</h1>
-          <p className="mt-4 text-lg text-[var(--gp-navy)]">{SHORT_NAME} · Grant Program</p>
+          <h1 className="mt-3 text-4xl">{SHORT_NAME}</h1>
+          <p className="mt-4 text-lg text-[var(--gp-navy)]">Grant Program</p>
         </div>
       </section>
       <section className="py-16">

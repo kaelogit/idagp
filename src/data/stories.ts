@@ -16,7 +16,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'I stopped choosing between the pharmacy and the grocery list.',
     story: [
       'I taught myself to live small after my husband died. The pension covered the house, most months, until the specialist visits stacked up. I was stretching prescriptions and skipping the extras I used to enjoy without thinking. I am not dramatic. I am a widow who kept the lights on and hoped the next envelope was not another bill.',
-      'I applied to IDA because a neighbor said grants were not loans. I almost did not believe that. I had been offered “help” before that turned into interest. Helen emailed within a day and asked clear questions. I answered them from my kitchen table with the statements in a stack beside the salt shaker.',
+      'I applied to IDA because a neighbor said awards were one-time grants. I almost did not believe that. I had been offered “help” before that turned into interest. Helen emailed within a day and asked clear questions. I answered them from my kitchen table with the statements in a stack beside the salt shaker.',
       'The $48,000 grant closed the medical bills that had been sitting on the counter. I sleep through the night again. I still clip coupons. I just do not cry over envelopes anymore. If you are a senior reading this and you are tired, apply. Asking did not cost me my dignity. It gave some of it back.',
     ],
   },
@@ -100,7 +100,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'I wanted dignity more than I wanted a speech.',
     story: [
       'I am seventy-two. I am not helpless. I was tired of asking my son for grocery money after the cooling bill jumped two summers in a row.',
-      'The International Development Association application took an evening. I said I was looking for financial assistance and I meant it. No drama. Just numbers.',
+      'The IDA application took an evening. I said I was looking for financial assistance and I meant it. No drama. Just numbers.',
       'The $29,000 grant put the utilities and the overdue dental work behind me. My son still visits. He brings pie, not cash. That is how it should be.',
     ],
   },
@@ -124,7 +124,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'I was tired of selling someone else’s product under someone else’s name.',
     story: [
       'I spent nine years on the road selling for a national brand. I knew the customers. I knew the pitch. What I did not have was the capital to open my own shop with my own inventory.',
-      'Salespeople starting their own business is exactly the kind of file IDA said they review. I listed equipment, a first lease deposit, and three months of stock. I said plainly: this is not a loan I can service. I needed a grant.',
+      'Salespeople starting their own business is exactly the kind of file IDA said they review. I listed equipment, a first lease deposit, and three months of stock. I said plainly: I needed a grant, not credit I could not service.',
       'The $44,000 award let me open Cole Home Goods. I still sell. I just keep the margin. I hired two people from my old territory. That is the part I am proudest of.',
     ],
   },
@@ -184,7 +184,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'My need did not fit one box. They still read the whole letter.',
     story: [
       'It was medical copays and a grandson’s school fees and a water heater in the same season. I did not know which category to pick. I chose financial assistance and wrote the truth.',
-      'International Development Association said completeness matters more than a perfect label. I was complete. I was not elegant. Helen treated the letter like a file, not a complaint.',
+      'IDA said completeness matters more than a perfect label. I was complete. I was not elegant. Helen treated the letter like a file, not a complaint.',
       'The $39,000 grant covered the heater, the copays, and the remaining school costs. I can breathe in my own kitchen again. If you are looking for financial assistance and your life is more than one checkbox, you are still allowed to apply.',
     ],
   },
@@ -208,7 +208,7 @@ export const recipientStories: RecipientStory[] = [
     quote: 'I am old. I am not finished. I was just out of money.',
     story: [
       'People talk to seniors as if we are already a problem to be managed. I am eighty. I still cook. I still pay my own bills until the hurricane deductible and the heart medicine arrived in the same month.',
-      'I applied because International Development Association said older retired people looking for financial assistance are welcome. I did not write a speech. I wrote the deductible, the copays, and the fact that my daughter lives four states away and I will not move in with her.',
+      'I applied because IDA said older retired people looking for financial assistance are welcome. I did not write a speech. I wrote the deductible, the copays, and the fact that my daughter lives four states away and I will not move in with her.',
       'The $31,000 grant closed those two files. I still live in my house. I still make soup on Sundays. If you are a senior reading this and you think asking is shameful, I asked. They answered. You can too.',
     ],
   },
@@ -221,7 +221,7 @@ export const recipientStories: RecipientStory[] = [
     story: [
       'Cancer is a medical story and a money story at the same time. Insurance paid a share. The rest sat in a folder I was afraid to open. I was well enough to work part-time and not well enough to ignore the hospital.',
       'Paying medical bills is one of the reasons IDA exists. I applied on a Tuesday night when I could not sleep. Helen emailed within a day. I sent statements. I did not perform gratitude in advance. I was too tired.',
-      'The $88,000 grant closed the oncology balance. I still have scans. I do not have a collector. If you are looking at medical bills and wondering whether a grant is real, IDA grants are not loans. That sentence is why I applied.',
+      'The $88,000 grant closed the oncology balance. I still have scans. I do not have a collector. If you are looking at medical bills and wondering whether a grant is real, that is why I applied.',
     ],
   },
   {

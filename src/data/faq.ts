@@ -34,7 +34,7 @@ export const faqItems = [
   {
     question: 'Can I apply for help buying a home?',
     answer:
-      'Yes. IDA reviews requests related to buying a home and keeping stable housing. This is grant assistance — not a bank mortgage and not a loan you pay back.',
+      'Yes. IDA reviews requests related to buying a home and keeping stable housing. This is grant assistance for a housing goal — not a bank mortgage product.',
   },
   {
     question: 'I am a salesperson who wants to start my own business. Can I apply?',
