@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+
+# Let the Next.js OpenNext adapter manage publish output.
+# Do not set publish = "public" or publish = ".next" in the Netlify UI.
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
