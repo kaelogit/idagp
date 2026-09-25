@@ -37,6 +37,7 @@ function parse(body: unknown): Payload | null {
   const str = (k: string) => (typeof o[k] === 'string' ? (o[k] as string).trim() : '');
   const name = str('name');
   const email = str('email');
+  const confirmEmail = str('confirmEmail');
   const phone = str('phone');
   const country = str('country');
   const region = str('region');
@@ -64,6 +65,7 @@ function parse(body: unknown): Payload | null {
     return null;
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return null;
+  if (!confirmEmail || email.toLowerCase() !== confirmEmail.toLowerCase()) return null;
   return {
     name,
     email,
@@ -80,8 +82,25 @@ function parse(body: unknown): Payload | null {
   };
 }
 
+function emailsDoNotMatch(body: unknown): boolean {
+  if (!body || typeof body !== 'object') return false;
+  const o = body as Record<string, unknown>;
+  const str = (k: string) => (typeof o[k] === 'string' ? (o[k] as string).trim() : '');
+  const email = str('email');
+  const confirmEmail = str('confirmEmail');
+  if (!email || !confirmEmail) return false;
+  return email.toLowerCase() !== confirmEmail.toLowerCase();
+}
+
 export async function POST(req: NextRequest) {
-  const parsed = parse(await req.json());
+  const body = await req.json().catch(() => null);
+  if (emailsDoNotMatch(body)) {
+    return NextResponse.json(
+      { error: 'Email addresses do not match. Please type the same address in both fields.' },
+      { status: 400 }
+    );
+  }
+  const parsed = parse(body);
   if (!parsed) {
     return NextResponse.json(
       { error: 'Please complete every field and confirm you are 18 or older.' },

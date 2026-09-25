@@ -1,6 +1,6 @@
 'use client';
 
-import { FormEvent, useEffect, useState } from 'react';
+import { FormEvent, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import {
   CheckCircle2,
@@ -28,9 +28,11 @@ export default function ApplyPage() {
   const [errorMsg, setErrorMsg] = useState('');
   const [testimonialIdx, setTestimonialIdx] = useState(0);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const confirmEmailRef = useRef<HTMLInputElement>(null);
   const [form, setForm] = useState({
     name: '',
     email: '',
+    confirmEmail: '',
     phone: '',
     country: '',
     region: '',
@@ -55,10 +57,30 @@ export default function ApplyPage() {
     setForm((f) => ({ ...f, [key]: value }));
   }
 
+  function emailsMatch(email: string, confirmEmail: string) {
+    return email.trim().toLowerCase() === confirmEmail.trim().toLowerCase();
+  }
+
+  function syncConfirmValidity(email: string, confirmEmail: string) {
+    const input = confirmEmailRef.current;
+    if (!input) return;
+    input.setCustomValidity(
+      confirmEmail && !emailsMatch(email, confirmEmail)
+        ? 'Email addresses do not match.'
+        : ''
+    );
+  }
+
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
-    setStatus('loading');
     setErrorMsg('');
+    if (!emailsMatch(form.email, form.confirmEmail)) {
+      setStatus('error');
+      setErrorMsg('Email addresses do not match. Please type the same address in both fields.');
+      confirmEmailRef.current?.focus();
+      return;
+    }
+    setStatus('loading');
     try {
       const res = await fetch('/api/apply', {
         method: 'POST',
@@ -131,28 +153,61 @@ export default function ApplyPage() {
                     onChange={(e) => set('name', e.target.value)}
                   />
                 </label>
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <label className="block text-sm font-medium text-[var(--gp-navy)]">
-                    Email
-                    <input
-                      type="email"
-                      required
-                      className="mt-1.5 w-full border border-[var(--gp-line)] px-3 py-2.5 text-sm"
-                      value={form.email}
-                      onChange={(e) => set('email', e.target.value)}
-                    />
-                  </label>
-                  <label className="block text-sm font-medium text-[var(--gp-navy)]">
-                    Phone
-                    <input
-                      type="tel"
-                      required
-                      className="mt-1.5 w-full border border-[var(--gp-line)] px-3 py-2.5 text-sm"
-                      value={form.phone}
-                      onChange={(e) => set('phone', e.target.value)}
-                    />
-                  </label>
-                </div>
+                <label className="block text-sm font-medium text-[var(--gp-navy)]">
+                  Email
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    autoComplete="email"
+                    className="mt-1.5 w-full border border-[var(--gp-line)] px-3 py-2.5 text-sm"
+                    value={form.email}
+                    onChange={(e) => {
+                      const email = e.target.value;
+                      set('email', email);
+                      syncConfirmValidity(email, form.confirmEmail);
+                    }}
+                  />
+                </label>
+                <label className="block text-sm font-medium text-[var(--gp-navy)]">
+                  Confirm email address
+                  <input
+                    ref={confirmEmailRef}
+                    type="email"
+                    name="confirmEmail"
+                    required
+                    autoComplete="off"
+                    inputMode="email"
+                    spellCheck={false}
+                    className="mt-1.5 w-full border border-[var(--gp-line)] px-3 py-2.5 text-sm"
+                    value={form.confirmEmail}
+                    onChange={(e) => {
+                      const confirmEmail = e.target.value;
+                      set('confirmEmail', confirmEmail);
+                      syncConfirmValidity(form.email, confirmEmail);
+                    }}
+                    onPaste={(e) => e.preventDefault()}
+                    onDrop={(e) => e.preventDefault()}
+                  />
+                  <span className="mt-1.5 block text-xs font-normal text-[var(--gp-muted)]">
+                    Type your email again. The two addresses must match so we can reach you.
+                  </span>
+                  {form.confirmEmail && !emailsMatch(form.email, form.confirmEmail) ? (
+                    <span className="mt-1 block text-xs font-normal text-red-700">
+                      Email addresses do not match.
+                    </span>
+                  ) : null}
+                </label>
+                <label className="block text-sm font-medium text-[var(--gp-navy)]">
+                  Phone
+                  <input
+                    type="tel"
+                    required
+                    className="mt-1.5 w-full border border-[var(--gp-line)] px-3 py-2.5 text-sm"
+                    value={form.phone}
+                    onChange={(e) => set('phone', e.target.value)}
+                  />
+                </label>
                 <label className="block text-sm font-medium text-[var(--gp-navy)]">
                   Country
                   <select
