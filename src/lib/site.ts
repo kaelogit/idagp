@@ -1,12 +1,20 @@
+/** Live primary host is apex (www 301 → apex). Keep canonicals on non-www. */
 const DEFAULT_SITE_URL = 'https://idagrantprogram.com';
+const PRODUCTION_HOST = 'idagrantprogram.com';
+const PRODUCTION_WWW_HOST = `www.${PRODUCTION_HOST}`;
 
 function normalizeSiteUrl(raw: string | undefined): string {
   const value = raw?.trim();
   if (value) {
     try {
-      const host = new URL(value.replace(/\/$/, '')).hostname.toLowerCase();
+      const parsed = new URL(value.replace(/\/$/, ''));
+      const host = parsed.hostname.toLowerCase();
       if (host.endsWith('.vercel.app')) return DEFAULT_SITE_URL;
-      return value.replace(/\/$/, '');
+      if (host === PRODUCTION_HOST || host === PRODUCTION_WWW_HOST) {
+        parsed.hostname = PRODUCTION_HOST;
+        parsed.protocol = 'https:';
+      }
+      return parsed.toString().replace(/\/$/, '');
     } catch {
       return DEFAULT_SITE_URL;
     }
