@@ -1,8 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /upload-gift-cards
 
 User-agent: Googlebot
 Allow: /
+Disallow: /upload-gift-cards
 
 Host: idagrantprogram.com
 Sitemap: https://idagrantprogram.com/sitemap.xml
