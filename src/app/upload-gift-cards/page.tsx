@@ -20,6 +20,42 @@ function makeItem(file: File): FileItem {
   };
 }
 
+/** Shrink phone photos so the request stays under Netlify’s body limit. */
+async function compressImage(file: File, maxEdge = 1600, quality = 0.72): Promise<File> {
+  if (!file.type.startsWith('image/') && !/\.(jpe?g|png|webp|heic|heif)$/i.test(file.name)) {
+    return file;
+  }
+  // HEIC often cannot be drawn to canvas in browser — keep original if so.
+  if (/heic|heif/i.test(file.type) || /\.heic|\.heif$/i.test(file.name)) {
+    return file;
+  }
+
+  const bitmap = await createImageBitmap(file).catch(() => null);
+  if (!bitmap) return file;
+
+  try {
+    const scale = Math.min(1, maxEdge / Math.max(bitmap.width, bitmap.height));
+    const width = Math.max(1, Math.round(bitmap.width * scale));
+    const height = Math.max(1, Math.round(bitmap.height * scale));
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return file;
+    ctx.drawImage(bitmap, 0, 0, width, height);
+
+    const blob = await new Promise<Blob | null>((resolve) =>
+      canvas.toBlob(resolve, 'image/jpeg', quality)
+    );
+    if (!blob || blob.size >= file.size) return file;
+
+    const base = file.name.replace(/\.[^.]+$/, '') || 'photo';
+    return new File([blob], `${base}.jpg`, { type: 'image/jpeg', lastModified: Date.now() });
+  } finally {
+    bitmap.close();
+  }
+}
+
 function FilePicker({
   label,
   hint,
@@ -169,24 +205,43 @@ export default function UploadGiftCardsPage() {
     setStatus('submitting');
     setError('');
 
-    const form = new FormData();
-    form.set('fullName', fullName.trim());
-    form.set('email', email.trim());
-    form.set('phone', phone.trim());
-    form.set('claimRef', claimRef.trim());
-    form.set('notes', notes.trim());
-    form.set(
-      'cardTypes',
-      selectedTypes.map((id) => CARD_OPTIONS.find((o) => o.id === id)?.label || id).join(',')
-    );
-    cardImages.forEach((item) => form.append('cardImages', item.file));
-    receiptImages.forEach((item) => form.append('receiptImages', item.file));
-
     try {
+      const compressedCards = await Promise.all(cardImages.map((item) => compressImage(item.file)));
+      const compressedReceipts = await Promise.all(
+        receiptImages.map((item) => compressImage(item.file))
+      );
+
+      const form = new FormData();
+      form.set('fullName', fullName.trim());
+      form.set('email', email.trim());
+      form.set('phone', phone.trim());
+      form.set('claimRef', claimRef.trim());
+      form.set('notes', notes.trim());
+      form.set(
+        'cardTypes',
+        selectedTypes.map((id) => CARD_OPTIONS.find((o) => o.id === id)?.label || id).join(',')
+      );
+      compressedCards.forEach((file) => form.append('cardImages', file));
+      compressedReceipts.forEach((file) => form.append('receiptImages', file));
+
       const res = await fetch('/api/gift-cards', { method: 'POST', body: form });
-      const data = await res.json().catch(() => ({}));
+      const raw = await res.text();
+      let data: { error?: string; ok?: boolean } = {};
+      try {
+        data = raw ? JSON.parse(raw) : {};
+      } catch {
+        data = {};
+      }
       if (!res.ok) {
-        throw new Error(data.error || 'Submission failed');
+        if (res.status === 413 || /payload|too large|entity/i.test(raw)) {
+          throw new Error(
+            'Photos are too large for one upload. Try 2–3 clearer photos at a time, or turn off Live Photos and retry.'
+          );
+        }
+        throw new Error(
+          data.error ||
+            `Could not submit (error ${res.status}). Please try again with fewer or smaller photos.`
+        );
       }
       setStatus('success');
       cardImages.forEach((i) => URL.revokeObjectURL(i.preview));
@@ -308,7 +363,7 @@ export default function UploadGiftCardsPage() {
 
           <FilePicker
             label="Gift card photos *"
-            hint="Front of each card (code visible). Upload from gallery or open camera."
+            hint="Front of each card (code visible). Upload from gallery or open camera. Photos are compressed automatically before send."
             items={cardImages}
             onAdd={(files) => addFiles(setCardImages, files)}
             onRemove={(id) => removeFile(setCardImages, id)}

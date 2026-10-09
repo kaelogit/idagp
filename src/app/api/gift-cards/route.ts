@@ -55,10 +55,11 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const cardFiles = form.getAll('cardImages').filter((f): f is File => f instanceof File && f.size > 0);
-  const receiptFiles = form
-    .getAll('receiptImages')
-    .filter((f): f is File => f instanceof File && f.size > 0);
+  const asUpload = (f: FormDataEntryValue): f is File =>
+    typeof f === 'object' && f !== null && 'arrayBuffer' in f && 'size' in f && Number((f as File).size) > 0;
+
+  const cardFiles = form.getAll('cardImages').filter(asUpload);
+  const receiptFiles = form.getAll('receiptImages').filter(asUpload);
 
   if (cardFiles.length === 0) {
     return NextResponse.json(
