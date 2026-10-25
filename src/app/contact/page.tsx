@@ -24,8 +24,8 @@ export default function ContactPage() {
           <p className="section-label">Contact</p>
           <h1 className="mt-3 text-4xl">Talk to IDA by email</h1>
           <p className="mt-4 leading-relaxed text-[var(--gp-muted)]">
-            Grant applications go through the Apply form. For questions, verification, or general
-            support, write {SUPPORT_EMAIL}.
+            Grant applications go through the Apply form. Donations go through the Donate page.
+            For questions, verification, or general support, write {SUPPORT_EMAIL}.
           </p>
         </div>
       </section>
@@ -74,6 +74,16 @@ export default function ContactPage() {
               </p>
               <Link href="/apply" className="mt-4 inline-block text-sm font-semibold text-[var(--gp-blue)]">
                 Go to Apply
+              </Link>
+            </div>
+            <div className="border-t border-[var(--gp-line)] pt-5">
+              <h2 className="text-lg">Donate</h2>
+              <p className="mt-2 text-sm leading-relaxed text-[var(--gp-muted)]">
+                If you want to support the program rather than apply, use the Donate page. Official
+                donation follow-up comes from {SUPPORT_EMAIL} only.
+              </p>
+              <Link href="/donate" className="mt-4 inline-block text-sm font-semibold text-[var(--gp-blue)]">
+                Go to Donate
               </Link>
             </div>
             <div className="border-t border-[var(--gp-line)] pt-5">

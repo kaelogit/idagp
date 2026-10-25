@@ -13,6 +13,7 @@ const navLinks = [
   { href: '/impact', label: 'Stories' },
   { href: '/awards', label: 'Awards' },
   { href: '/how-it-works', label: 'How it works' },
+  { href: '/donate', label: 'Donate' },
   { href: '/faq', label: 'FAQ' },
   { href: '/verify', label: 'Verify' },
 ];

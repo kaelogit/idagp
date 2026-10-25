@@ -29,6 +29,12 @@ export function mailFromAutomated() {
   return `"${APPLY_FROM_NAME}" <${address}>`;
 }
 
+export function mailFromSupport() {
+  const address = process.env.MAIL_FROM?.trim() || process.env.ZOHO_USER?.trim() || '';
+  if (!address) return '';
+  return `"IDA Support" <${address}>`;
+}
+
 export function mailUnavailableMessage() {
   return `Applications are temporarily unavailable. Please email ${SUPPORT_EMAIL} or try again shortly.`;
 }

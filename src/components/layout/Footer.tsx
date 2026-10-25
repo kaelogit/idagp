@@ -26,6 +26,7 @@ export function Footer() {
               ['/impact', 'Stories'],
               ['/awards', 'Awards'],
               ['/apply', 'Apply'],
+              ['/donate', 'Donate'],
               ['/faq', 'FAQ'],
               ['/verify', 'Verify'],
               ['/contact', 'Contact'],

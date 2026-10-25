@@ -69,6 +69,10 @@ export const faqItems = [
     answer: `Complete the form at ${SITE_DOMAIN}/apply. Choose your category and explain your situation. Official applications are submitted on this website only.`,
   },
   {
+    question: 'Can I donate instead of applying?',
+    answer: `Yes. If you want to support IDA rather than apply for a grant, go to ${SITE_DOMAIN}/donate or email ${SUPPORT_EMAIL}. We reply with official donation instructions. Apply and Donate are separate. Do not send money to anyone who contacts you first.`,
+  },
+  {
     question: 'How will I be contacted?',
     answer: `You will get a receipt from ${APPLY_FROM_NAME} (${APPLY_FROM_EMAIL}). Then an IDA grant coordinator assigned to your file will contact you from ${COORDINATOR_EMAIL} within ${RESPONSE_HOURS} hours. Check inbox and spam. Reply on that thread.`,
   },

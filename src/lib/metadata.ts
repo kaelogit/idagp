@@ -84,6 +84,7 @@ export const PUBLIC_ROUTES = [
   '/awards',
   '/how-it-works',
   '/apply',
+  '/donate',
   '/about',
   '/impact',
   '/faq',

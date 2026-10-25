@@ -85,3 +85,23 @@
     background: white;
   }
 }
+
+@keyframes ida-ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.donate-ticker {
+  width: max-content;
+  animation: ida-ticker 280s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .donate-ticker {
+    animation: none;
+  }
+}
