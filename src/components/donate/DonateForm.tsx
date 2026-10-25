@@ -37,10 +37,10 @@ export function DonateForm() {
   if (status === 'ok') {
     return (
       <div className="card mt-8 p-8">
-        <h3 className="text-xl">We have your inquiry</h3>
+        <h3 className="text-xl">Thank you</h3>
         <p className="mt-3 text-sm leading-relaxed text-[var(--gp-muted)]">
-          Check your inbox. Official donation follow-up comes from {SUPPORT_EMAIL}. Stay on that
-          thread.
+          We have received your donation inquiry. Please check your inbox. Our office will write you
+          from {SUPPORT_EMAIL} with the next steps.
         </p>
       </div>
     );

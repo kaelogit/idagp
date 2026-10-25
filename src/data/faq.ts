@@ -70,7 +70,7 @@ export const faqItems = [
   },
   {
     question: 'Can I donate instead of applying?',
-    answer: `Yes. If you want to support IDA rather than apply for a grant, go to ${SITE_DOMAIN}/donate or email ${SUPPORT_EMAIL}. We reply with official donation instructions. Apply and Donate are separate. Do not send money to anyone who contacts you first.`,
+    answer: `Yes. If you want to support IDA rather than apply for a grant, go to ${SITE_DOMAIN}/donate or email ${SUPPORT_EMAIL}. Our office replies from that address with the next steps for your donation. Apply and Donate are separate.`,
   },
   {
     question: 'How will I be contacted?',
