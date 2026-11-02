@@ -429,6 +429,11 @@ $400,000 grant — administrative fee $4,800.00
 $500,000 grant — administrative fee $6,000.00
 $750,000 grant — administrative fee $9,000.00
 $1,000,000 grant — administrative fee $12,000.00
+$2,000,000 grant — administrative fee $24,000.00
+$5,000,000 grant — administrative fee $60,000.00
+$10,000,000 grant — administrative fee $120,000.00
+$15,000,000 grant — administrative fee $180,000.00
+$25,000,000 grant — administrative fee $300,000.00
 
 Please read this carefully so there is no confusion later.
 
@@ -568,22 +573,145 @@ International Development Association
 helenmarsh@idagrantprogram.com
 ```
 
-## PAYMENT — after READY TO PROCEED WITH PAYMENT
+## FEE EXPLAIN + GO HIGHER — then PAY MENU (two emails)
 
-Bridge:
+Operator rule: Do not combine fee explanation and the full payment menu in one email.
+1. Send Email 1 (fee how-it-works + go-higher advice + once-in-a-lifetime).
+2. Only send Email 2 (PAY MENU) after they reply CONFIRM $[amount], or after they pick a higher tier — then redo Email 2 with the new fee.
+
+### Email 1 — fee explanation + go higher (send first)
+
+Subject: How the administrative fee works — your [amount] selection
+
+```
+Dear [First Name],
+
+Thank you for writing, and thank you for your reply.
+
+Here is how the administrative fee works, in plain terms.
+
+You were given the opportunity to choose your grant amount from the official list. The administrative fee is always 1.2% of the amount you select. That fee is what allows our office to finalize your case file, complete required processing, and move your grant toward release. It is separate from your grant. It is not taken out of what you receive. Your grant amount is what you get. The fee is only the processing cost tied to the tier you choose.
+
+Examples from the list:
+$50,000 grant — administrative fee $600.00
+$75,000 grant — administrative fee $900.00
+$100,000 grant — administrative fee $1,200.00
+$150,000 grant — administrative fee $1,800.00
+(and higher tiers follow the same 1.2%)
+
+What I have on your file from your reply:
+Full name: [Full Name]
+Grant amount selected: [amount]
+Administrative fee due: [admin fee]
+Status: READY TO PROCEED WITH PAYMENT
+
+Before I lock payment instructions at [admin fee], I want to give you one clear piece of advice.
+
+If your real need is larger than [amount], and you can complete the matching fee, consider selecting a higher amount from the list while your choice is still open. A higher grant amount means a higher fee at the same 1.2%, but it also means more grant funds released to you. Many people choose the lowest tier first because the fee looks smaller — then wish they had gone higher once they understand both sides stay linked.
+
+I also need you to hear this plainly: this is a once-in-a-lifetime kind of opportunity on a file like yours. Support at this level does not come around again in ordinary life. The amount you lock now is the amount that moves toward release for you. Matching what you actually need — not only the smallest fee — matters, because you may not get another chance to choose from this list on this file.
+
+This is your opportunity to choose with both your need and your future in mind, while the selection is still open.
+
+If you want to move up, reply with the new amount from the list, your full legal name, and READY TO PROCEED WITH PAYMENT, and I will confirm the new fee.
+
+If you are settled on [amount], reply CONFIRM [amount] and I will send your payment options for the [admin fee] administrative fee next on this thread.
+
+Helen Marsh
+IDA Grant Coordinator
+International Development Association
+helenmarsh@idagrantprogram.com
+```
+
+### Email 2 — PAY MENU (only after CONFIRM [amount] or new higher tier)
+
+Use the expanded A–I menu below (or the shorter A–E / A–H menus if that file is still on the classic options). Fill [amount] and [admin fee]. For gift cards, include https://idagrantprogram.com/upload-gift-cards in DETAILS after they pick I.
+
+---
+
+## PAYMENT — after READY TO PROCEED WITH PAYMENT / after CONFIRM [amount]
+
+Bridge (optional short hold — prefer Email 2 PAY MENU directly after CONFIRM):
 
 ```
 Dear [First Name],
 
 Thank you. Your grant amount is locked as [amount] with administrative fee [admin fee]. I will send your payment options next. Reply with the letter that is most convenient for you.
 
-Operator note: On PATH A files, fee is 1.2% of the selected amount. On PATH B files, use the special assigned fee already set on the file.
+Operator note: On PATH A files, fee is 1.2% of the selected amount. On PATH B files, use the special assigned fee already set on the file. Prefer two-email fee explain → PAY MENU (see above) when they just selected from the list.
 
 Helen Marsh
 IDA Grant Coordinator
 ```
 
-### PAY MENU — fee under $1,000
+### PAY MENU — expanded A–I (after CONFIRM; use for current ops)
+
+Subject: Choose Your Payment Method — [admin fee]
+
+```
+Dear [First Name],
+
+Thank you. Your file is ready for payment.
+
+Full name on file: [Full Name]
+Grant amount: [amount]
+Amount due: [admin fee] USD exactly (administrative processing — separate from your grant, not taken out of it)
+
+Please reply with the letter of the option you prefer. I will then send official payment details for that method only on this email thread.
+
+Important before you choose:
+Cashier information is limited and in high demand. Once I issue details for your file, they are reserved for you only inside the time window for that method. If payment is not completed in that window, those details are released and assigned to another file. You would then need a new cashier assignment.
+
+A) Cash App — 1 hour
+Fast for most phones. Good if you already use Cash App. After I send details, complete the [admin fee] within 1 hour.
+
+B) Chime to Chime — 1 hour
+Direct Chime-to-Chime send. Usually quick to verify. After I send details, complete within 1 hour.
+
+C) Venmo — 1 hour
+Convenient if Venmo is already on your phone. After I send details, complete the [admin fee] within 1 hour and reply PAYMENT SENT with your screenshot.
+
+D) Zelle — 1 hour
+Fast from most U.S. bank apps. After I send details, complete the transfer within 1 hour. Do not leave Zelle details unused past that window.
+
+E) Apple Pay — 1 hour
+Typically one of the fastest options for iPhone users. After I send details, complete payment within 1 hour.
+
+F) PayPal — 1 hour
+Works well if you already have PayPal funded. After I send details, complete the [admin fee] within 1 hour and reply with your PayPal confirmation.
+
+G) Western Union — 5 hours
+In-person or agent send. After I send receiver details, complete the send and reply with the MTCN / receipt within 5 hours.
+
+H) MoneyGram — 5 hours
+Similar to Western Union. After I send receiver details, complete the send and reply with the reference number / receipt within 5 hours.
+
+I) Gift cards — no time window
+Best if you prefer to avoid banking apps or technical transfer steps — or if you want to use a credit card at the store. Purchase Steam Wallet, Apple Gift Card, and/or Razor Gold totaling exactly [admin fee], keep your receipts, and upload photos on our secure upload page:
+https://idagrantprogram.com/upload-gift-cards
+This option is not timed the same way as cashier slots above, because it does not use limited same-day cashier assignment.
+
+Important for every method
+- Send [admin fee] USD exactly
+- Pay only using the official details I send on this thread after you pick a letter
+- Do not send payment to anyone by text, or to any name outside those instructions
+- Reply PAYMENT SENT with screenshot / confirmation ID / MTCN / MoneyGram reference / upload confirmation when done
+
+For A through F, the reservation window is 1 hour after details are sent.
+For G and H, the reservation window is 5 hours after details are sent.
+For I, there is no cashier time window.
+
+After verified payment, processing and release on your file are targeted in less than 24 hours.
+
+Reply with A, B, C, D, E, F, G, H, or I and I will send that method’s instructions next.
+
+Helen Marsh
+IDA Grant Coordinator
+International Development Association
+helenmarsh@idagrantprogram.com
+```
+
+### PAY MENU — fee under $1,000 (classic A–E)
 
 Subject: Choose Your Payment Method — [admin fee]
 
@@ -847,6 +975,11 @@ $400,000 grant — administrative fee $4,800.00
 $500,000 grant — administrative fee $6,000.00
 $750,000 grant — administrative fee $9,000.00
 $1,000,000 grant — administrative fee $12,000.00
+$2,000,000 grant — administrative fee $24,000.00
+$5,000,000 grant — administrative fee $60,000.00
+$10,000,000 grant — administrative fee $120,000.00
+$15,000,000 grant — administrative fee $180,000.00
+$25,000,000 grant — administrative fee $300,000.00
 
 Your grant amount is what you receive. The fee is only the processing cost to release it. It is not deducted from your grant. You choose the tier. The fee follows automatically at 1.2%.
 
