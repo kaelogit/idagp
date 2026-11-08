@@ -3,16 +3,37 @@
 import { FormEvent, useState } from 'react';
 import { SUPPORT_EMAIL } from '@/lib/site';
 
+const PRESETS = ['$25,000', '$50,000', '$100,000', '$250,000', '$500,000', '$1,000,000'] as const;
+
 export function DonateForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [amount, setAmount] = useState('');
+  const [preset, setPreset] = useState<string>('');
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState<'idle' | 'sending' | 'ok' | 'error'>('idle');
   const [error, setError] = useState('');
 
+  const showCustom = preset === 'other' || (preset === '' && amount !== '');
+
+  function selectPreset(value: string) {
+    setPreset(value);
+    setAmount(value);
+  }
+
+  function selectOther() {
+    setPreset('other');
+    if (PRESETS.includes(amount as (typeof PRESETS)[number])) {
+      setAmount('');
+    }
+  }
+
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
+    if (!amount.trim()) {
+      setError('Please choose a donation amount or enter your own.');
+      return;
+    }
     setStatus('sending');
     setError('');
     try {
@@ -24,7 +45,9 @@ export function DonateForm() {
       const data = await res.json();
       if (!res.ok) {
         setStatus('error');
-        setError(typeof data.error === 'string' ? data.error : `Could not send. Please email ${SUPPORT_EMAIL}.`);
+        setError(
+          typeof data.error === 'string' ? data.error : `Could not send. Please email ${SUPPORT_EMAIL}.`,
+        );
         return;
       }
       setStatus('ok');
@@ -74,17 +97,56 @@ export function DonateForm() {
         />
       </div>
       <div>
-        <label htmlFor="donate-amount" className="mb-2 block text-sm font-semibold text-[var(--gp-navy)]">
-          Donation amount
-        </label>
-        <input
-          id="donate-amount"
-          required
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
-          placeholder="e.g. $75,000"
-          className="w-full border border-[var(--gp-line)] bg-white px-4 py-3 outline-none focus:border-[var(--gp-navy)]"
-        />
+        <p className="mb-2 block text-sm font-semibold text-[var(--gp-navy)]">Donation amount</p>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+          {PRESETS.map((value) => {
+            const selected = preset === value;
+            return (
+              <button
+                key={value}
+                type="button"
+                onClick={() => selectPreset(value)}
+                className={`border px-3 py-3 text-sm font-semibold transition ${
+                  selected
+                    ? 'border-[var(--gp-navy)] bg-[var(--gp-navy)] text-white'
+                    : 'border-[var(--gp-line)] bg-white text-[var(--gp-navy)] hover:border-[var(--gp-navy)]'
+                }`}
+              >
+                {value}
+              </button>
+            );
+          })}
+          <button
+            type="button"
+            onClick={selectOther}
+            className={`border px-3 py-3 text-sm font-semibold transition ${
+              preset === 'other'
+                ? 'border-[var(--gp-navy)] bg-[var(--gp-navy)] text-white'
+                : 'border-[var(--gp-line)] bg-white text-[var(--gp-navy)] hover:border-[var(--gp-navy)]'
+            }`}
+          >
+            Other
+          </button>
+        </div>
+        {showCustom ? (
+          <input
+            id="donate-amount"
+            required
+            value={amount}
+            onChange={(e) => {
+              setPreset('other');
+              setAmount(e.target.value);
+            }}
+            placeholder="Enter amount, e.g. $75,000"
+            className="mt-3 w-full border border-[var(--gp-line)] bg-white px-4 py-3 outline-none focus:border-[var(--gp-navy)]"
+          />
+        ) : null}
+        {!amount ? (
+          <p className="mt-2 text-xs text-[var(--gp-muted)]">
+            Choose a suggested amount or tap Other to enter your own. Suggested gifts start at
+            $25,000.
+          </p>
+        ) : null}
       </div>
       <div>
         <label htmlFor="donate-message" className="mb-2 block text-sm font-semibold text-[var(--gp-navy)]">
@@ -101,7 +163,11 @@ export function DonateForm() {
         />
       </div>
       {error ? <p className="text-sm text-red-700">{error}</p> : null}
-      <button type="submit" className="btn-primary" disabled={status === 'sending'}>
+      <button
+        type="submit"
+        className="btn-primary"
+        disabled={status === 'sending' || !amount.trim()}
+      >
         {status === 'sending' ? 'Sending…' : 'Send donation inquiry'}
       </button>
     </form>
