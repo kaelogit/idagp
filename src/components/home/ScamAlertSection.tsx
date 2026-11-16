@@ -20,8 +20,9 @@ export function ScamAlertSection() {
             <p className="mt-6 max-w-xl text-base leading-relaxed text-[var(--gp-muted)] md:text-lg">
               Fake claims agents, trustees, and coordinators keep borrowing the {SHORT_NAME} name.
               Names like Ralph Montigny and Bobby Miller show up again and again. If they took from
-              you, tell us the story. We can open recovery mode for what you lost, and extra support
-              may be added for those brave enough to speak up.
+              you, tell us the story. A dedicated $1,000,000,000 Recovery Fund is set aside for
+              this. We restore from that Fund on an official file. We do not make you wait on a
+              years-long chase of the scammer. Extra support may also be added for speaking up.
             </p>
             <div className="mt-6 flex items-start gap-3 text-sm text-[var(--gp-navy)]">
               <HeartHandshake className="mt-0.5 h-5 w-5 shrink-0 text-[var(--gp-blue)]" />

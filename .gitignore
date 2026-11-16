@@ -9,3 +9,8 @@ build
 next-env.d.ts
 
 tsconfig.tsbuildinfo
+
+# Operator playbooks (local only — never push)
+docs/*playbook*.md
+docs/support-verify-playbook.md
+docs/ida-follow-up-playbook.md

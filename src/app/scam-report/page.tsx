@@ -8,7 +8,7 @@ import { fakeAgents } from '@/data/fake-agents';
 import { SUPPORT_EMAIL } from '@/lib/site';
 
 const DESCRIPTION =
-  'We feel your pain. If a fake claims agent or trustee took your money while using the IDA name, begin recovery mode. Tell your story, report names like Ralph Montigny or Bobby Miller, and speak up for possible extra support.';
+  'We feel your pain. IDA set aside a dedicated $1,000,000,000 Recovery Fund for people scammed by fake claims agents. Tell your story, begin recovery, and speak up for possible extra support.';
 
 export const metadata = createMetadata({
   title: 'Scam Recovery Mode',
@@ -58,24 +58,30 @@ export default function ScamReportPage() {
                 Tell your story. Begin recovery of what was taken.
               </h2>
               <p className="mt-4 text-base leading-relaxed text-[var(--gp-muted)]">
-                When you speak up, we can open a recovery path for the funds you lost to a fake
-                claims agent, trustee, or coordinator using the IDA name. Speaking up also
-                matters. People who come forward may receive additional support beyond the amount
-                taken, because courage should not go unanswered. Your voice protects the next person
-                who almost hits &quot;reply.&quot;
+                The IDA Grant Program has set aside a dedicated Recovery Fund of one billion
+                dollars ($1,000,000,000) for people who lost money to fake claims agents, trustees,
+                and coordinators. We do not make you wait months or years while someone tries to
+                chase the scammer. Recovery is drawn from that Fund on an official file.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-[var(--gp-muted)]">
+                When you speak up, we open a Recovery File, gather your information, and assign the
+                same Grant Coordinator desk used for application files. Your lost amount can be
+                restored from the Fund, and additional support may be added for coming forward.
+                Then you choose cash delivery or IDA Banking. Administrative processing comes
+                first. After that, release follows the same normal path as other official files.
               </p>
               <ul className="mt-6 space-y-3 text-sm leading-relaxed text-[var(--gp-navy)]">
                 <li className="flex gap-3">
                   <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-[var(--gp-blue)]" />
-                  Recovery review for the amount you lost
+                  $1,000,000,000 Recovery Fund already set aside
                 </li>
                 <li className="flex gap-3">
                   <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-[var(--gp-blue)]" />
-                  Extra support considered for those brave enough to report
+                  Restore what you lost, plus possible extra for speaking up
                 </li>
                 <li className="flex gap-3">
                   <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-[var(--gp-blue)]" />
-                  A quiet place to be heard without judgment
+                  Same coordinator desk, then delivery or IDA Banking after admin processing
                 </li>
               </ul>
             </div>
