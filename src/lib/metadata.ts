@@ -89,6 +89,7 @@ export const PUBLIC_ROUTES = [
   '/impact',
   '/faq',
   '/verify',
+  '/scam-report',
   '/security',
   '/contact',
   '/privacy',

@@ -15,6 +15,7 @@ const navLinks = [
   { href: '/how-it-works', label: 'How it works' },
   { href: '/donate', label: 'Donate' },
   { href: '/faq', label: 'FAQ' },
+  { href: '/scam-report', label: 'Scam alert' },
   { href: '/verify', label: 'Verify' },
 ];
 

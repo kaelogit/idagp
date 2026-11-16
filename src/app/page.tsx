@@ -10,6 +10,7 @@ import { StoriesSection } from '@/components/home/StoriesSection';
 import { CoordinatorSection } from '@/components/home/CoordinatorSection';
 import { FaqSection } from '@/components/home/FaqSection';
 import { DonateSection } from '@/components/home/DonateSection';
+import { ScamAlertSection } from '@/components/home/ScamAlertSection';
 import { ApplyCtaSection } from '@/components/home/ApplyCtaSection';
 
 export default function HomePage() {
@@ -27,6 +28,7 @@ export default function HomePage() {
       <CoordinatorSection />
       <FaqSection />
       <DonateSection />
+      <ScamAlertSection />
       <ApplyCtaSection />
     </div>
   );

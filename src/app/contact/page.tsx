@@ -95,6 +95,16 @@ export default function ContactPage() {
                 Go to Verify
               </Link>
             </div>
+            <div className="border-t border-[var(--gp-line)] pt-5">
+              <h2 className="text-lg">Already scammed by a fake agent</h2>
+              <p className="mt-2 text-sm leading-relaxed text-[var(--gp-muted)]">
+                Tell us the story and how much you lost. Recovery mode can review lost funds, and
+                extra support may be considered for speaking up.
+              </p>
+              <Link href="/scam-report" className="mt-4 inline-block text-sm font-semibold text-[var(--gp-blue)]">
+                Begin scam recovery
+              </Link>
+            </div>
           </div>
         </div>
       </section>

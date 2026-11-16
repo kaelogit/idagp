@@ -78,7 +78,7 @@ export const faqItems = [
   },
   {
     question: 'Someone contacted me about an IDA grant — is it real?',
-    answer: `If you are unsure, verify before you act. Official support is ${SUPPORT_EMAIL}. Application receipts come from ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}). Assigned coordinator follow-up is ${COORDINATOR_EMAIL}. This website is ${SITE_DOMAIN}. Visit ${SITE_DOMAIN}/verify and email support with what you were told.`,
+    answer: `If they reached you first by text, Facebook, Instagram, or another social app saying you were selected and need to claim a grant, that may not be IDA. Pause and verify. Official support is ${SUPPORT_EMAIL}. Application receipts come from ${APPLY_FROM_EMAIL} (${APPLY_FROM_NAME}). Assigned coordinator follow-up is ${COORDINATOR_EMAIL}. This website is ${SITE_DOMAIN}. Visit ${SITE_DOMAIN}/verify. If a fake agent already took money, begin recovery at ${SITE_DOMAIN}/scam-report and email support with how you were contacted and what they asked.`,
   },
   {
     question: 'Do I have to pay IDA back?',

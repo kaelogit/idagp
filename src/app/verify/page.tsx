@@ -16,12 +16,16 @@ import {
 } from '@/lib/site';
 
 const VERIFY_DESCRIPTION =
-  'Pause here if someone contacted you about an IDA grant. Official support: support@idagrantprogram.com. Application receipts: apply@idagrantprogram.com. Assigned coordinator follow-up: helenmarsh@idagrantprogram.com.';
+  'Got a surprise text, Facebook message, Instagram DM, or email saying you were selected for an IDA grant and must claim it? That may not be IDA. Tell support how you were contacted so we can confirm it.';
 
 const verifyFaqs = [
   {
-    question: 'How do I verify an IDA grant text or email?',
-    answer: `Pause and check this page. Email ${SUPPORT_EMAIL} with who contacted you and what they asked. We will confirm whether it matches an official file. The official website is ${SITE_DOMAIN}.`,
+    question: 'I got a message saying I was selected and need to claim an IDA grant. Real?',
+    answer: `Be careful. IDA does not start with cold texts, Facebook, Instagram, TikTok, WhatsApp, or surprise emails announcing that you won and must claim funds. If that is how someone reached you, email ${SUPPORT_EMAIL} with the channel, who they claimed to be, and what they asked. We will confirm whether it is us.`,
+  },
+  {
+    question: 'How do I verify an IDA grant text, social DM, or email?',
+    answer: `Stop and use this page. Write ${SUPPORT_EMAIL} with who contacted you, where (text, Facebook, Instagram, email, or another app), and what they wanted you to do. We will check it against an official file. The official website is ${SITE_DOMAIN}.`,
   },
   {
     question: 'What are the official IDA email addresses?',
@@ -63,8 +67,10 @@ export default function VerifyPage() {
             <span className="mt-2 block text-[var(--gp-blue)]">Verify it here first.</span>
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-[var(--gp-muted)]">
-            If a text or email about an IDA grant left you unsure, pause and write us. Verifying
-            means confirming the message is from {SHORT_NAME} before you reply or take any next step.
+            If a stranger messaged you out of nowhere — text, email, Facebook, Instagram, or another
+            social app — saying you were selected and need to claim an IDA grant, that may not be
+            us. Tell us what happened and confirm you are speaking with the right office before you
+            reply or send anything.
           </p>
         </div>
       </section>
@@ -96,6 +102,11 @@ export default function VerifyPage() {
           <div className="space-y-6">
             {[
               {
+                icon: AlertTriangle,
+                title: 'Unsolicited “selected — claim now” contact',
+                body: `IDA does not open files by cold-texting or DMing people on Facebook, Instagram, TikTok, WhatsApp, or similar apps to say they won and must claim a grant. If that is how you heard from someone, treat it as unverified and email ${SUPPORT_EMAIL} first.`,
+              },
+              {
                 icon: Globe,
                 title: 'Official website only',
                 body: `The official application site is ${SITE_DOMAIN}. If a link goes somewhere else, stop and email ${SUPPORT_EMAIL}.`,
@@ -107,8 +118,8 @@ export default function VerifyPage() {
               },
               {
                 icon: ShieldCheck,
-                title: 'Ask us before you act',
-                body: `Tell us who contacted you and what they asked. Email ${SUPPORT_EMAIL} and we will confirm whether it matches an official file.`,
+                title: 'Describe the contact',
+                body: `Tell us the channel (text, Facebook, Instagram, email, or another app), the name or handle they used, and what they asked you to do. Email ${SUPPORT_EMAIL} so we can confirm you are talking to the right person.`,
               },
               {
                 icon: AlertTriangle,
@@ -128,9 +139,14 @@ export default function VerifyPage() {
             ))}
           </div>
           <div className="border-t border-[var(--gp-line)] pt-8 text-center">
-            <Link href="/apply" className="btn-primary">
-              Apply for a grant
-            </Link>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link href="/scam-report" className="btn-primary">
+                Begin scam recovery
+              </Link>
+              <Link href="/apply" className="btn-outline">
+                Apply for a grant
+              </Link>
+            </div>
             <p className="mt-4 text-sm text-[var(--gp-muted)]">
               {SHORT_NAME} · Official contact lives on this website and the addresses above.
             </p>

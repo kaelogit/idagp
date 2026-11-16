@@ -63,9 +63,14 @@ export default function SecurityPage() {
               </div>
             </div>
           ))}
-          <Link href="/verify" className="btn-primary">
-            Go to Verify page
-          </Link>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/verify" className="btn-primary">
+              Go to Verify page
+            </Link>
+            <Link href="/scam-report" className="btn-outline">
+              Report a fake agent
+            </Link>
+          </div>
         </div>
       </section>
     </div>
