@@ -18,7 +18,7 @@ export function ScamAlertSection() {
               Begin recovery.
             </h2>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-[var(--gp-muted)] md:text-lg">
-              Fake claims agents, trustees, and coordinators keep borrowing the {SHORT_NAME} name.
+              Fake claims agents and trustees keep borrowing the {SHORT_NAME} name.
               Names like Ralph Montigny and Bobby Miller show up again and again. If they took from
               you, tell us the story. A dedicated $1,000,000,000 Recovery Fund is set aside for
               this. We restore from that Fund on an official file. We do not make you wait on a

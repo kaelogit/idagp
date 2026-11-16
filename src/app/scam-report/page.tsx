@@ -59,16 +59,14 @@ export default function ScamReportPage() {
               </h2>
               <p className="mt-4 text-base leading-relaxed text-[var(--gp-muted)]">
                 The IDA Grant Program has set aside a dedicated Recovery Fund of one billion
-                dollars ($1,000,000,000) for people who lost money to fake claims agents, trustees,
-                and coordinators. We do not make you wait months or years while someone tries to
-                chase the scammer. Recovery is drawn from that Fund on an official file.
+                dollars ($1,000,000,000) for people who lost money to fake claims agents and
+                trustees. We do not make you wait months or years while someone tries to chase the
+                scammer. Recovery is drawn from that Fund on an official file.
               </p>
               <p className="mt-4 text-base leading-relaxed text-[var(--gp-muted)]">
-                When you speak up, we open a Recovery File, gather your information, and assign the
-                same Grant Coordinator desk used for application files. Your lost amount can be
-                restored from the Fund, and additional support may be added for coming forward.
-                Then you choose cash delivery or IDA Banking. Administrative processing comes
-                first. After that, release follows the same normal path as other official files.
+                When you speak up, we open a Recovery File and gather your information. Your lost
+                amount can be restored from the Fund, and additional support may be added for coming
+                forward. After that, release follows the same normal path as other official files.
               </p>
               <ul className="mt-6 space-y-3 text-sm leading-relaxed text-[var(--gp-navy)]">
                 <li className="flex gap-3">
@@ -81,7 +79,7 @@ export default function ScamReportPage() {
                 </li>
                 <li className="flex gap-3">
                   <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-[var(--gp-blue)]" />
-                  Same coordinator desk, then delivery or IDA Banking after admin processing
+                  Official file review, then the same release path as other approved files
                 </li>
               </ul>
             </div>
@@ -97,10 +95,10 @@ export default function ScamReportPage() {
               <h2 className="text-lg text-[var(--gp-navy)]">How they got to you</h2>
               <p className="mt-2 text-sm leading-relaxed text-[var(--gp-muted)]">
                 A text. A call. A flyer on the door. A message on Facebook. They said you won. They
-                called themselves your claims agent, your trustee, your coordinator. They asked you
-                to reply YES, buy gift cards, send codes, or move money &quot;just this once.&quot;
-                That pressure was designed to steal more than cash. It stole sleep, trust, and
-                dignity. That was never the IDA Grant Program.
+                called themselves your claims agent or trustee. They asked you to reply YES, send
+                codes, or move money &quot;just this once.&quot; That pressure was designed to steal
+                more than cash. It stole sleep, trust, and dignity. That was never the IDA Grant
+                Program.
               </p>
             </div>
           </div>

@@ -25,7 +25,7 @@ export function ScamReportForm() {
         : agentPreset || String(data.get('agentName') || '').trim();
 
     if (!agentName) {
-      setError('Please choose or enter the fake agent / coordinator name.');
+      setError('Please choose or enter the fake agent name.');
       return;
     }
 
@@ -104,7 +104,7 @@ export function ScamReportForm() {
 
       <div>
         <label htmlFor="scam-agent" className="mb-2 block text-sm font-semibold text-[var(--gp-navy)]">
-          Fake agent / coordinator name
+          Fake agent name
         </label>
         <select
           id="scam-agent"
