@@ -15,7 +15,7 @@ export function StoriesSection() {
   }, []);
 
   return (
-    <section className="bg-white py-20">
+    <section data-nosnippet className="bg-white py-20">
       <div className="container-page max-w-4xl">
         <p className="section-label">Recipient letters</p>
         <h2 className="mt-3 text-3xl md:text-4xl">People IDA has already helped</h2>

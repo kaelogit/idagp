@@ -10,7 +10,7 @@ import {
 import Link from 'next/link';
 
 export const metadata = createMetadata({
-  title: 'About IDA',
+  title: 'About the IDA Grant Program',
   description:
     'IDA Grant Program. Official application site: idagrantprogram.com.',
   path: '/about',

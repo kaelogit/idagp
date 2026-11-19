@@ -10,7 +10,7 @@ export function FaqSection() {
   const preview = faqItems.slice(0, 5);
 
   return (
-    <section className="bg-white py-20">
+    <section data-nosnippet className="bg-white py-20">
       <div className="container-page max-w-3xl">
         <p className="section-label">FAQ</p>
         <h2 className="mt-3 text-3xl md:text-4xl">Common questions</h2>

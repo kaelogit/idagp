@@ -4,7 +4,7 @@ import { RESPONSE_HOURS } from '@/lib/site';
 
 export function ApplyCtaSection() {
   return (
-    <section className="bg-[var(--gp-blue)] py-16">
+    <section data-nosnippet className="bg-[var(--gp-blue)] py-16">
       <div className="container-page text-center">
         <h2 className="text-2xl font-bold text-white md:text-3xl">Ready to apply for an IDA grant?</h2>
         <p className="mx-auto mt-3 max-w-md text-sm text-white/90">

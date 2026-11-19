@@ -63,7 +63,7 @@ export function StatsSection() {
   }, []);
 
   return (
-    <section ref={ref} className="border-y border-[var(--gp-line)] bg-[var(--gp-paper)] py-16">
+    <section data-nosnippet ref={ref} className="border-y border-[var(--gp-line)] bg-[var(--gp-paper)] py-16">
       <div className="container-page grid grid-cols-2 gap-8 lg:grid-cols-4">
         <Stat value={24} suffix="h" label="First email reply" visible={visible} delay={0} />
         <div className="text-center">

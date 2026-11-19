@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export function PhotoQuoteBand() {
   return (
-    <section className="relative overflow-hidden py-28 text-white">
+    <section data-nosnippet className="relative overflow-hidden py-28 text-white">
       <Image
         src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1800&q=80"
         alt=""

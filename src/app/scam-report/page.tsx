@@ -8,10 +8,10 @@ import { fakeAgents } from '@/data/fake-agents';
 import { SUPPORT_EMAIL } from '@/lib/site';
 
 const DESCRIPTION =
-  'We feel your pain. IDA set aside a dedicated $1,000,000,000 Recovery Fund for people scammed by fake claims agents. Tell your story, begin recovery, and speak up for possible extra support.';
+  'Got an IDA grant scam text about a grant you never applied for? Tell us what they said. The IDA Grant Program has a $1,000,000,000 Recovery Fund for people who lost money to a fake message.';
 
 export const metadata = createMetadata({
-  title: 'Scam Recovery Mode',
+  title: 'IDA grant scam? Tell us about the text',
   description: DESCRIPTION,
   path: '/scam-report',
 });
@@ -21,7 +21,7 @@ export default function ScamReportPage() {
     <div className="bg-white">
       <JsonLd
         data={webPageJsonLd({
-          name: 'IDA scam recovery mode',
+          name: 'IDA grant scam',
           path: '/scam-report',
           description: DESCRIPTION,
         })}
@@ -29,7 +29,7 @@ export default function ScamReportPage() {
       <JsonLd
         data={breadcrumbJsonLd([
           { name: 'Home', path: '/' },
-          { name: 'Scam Recovery Mode', path: '/scam-report' },
+          { name: 'IDA grant scam', path: '/scam-report' },
         ])}
       />
 
@@ -37,8 +37,8 @@ export default function ScamReportPage() {
         <div className="container-page max-w-3xl">
           <p className="section-label">You are not alone</p>
           <h1 className="mt-3 text-4xl text-[var(--gp-navy)] md:text-5xl">
-            We feel your pain.
-            <span className="mt-2 block text-[var(--gp-blue)]">Let us help you heal.</span>
+            Got an IDA grant
+            <span className="mt-2 block text-[var(--gp-blue)]">scam text?</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-[var(--gp-muted)] md:text-lg">
             Someone used a fake name, a soft voice, and a promise that felt like hope. Then the money

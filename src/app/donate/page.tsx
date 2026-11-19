@@ -15,7 +15,7 @@ import {
 export const metadata = createMetadata({
   title: 'Donate to the IDA Grant Program',
   description:
-    'Support the IDA Grant Program. Donations help IDA keep awarding one-time grants for medical care, housing, business, education, teachers, seniors, and more.',
+    'Donate to the IDA Grant Program. IDA awards one-time grants every day for medical care, housing, business, education, teachers, retired teachers, seniors, and general goals. Your gift helps more of those grants go out.',
   path: '/donate',
 });
 
@@ -96,11 +96,11 @@ export default function DonatePage() {
       <section className="border-b border-[var(--gp-line)] bg-[var(--gp-paper)] pt-16 pb-12">
         <div className="container-page max-w-3xl">
           <p className="section-label">Donate</p>
-          <h1 className="mt-3 text-4xl md:text-5xl">Help us keep awarding grants</h1>
+          <h1 className="mt-3 text-4xl md:text-5xl">Donate to the IDA Grant Program</h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[var(--gp-muted)] md:text-lg">
-            If you are here to give, you already understand something simple. This program changes
-            lives. Your donation helps the next award go out across every category {SHORT_NAME}{' '}
-            funds.
+            IDA awards one-time grants every day for medical care, housing, business, education,
+            teachers, retired teachers, seniors, and general goals. People and companies who believe
+            in that work donate so more grants can go out. If that is you, this is the page.
           </p>
         </div>
       </section>
@@ -123,26 +123,26 @@ export default function DonatePage() {
 
       <section className="container-page grid gap-12 py-16 md:grid-cols-2 md:gap-16 md:py-24">
         <div className="space-y-5 text-sm leading-relaxed text-[var(--gp-muted)] md:text-base">
-          <p className="section-label">The program</p>
+        <p className="section-label">The program</p>
           <h2 className="text-3xl text-[var(--gp-navy)] md:text-4xl">What {SHORT_NAME} does</h2>
-          <p>{ORG_BLURB}</p>
-          <p>
-            Awards are grants, not loans. People apply for medical care, housing, business ventures,
+        <p>{ORG_BLURB}</p>
+        <p>
+          Awards are grants, not loans. People apply for medical care, housing, business ventures,
             education, educators, retirees, seniors, and other clear goals. {ELIGIBILITY_OPEN}
-          </p>
-          <p>
-            Donations from individuals and companies around the world help {SHORT_NAME} do even more.
-            We are open to more donations so this work does not slow down. Twenty thousand dollars.
-            Two hundred fifty thousand. Five million. Every amount keeps another award moving.
-          </p>
+        </p>
+        <p>
+          Donations from individuals and companies around the world help {SHORT_NAME} do even more.
+          We are open to more donations so this work does not slow down. Twenty thousand dollars.
+          Two hundred fifty thousand. Five million. Every amount keeps another award moving.
+        </p>
           <div className="flex flex-wrap gap-3 pt-2">
-            <Link href="/about" className="btn-outline">
+        <Link href="/about" className="btn-outline">
               Read about {FULL_NAME}
             </Link>
             <Link href="/programs" className="btn-outline">
               See all grant categories
               <ArrowRight className="h-4 w-4" />
-            </Link>
+        </Link>
           </div>
         </div>
         <aside className="border border-[var(--gp-line)] bg-[var(--gp-paper)] p-8 md:p-10">
@@ -196,12 +196,12 @@ export default function DonatePage() {
       </section>
 
       <section className="container-page py-16 md:py-20">
-        <p className="section-label">What your donation continues</p>
+          <p className="section-label">What your donation continues</p>
         <h2 className="mt-3 text-3xl md:text-4xl">This is the work you join</h2>
-        <div className="mt-10 grid gap-0 border border-[var(--gp-line)] bg-white md:grid-cols-3">
-          {outcomes.map((item, i) => (
-            <article
-              key={item.title}
+          <div className="mt-10 grid gap-0 border border-[var(--gp-line)] bg-white md:grid-cols-3">
+            {outcomes.map((item, i) => (
+              <article
+                key={item.title}
               className={`p-8 md:p-10 ${
                 i > 0 ? 'border-t border-[var(--gp-line)] md:border-t-0' : ''
               } ${i % 3 !== 0 ? 'md:border-l border-[var(--gp-line)]' : ''} ${

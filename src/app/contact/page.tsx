@@ -10,7 +10,7 @@ import {
 import Link from 'next/link';
 
 export const metadata = createMetadata({
-  title: 'Contact IDA — Official Email for Applicants',
+  title: 'Contact the IDA Grant Program',
   description:
     'Official support: support@idagrantprogram.com. Application receipts: apply@idagrantprogram.com. After you apply, your coordinator contacts you from helenmarsh@idagrantprogram.com.',
   path: '/contact',

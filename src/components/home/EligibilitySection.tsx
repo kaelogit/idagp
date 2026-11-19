@@ -4,7 +4,7 @@ import { ELIGIBILITY_OPEN } from '@/lib/site';
 
 export function EligibilitySection() {
   return (
-    <section className="bg-white py-20">
+    <section data-nosnippet className="bg-white py-20">
       <div className="container-page">
         <p className="section-label">Eligibility</p>
         <h2 className="mt-3 max-w-2xl text-3xl md:text-4xl">Who IDA grants are for</h2>

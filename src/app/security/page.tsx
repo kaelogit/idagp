@@ -10,7 +10,7 @@ import {
 } from '@/lib/site';
 
 export const metadata = createMetadata({
-  title: 'IDA Official Emails — How to Verify a Message',
+  title: 'Is this IDA grant email real?',
   description:
     'Official IDA contact is support@idagrantprogram.com, apply@idagrantprogram.com, and helenmarsh@idagrantprogram.com on idagrantprogram.com. We never ask for passwords.',
   path: '/security',

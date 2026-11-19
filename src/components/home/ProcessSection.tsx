@@ -47,7 +47,7 @@ export function ProcessSection() {
   }, []);
 
   return (
-    <section ref={ref} className="bg-[var(--gp-paper)] py-20">
+    <section data-nosnippet ref={ref} className="bg-[var(--gp-paper)] py-20">
       <div className="container-page">
         <p className="section-label">Process</p>
         <h2 className="mt-3 text-3xl md:text-4xl">How an IDA grant works</h2>

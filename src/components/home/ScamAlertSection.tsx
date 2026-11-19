@@ -7,22 +7,19 @@ const featured = fakeAgents.slice(0, 8);
 
 export function ScamAlertSection() {
   return (
-    <section id="scam-alert" className="border-y border-[var(--gp-line)] bg-white py-20 md:py-28">
+    <section data-nosnippet className="border-y border-[var(--gp-line)] bg-white py-20 md:py-28">
       <div className="container-page">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <div>
             <p className="section-label">You are not alone</p>
             <h2 className="mt-4 text-4xl text-[var(--gp-navy)] md:text-5xl">
-              We feel your pain.
+              Got an IDA grant
               <br />
-              Begin recovery.
+              scam text?
             </h2>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-[var(--gp-muted)] md:text-lg">
-              Fake claims agents and trustees keep borrowing the {SHORT_NAME} name.
-              Names like Ralph Montigny and Bobby Miller show up again and again. If they took from
-              you, tell us the story. A dedicated $1,000,000,000 Recovery Fund is set aside for
-              this. We restore from that Fund on an official file. We do not make you wait on a
-              years-long chase of the scammer. Extra support may also be added for speaking up.
+              If a text said the grant program picked you, that message was not us. The full story
+              form is on its own page.
             </p>
             <div className="mt-6 flex items-start gap-3 text-sm text-[var(--gp-navy)]">
               <HeartHandshake className="mt-0.5 h-5 w-5 shrink-0 text-[var(--gp-blue)]" />
@@ -32,7 +29,7 @@ export function ScamAlertSection() {
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/scam-report" className="btn-navy">
-                Start recovery mode
+                Tell us about the scam text
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link href="/verify" className="btn-outline">

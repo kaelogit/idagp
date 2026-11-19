@@ -4,7 +4,7 @@ import { RESPONSE_HOURS } from '@/lib/site';
 
 export function CoordinatorSection() {
   return (
-    <section className="border-y border-[var(--gp-line)] bg-[var(--gp-paper)] py-20">
+    <section data-nosnippet className="border-y border-[var(--gp-line)] bg-[var(--gp-paper)] py-20">
       <div className="container-page max-w-3xl">
         <p className="section-label">After you apply</p>
         <h2 className="mt-3 text-3xl md:text-4xl">A coordinator is assigned to your file</h2>

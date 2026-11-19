@@ -43,7 +43,7 @@ const verifyFaqs = [
 ];
 
 export const metadata = createMetadata({
-  title: 'Verify an IDA Grant Text or Email',
+  title: 'Is this IDA grant text real?',
   description: VERIFY_DESCRIPTION,
   path: '/verify',
 });
@@ -63,8 +63,8 @@ export default function VerifyPage() {
         <div className="container-page max-w-3xl text-center">
           <p className="section-label">Verify</p>
           <h1 className="mt-3 text-4xl">
-            Someone contacted you about an IDA grant?
-            <span className="mt-2 block text-[var(--gp-blue)]">Verify it here first.</span>
+            Is this IDA grant
+            <span className="mt-2 block text-[var(--gp-blue)]">text real?</span>
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-[var(--gp-muted)]">
             If a stranger messaged you out of nowhere — text, email, Facebook, Instagram, or another
@@ -139,14 +139,9 @@ export default function VerifyPage() {
             ))}
           </div>
           <div className="border-t border-[var(--gp-line)] pt-8 text-center">
-            <div className="flex flex-wrap justify-center gap-3">
-              <Link href="/scam-report" className="btn-primary">
-                Begin scam recovery
-              </Link>
-              <Link href="/apply" className="btn-outline">
-                Apply for a grant
-              </Link>
-            </div>
+            <Link href="/apply" className="btn-primary">
+              Apply for a grant
+            </Link>
             <p className="mt-4 text-sm text-[var(--gp-muted)]">
               {SHORT_NAME} · Official contact lives on this website and the addresses above.
             </p>
